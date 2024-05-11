@@ -1,7 +1,10 @@
 version: "3.8"
 services:
-  app:
-    build: .
+  cover-letter-backend:
+    container_name: cover_letter_backend
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3001:3001"
     environment:
