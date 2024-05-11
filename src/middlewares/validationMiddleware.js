@@ -12,11 +12,16 @@ exports.validateCoverLetter = [
   check("emailAddress")
     .isEmail()
     .withMessage("A valid email address is required"),
+  check("phoneNumber").not().isEmpty().withMessage("Phone number is required"),
   check("todayDate").not().isEmpty().withMessage("Today's date is required"),
   check("employerName")
     .not()
     .isEmpty()
     .withMessage("Employer's name is required"),
+  check("hiringManagerName")
+    .not()
+    .isEmpty()
+    .withMessage("Hiring manager's name is required"),
   check("companyName").not().isEmpty().withMessage("Company name is required"),
   check("companyAddress")
     .not()

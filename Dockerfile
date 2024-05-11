@@ -1,21 +1,23 @@
-# Use the official Node.js 16 as a parent image
-FROM node:16-alpine
+# Use a more recent Node.js version
+FROM node:18-alpine
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
+# Set the working directory in the Docker container
+WORKDIR /app
 
-# Copy the current directory contents into the container at /usr/src/app
+# Update npm to the latest version
+RUN npm install -g npm@10.7.0
+
+# Copy package.json and package-lock.json
+COPY package.json package-lock.json ./
+
+# Install production dependencies
+RUN npm install --omit=dev
+
+# Copy the rest of your application code
 COPY . .
 
-# Install any needed packages specified in package.json
-RUN npm install --production
-
-# Make port 3001 available to the world outside this container
+# Expose the port your app runs on
 EXPOSE 3001
 
-# Run the app when the container launches
+# Command to run your app
 CMD ["node", "src/app.js"]
-# docker run -p 3001:3001 -d          
-# docker run -d --name cover-letter-app cover-letter-generator:latest
-
-# docker run -p 3001:3001 -d cover-letter-generator:latest

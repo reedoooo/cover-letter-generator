@@ -5,8 +5,10 @@ exports.generateCoverLetter = async (
   address,
   cityStateZip,
   emailAddress,
+  phoneNumber,
   todayDate,
   employerName,
+  hiringManagerName,
   companyName,
   companyAddress,
   companyCityStateZip,
@@ -37,9 +39,40 @@ exports.generateCoverLetter = async (
       frequency_penalty: 0.5,
       presence_penalty: 0,
     });
-    const generatedText = response.choices[0].text.trim();
-    console.log("Generated cover letter:", generatedText);
+    const generatedTextResponse = response.choices[0].text.trim();
+    console.log("Generated cover letter:", generatedTextResponse);
+    const placeholders = {
+      "[Your Name]": yourName,
+      "[Address]": address,
+      "[City, State ZIP Code]": cityStateZip,
+      "[Email Address]": emailAddress,
+      "[Phone Number]": phoneNumber,
+      "[Today’s Date]": todayDate,
+      "[Employer Name]": employerName,
+      "[Hiring Manager Name]": hiringManagerName,
+      "[Company Name]": companyName,
+      "[Company Address]": companyAddress,
+      "[Company City, State ZIP Code]": companyCityStateZip,
+      "[Job Title]": jobTitle,
+      "[Previous Position]": previousPosition,
+      "[Previous Company]": previousCompany,
+      "[Skills]": skills,
+      "[Software Programs]": softwarePrograms,
+      "[Reasons]": reasons,
+    };
+    // Replace placeholders with actual values
+    const generatedText = generatedTextResponse.replace(
+      /\[.*?\]/g,
+      (match) => placeholders[match]
+    );
 
+    // Object.keys(placeholders).forEach((key) => {
+    //   generatedText = generatedText.replace(
+    //     new RegExp(key, "g"),
+    //     placeholders[key]
+    //   );
+    // });
+    console.log("Generated cover letter:", generatedText);
     const coverLetterHtml = `<p>${generatedText.replace(/\n/g, "</p><p>")}</p>`;
 
     // Convert the generated text into Draft.js RawDraftContentState
