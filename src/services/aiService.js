@@ -1,36 +1,32 @@
-const openai = require("../config/openaiClient");
-exports.generateCoverLetter = async (
-  url,
-  yourName,
-  address,
-  cityStateZip,
-  emailAddress,
-  phoneNumber,
-  todayDate,
-  employerName,
-  hiringManagerName,
-  companyName,
-  companyAddress,
-  companyCityStateZip,
-  jobTitle,
-  previousPosition,
-  previousCompany,
-  skills,
-  softwarePrograms,
-  reasons
-) => {
-  console.log(
-    "Generating cover letter...",
-    jobTitle,
+const config = require("../config/index");
+const logger = require("../config/winston");
+const User = require("../models/User");
+const { convertDraftContentStateToPlainText } = require("../utils");
+
+exports.generateCoverLetter = async (reqBody) => {
+  const {
+    url,
+    yourName,
+    address,
+    cityStateZip,
+    emailAddress,
+    phoneNumber,
+    todayDate,
+    employerName,
+    hiringManagerName,
     companyName,
+    companyAddress,
+    companyCityStateZip,
+    jobTitle,
+    previousPosition,
+    previousCompany,
     skills,
-    reasons
-  );
-
+    softwarePrograms,
+    reasons,
+  } = reqBody;
   const prompt = `Write a professional cover letter for a position of ${jobTitle} at ${companyName}. Highlight the following skills: ${skills}. Express enthusiasm for the role because: ${reasons}.`;
-
   try {
-    const response = await openai.completions.create({
+    const response = await config.openai.completions.create({
       model: "gpt-3.5-turbo-instruct",
       prompt: prompt,
       temperature: 0.5,
@@ -40,7 +36,7 @@ exports.generateCoverLetter = async (
       presence_penalty: 0,
     });
     const generatedTextResponse = response.choices[0].text.trim();
-    console.log("Generated cover letter:", generatedTextResponse);
+    // logger.info("Generated cover letter:", generatedTextResponse);
     const placeholders = {
       "[Your Name]": yourName,
       "[Address]": address,
@@ -60,22 +56,11 @@ exports.generateCoverLetter = async (
       "[Software Programs]": softwarePrograms,
       "[Reasons]": reasons,
     };
-    // Replace placeholders with actual values
     const generatedText = generatedTextResponse.replace(
       /\[.*?\]/g,
       (match) => placeholders[match]
     );
-
-    // Object.keys(placeholders).forEach((key) => {
-    //   generatedText = generatedText.replace(
-    //     new RegExp(key, "g"),
-    //     placeholders[key]
-    //   );
-    // });
-    console.log("Generated cover letter:", generatedText);
     const coverLetterHtml = `<p>${generatedText.replace(/\n/g, "</p><p>")}</p>`;
-
-    // Convert the generated text into Draft.js RawDraftContentState
     const draftContentState = {
       entityMap: {},
       blocks: generatedText.split("\n").map((text, index) => ({
@@ -92,17 +77,29 @@ exports.generateCoverLetter = async (
       coverLetterHtml,
       draftContentState,
     };
-    // return generatedText;
   } catch (error) {
-    console.error("Error generating cover letter:", error);
-    if (error.response && error.response.status === 429) {
-      console.error("Rate limit exceeded, retrying...");
-      // Implement retry logic here or handle the rate limit gracefully
-    } else if (error.response) {
-      console.log(error.response.status);
-      console.log(error.response.data);
-    } else {
-      console.log(error.message);
+    logger.error(`Error generating cover letter: ${error.message}`);
+    throw error; // Rethrow the error for further handling if necessary
+  }
+};
+exports.saveDraftToDatabase = async (content, contentName, userId) => {
+  try {
+    const plainText = convertDraftContentStateToPlainText(content);
+    const user = await User.findById(userId);
+    if (!user) {
+      throw new Error("User not found");
     }
+    const draftKey = `Draft ${user.coverLetters.size + 1}`;
+    user.coverLetters.set(draftKey, {
+      name: contentName,
+      content: plainText,
+      createdAt: new Date(), // Set current time if it's a new draft
+      updatedAt: new Date(), // Update time every time this is saved
+    });
+    await user.save();
+    return user.coverLetters.get(draftKey);
+  } catch (error) {
+    logger.error(`Error saving draft to database: ${error.message}`);
+    throw error; // Rethrow the error for further handling if necessary
   }
 };

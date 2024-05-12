@@ -1,0 +1,52 @@
+name: Node.js CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm test
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "18.x"
+      - run: npm ci
+      - run: npm run build --if-present
+      - name: Create .env file
+        run: |
+          echo "PORT=3001" > .env
+          echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> .env
+          echo "OPENAI_API_ORG_NAME=reed_tha_human" >> .env
+          echo "OPENAI_API_ORG_ID=org-8tsuoX9mFwv3xP5r9E4nFJZW" >> .env
+          echo "OPENAI_API_PROJECT_NAME=Cover Letter Generator" >> .env
+          echo "OPENAI_API_PROJECT_ID=proj_8jcrFVYnAxXJ21PuuSk9zIFO" >> .env
+          echo "MONGODB_URL=${{ secrets.MONGODB_URL }}" >> .env
+          echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> .env
+          echo "SESSION_SECRET=${{ secrets.SESSION_SECRET }}" >> .env
+      - name: Build Docker Image
+        run: docker-compose up --build -d
+      - name: Deploy to Production
+        run: echo "Deploying to production server"

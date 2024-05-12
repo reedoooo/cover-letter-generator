@@ -1,4 +1,5 @@
 const cheerio = require("cheerio");
+const logger = require("../config/winston");
 function splitTextDocuments(text) {
   // Split the text into individual documents based on some delimiter or criteria
   // For example, splitting by empty lines assuming each document is separated by empty lines
@@ -26,12 +27,25 @@ async function extractTextFromUrl(url) {
 
     return document;
   } catch (error) {
-    console.error("Error extracting text from URL:", error);
+    logger.error("Error extracting text from URL:", error);
     throw error;
   }
+}
+
+function convertDraftContentStateToPlainText(draftContentState) {
+  if (!draftContentState.blocks) {
+    logger.error("Invalid draft content state: Missing blocks");
+    return ""; // Return empty string if no blocks are found
+  }
+  const plainText = draftContentState.blocks
+    .map((block) => block.text)
+    .join("\n");
+
+  return plainText;
 }
 
 module.exports = {
   splitTextDocuments,
   extractTextFromUrl,
+  convertDraftContentStateToPlainText,
 };

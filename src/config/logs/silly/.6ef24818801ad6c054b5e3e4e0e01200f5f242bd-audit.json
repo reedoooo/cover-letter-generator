@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/silly/.6ef24818801ad6c054b5e3e4e0e01200f5f242bd-audit.json",
+    "files": [
+        {
+            "date": 1715463953680,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/silly/silly-2024-05-11.log",
+            "hash": "6bb7beb2ec23270a42dfc4e8d7189596b23c3e53dd91c0bfd3e73dbf7fb38721"
+        }
+    ],
+    "hashType": "sha256"
+}

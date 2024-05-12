@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/verbose/.dca805f27192318fb84b818c4dd056a70f2be937-audit.json",
+    "files": [
+        {
+            "date": 1715463953679,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/verbose/verbose-2024-05-11.log",
+            "hash": "1b2e7c81138a6019f988e5d1286aaa19ec31c5981b634eab6c6ece5d0a7cffd4"
+        }
+    ],
+    "hashType": "sha256"
+}

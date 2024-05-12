@@ -1,0 +1,1179 @@
+[error][14:51] Error registering user: User validation failed: password: Path `password` is required., email: Path `email` is required., username: Path `username` is required.
+[error][14:56] Error registering user: User validation failed: password: Path `password` is required., email: Path `email` is required., username: Path `username` is required.
+[error][14:57] Error registering user: User validation failed: password: Path `password` is required., email: Path `email` is required., username: Path `username` is required.
+[error][14:58] Error registering user: JWT_SECRET is not defined
+[error][14:59] Error registering user: E11000 duplicate key error collection: SharedDatabase.users index: username_1 dup key: { username: null }
+[error][15:00] Failed to save draft: req is not defined
+[error][15:00] unhandledRejection: req is not defined
+ReferenceError: req is not defined
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:113:20)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][15:13] Validation errors:
+[error][15:15] Validation errors:
+[error][15:16] Validation errors: [object Object]
+[error][15:16] Validation errors: [{"type":"field","msg":"Email is required","path":"email","location":"body"}]
+[error][15:32] Error registering user: E11000 duplicate key error collection: SharedDatabase.users index: username_1 dup key: { username: null }
+[error][15:34] Failed to save draft: Cannot read properties of undefined (reading 'coverLetters')
+[error][15:34] unhandledRejection: Cannot read properties of undefined (reading 'coverLetters')
+TypeError: Cannot read properties of undefined (reading 'coverLetters')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:121:22)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][15:35] Failed to save draft: req is not defined
+[error][15:35] unhandledRejection: req is not defined
+ReferenceError: req is not defined
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:113:20)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][15:36] Failed to save draft: req is not defined
+[error][15:36] unhandledRejection: req is not defined
+ReferenceError: req is not defined
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:113:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][15:48] Failed to save draft: Cannot read properties of undefined (reading 'session')
+[error][15:48] unhandledRejection: Cannot read properties of undefined (reading 'session')
+TypeError: Cannot read properties of undefined (reading 'session')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:113:41)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][15:48] Failed to save draft: user is not defined
+[error][15:48] unhandledRejection: user is not defined
+ReferenceError: user is not defined
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:122:17)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][15:55] Failed to save draft: Cannot read properties of undefined (reading 'coverLetters')
+[error][15:55] unhandledRejection: Cannot read properties of undefined (reading 'coverLetters')
+TypeError: Cannot read properties of undefined (reading 'coverLetters')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:123:22)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][15:56] Failed to save draft: Cannot read properties of undefined (reading 'coverLetters')
+[error][15:56] unhandledRejection: Cannot read properties of undefined (reading 'coverLetters')
+TypeError: Cannot read properties of undefined (reading 'coverLetters')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:123:22)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][15:58] Failed to save draft: User not authenticated
+[error][15:58] unhandledRejection: User not authenticated
+Error: User not authenticated
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:115:13)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:31] Failed to save draft: User not authenticated
+[error][16:31] unhandledRejection: User not authenticated
+Error: User not authenticated
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:115:13)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:32] Failed to save draft: User not authenticated
+[error][16:32] unhandledRejection: User not authenticated
+Error: User not authenticated
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:115:13)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:34] Failed to save draft: User not authenticated
+[error][16:34] unhandledRejection: User not authenticated
+Error: User not authenticated
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:115:13)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:39] Failed to save draft: User not authenticated
+[error][16:39] unhandledRejection: User not authenticated
+Error: User not authenticated
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:115:13)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:41] Failed to save draft: Cannot read properties of undefined (reading '_id')
+[error][16:41] unhandledRejection: Cannot read properties of undefined (reading '_id')
+TypeError: Cannot read properties of undefined (reading '_id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:117:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:44] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][16:44] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:117:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:73:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:48] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][16:48] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:117:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:78:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:51] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][16:51] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:117:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][16:52] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][16:52] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:117:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:04] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:04] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:117:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:06] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:06] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:117:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:09] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:09] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:117:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:12] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:12] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:132:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:15] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:15] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:132:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:23] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:23] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:132:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:25] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:25] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:132:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:27] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:27] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:132:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:28] Failed to save draft: Cannot read properties of undefined (reading 'id')
+[error][17:28] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:132:37)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:79:40)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:29] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:82:24)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:47:12)
+[error][17:30] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:82:24)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:47:12)
+[error][17:32] unhandledRejection: Cannot read properties of undefined (reading 'id')
+TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:81:24)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at router (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:47:12)
+[error][17:32] unhandledRejection: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:69:38)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+[error][17:35] Failed to save draft: User validation failed: coverLetters.Draft 1.content: Cast to string failed for value "{
+  blocks: [
+    {
+      key: 'block0',
+      text: 'Reed O Vogt',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block1',
+      text: '2222 e cr drive',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block2',
+      text: 'Seattle',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block3',
+      text: 'readvogt@gmail.com',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block4',
+      text: '12/04/1999',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block5',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block6',
+      text: 'undefined',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block7',
+      text: 'asdfas',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block8',
+      text: '2222 e cr drive',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block9',
+      text: 'Seattle',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block10',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block11',
+      text: 'Dear undefined,',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block12',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block13',
+      text: 'I am writing to express my interest in the position of undefined at asdfas. With over undefined years of experience in undefined, I am confident that my skills and qualifications make me a strong candidate for this role.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block14',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block15',
+      text: 'In my current role as a undefined at undefined, I have honed my skills in undefined, undefined, and undefined. These skills have enabled me to successfully handle multiple tasks and projects simultaneously, while maintaining a high level of accuracy and meeting strict deadlines. Moreover, I have a proven track record of consistently achieving or exceeding goals and targets set by my superiors.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block16',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block17',
+      text: 'One skill that sets me apart from other candidates is my proficiency in undefined. Throughout my career, I have consistently demonstrated my ability to use this skill to streamline processes, improve efficiency, and reduce costs for the companies I have worked for. I am confident that I can bring the same level of success to your organization.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block18',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block19',
+      text: 'Aside from my technical skills, I also possess excellent communication and interpersonal skills. This has allowed me to effectively collaborate with colleagues from different departments and build strong relationships with clients. Furthermore, I am a quick learner who is always eager to take on new challenges and expand my knowledge in order to contribute more effectively to the team.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block20',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block21',
+      text: 'I am very excited about the opportunity to join such a reputable company like yours. The prospect of working at asdfas not only excites me because of its great reputation but also because of the good pay that comes with the role. As someone who is highly motivated by challenges, I am confident that this position will provide me with ample opportunities to grow and develop my skills.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block22',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block23',
+      text: 'Thank you for considering my application. I am eager to discuss my qualifications further and how I can contribute to the success of your team. Please feel free to contact me at 2069158624 or via email at readvogt@gmail.com to schedule an interview.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block24',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block25',
+      text: 'Sincerely,',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block26',
+      text: 'Reed O Vogt',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    }
+  ],
+  entityMap: {}
+}" (type Object) at path "content"
+[error][17:35] unhandledRejection: User validation failed: coverLetters.Draft 1.content: Cast to string failed for value "{
+  blocks: [
+    {
+      key: 'block0',
+      text: 'Reed O Vogt',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block1',
+      text: '2222 e cr drive',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block2',
+      text: 'Seattle',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block3',
+      text: 'readvogt@gmail.com',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block4',
+      text: '12/04/1999',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block5',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block6',
+      text: 'undefined',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block7',
+      text: 'asdfas',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block8',
+      text: '2222 e cr drive',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block9',
+      text: 'Seattle',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block10',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block11',
+      text: 'Dear undefined,',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block12',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block13',
+      text: 'I am writing to express my interest in the position of undefined at asdfas. With over undefined years of experience in undefined, I am confident that my skills and qualifications make me a strong candidate for this role.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block14',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block15',
+      text: 'In my current role as a undefined at undefined, I have honed my skills in undefined, undefined, and undefined. These skills have enabled me to successfully handle multiple tasks and projects simultaneously, while maintaining a high level of accuracy and meeting strict deadlines. Moreover, I have a proven track record of consistently achieving or exceeding goals and targets set by my superiors.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block16',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block17',
+      text: 'One skill that sets me apart from other candidates is my proficiency in undefined. Throughout my career, I have consistently demonstrated my ability to use this skill to streamline processes, improve efficiency, and reduce costs for the companies I have worked for. I am confident that I can bring the same level of success to your organization.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block18',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block19',
+      text: 'Aside from my technical skills, I also possess excellent communication and interpersonal skills. This has allowed me to effectively collaborate with colleagues from different departments and build strong relationships with clients. Furthermore, I am a quick learner who is always eager to take on new challenges and expand my knowledge in order to contribute more effectively to the team.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block20',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block21',
+      text: 'I am very excited about the opportunity to join such a reputable company like yours. The prospect of working at asdfas not only excites me because of its great reputation but also because of the good pay that comes with the role. As someone who is highly motivated by challenges, I am confident that this position will provide me with ample opportunities to grow and develop my skills.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block22',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block23',
+      text: 'Thank you for considering my application. I am eager to discuss my qualifications further and how I can contribute to the success of your team. Please feel free to contact me at 2069158624 or via email at readvogt@gmail.com to schedule an interview.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block24',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block25',
+      text: 'Sincerely,',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block26',
+      text: 'Reed O Vogt',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    }
+  ],
+  entityMap: {}
+}" (type Object) at path "content"
+ValidationError: User validation failed: coverLetters.Draft 1.content: Cast to string failed for value "{
+  blocks: [
+    {
+      key: 'block0',
+      text: 'Reed O Vogt',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block1',
+      text: '2222 e cr drive',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block2',
+      text: 'Seattle',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block3',
+      text: 'readvogt@gmail.com',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block4',
+      text: '12/04/1999',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block5',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block6',
+      text: 'undefined',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block7',
+      text: 'asdfas',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block8',
+      text: '2222 e cr drive',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block9',
+      text: 'Seattle',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block10',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block11',
+      text: 'Dear undefined,',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block12',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block13',
+      text: 'I am writing to express my interest in the position of undefined at asdfas. With over undefined years of experience in undefined, I am confident that my skills and qualifications make me a strong candidate for this role.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block14',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block15',
+      text: 'In my current role as a undefined at undefined, I have honed my skills in undefined, undefined, and undefined. These skills have enabled me to successfully handle multiple tasks and projects simultaneously, while maintaining a high level of accuracy and meeting strict deadlines. Moreover, I have a proven track record of consistently achieving or exceeding goals and targets set by my superiors.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block16',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block17',
+      text: 'One skill that sets me apart from other candidates is my proficiency in undefined. Throughout my career, I have consistently demonstrated my ability to use this skill to streamline processes, improve efficiency, and reduce costs for the companies I have worked for. I am confident that I can bring the same level of success to your organization.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block18',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block19',
+      text: 'Aside from my technical skills, I also possess excellent communication and interpersonal skills. This has allowed me to effectively collaborate with colleagues from different departments and build strong relationships with clients. Furthermore, I am a quick learner who is always eager to take on new challenges and expand my knowledge in order to contribute more effectively to the team.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block20',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block21',
+      text: 'I am very excited about the opportunity to join such a reputable company like yours. The prospect of working at asdfas not only excites me because of its great reputation but also because of the good pay that comes with the role. As someone who is highly motivated by challenges, I am confident that this position will provide me with ample opportunities to grow and develop my skills.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block22',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block23',
+      text: 'Thank you for considering my application. I am eager to discuss my qualifications further and how I can contribute to the success of your team. Please feel free to contact me at 2069158624 or via email at readvogt@gmail.com to schedule an interview.',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block24',
+      text: '',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block25',
+      text: 'Sincerely,',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    },
+    {
+      key: 'block26',
+      text: 'Reed O Vogt',
+      type: 'unstyled',
+      depth: 0,
+      inlineStyleRanges: [],
+      entityRanges: [],
+      data: {}
+    }
+  ],
+  entityMap: {}
+}" (type Object) at path "content"
+    at Document.invalidate (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/document.js:3289:32)
+    at Subdocument.invalidate (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/types/subdocument.js:229:12)
+    at SingleNested.$set (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/document.js:1463:12)
+    at SingleNested.$set (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/document.js:1117:16)
+    at SingleNested.Document (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/document.js:166:12)
+    at SingleNested.Subdocument (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/types/subdocument.js:34:12)
+    at new SingleNested (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/schema/subdocument.js:78:21)
+    at SchemaSubdocument.cast (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/schema/subdocument.js:193:12)
+    at SchemaType.applySetters (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/schemaType.js:1236:12)
+    at MongooseMap.set (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongoose/lib/types/map.js:134:36)
+[error][17:55] unhandledRejection: Connection pool for ac-qmqonx3-shard-00-02.drldbfy.mongodb.net:27017 was cleared because another operation failed with: "connection <monitor> to 34.206.129.197:27017 timed out"
+MongoPoolClearedError: Connection pool for ac-qmqonx3-shard-00-02.drldbfy.mongodb.net:27017 was cleared because another operation failed with: "connection <monitor> to 34.206.129.197:27017 timed out"
+    at then.emitAndLog.connection_pool_events_1.ConnectionClosedEvent.id (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/mongodb/lib/cmap/connection_pool.js:367:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error][19:26] Error saving draft to database: User not found
+[error][19:26] unhandledRejection: User not found
+Error: User not found
+    at exports.saveDraftToDatabase (/Users/reedvogt/Desktop/cover-letter-generator/src/services/aiService.js:103:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async exports.saveDraft (/Users/reedvogt/Desktop/cover-letter-generator/src/controllers/coverLetterController.js:25:24)
