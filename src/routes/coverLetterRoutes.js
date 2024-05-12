@@ -8,5 +8,6 @@ router.post(
   validationMiddleware.validateCoverLetter,
   coverLetterController.generate
 );
+router.post("/save-draft", coverLetterController.saveDraft);
 
 module.exports = router;

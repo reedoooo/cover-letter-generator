@@ -1,0 +1,797 @@
+[info][14:45] MongoDB connected successfully
+[info][14:46] Server is running on port 3001
+[info][14:46] MongoDB connected successfully
+[info][14:46] Server is running on port 3001
+[info][14:46] MongoDB connected successfully
+[info][14:46] Server is running on port 3001
+[info][14:46] MongoDB connected successfully
+[info][14:46] Server is running on port 3001
+[info][14:46] MongoDB connected successfully
+[info][14:46] Server is running on port 3001
+[info][14:46] MongoDB connected successfully
+[info][14:46] Server is running on port 3001
+[info][14:46] MongoDB connected successfully
+[info][14:46] Server is running on port 3001
+[info][14:46] MongoDB connected successfully
+[info][14:46] Server is running on port 3001
+[info][14:46] MongoDB connected successfully
+[info][14:47] Server is running on port 3001
+[info][14:47] MongoDB connected successfully
+[info][14:47] Server is running on port 3001
+[info][14:47] Server is running on port 3001
+[info][14:47] MongoDB connected successfully
+[info][14:47] Server is running on port 3001
+[info][14:47] MongoDB connected successfully
+[info][14:47] Server is running on port 3001
+[info][14:47] MongoDB connected successfully
+[info][14:48] Server is running on port 3001
+[info][14:48] MongoDB connected successfully
+[info][14:48] Server is running on port 3001
+[info][14:48] MongoDB connected successfully
+[info][14:48] Server is running on port 3001
+[info][14:48] MongoDB connected successfully
+[info][14:49] Server is running on port 3001
+[info][14:49] MongoDB connected successfully
+[info][14:49] Server is running on port 3001
+[info][14:49] Server is running on port 3001
+[info][14:49] MongoDB connected successfully
+[info][14:50] Server is running on port 3001
+[info][14:50] MongoDB connected successfully
+[info][14:50] Server is running on port 3001
+[info][14:50] MongoDB connected successfully
+[info][14:50] Server is running on port 3001
+[info][14:50] MongoDB connected successfully
+[info][14:50] Server is running on port 3001
+[info][14:50] MongoDB connected successfully
+[info][14:50] Server is running on port 3001
+[info][14:50] Server is running on port 3001
+[info][14:50] MongoDB connected successfully
+[info][14:50] Server is running on port 3001
+[info][14:50] MongoDB connected successfully
+[info][14:51] ::1 - - [11/May/2024:21:51:00 +0000] "OPTIONS /api/user/signup HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:51] username: ReedThaUchiha, email: readvogt@gmail.com, password: password
+[info][14:51] ::1 - - [11/May/2024:21:51:00 +0000] "POST /api/user/signup HTTP/1.1" 500 183 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:55] Server is running on port 3001
+[info][14:55] MongoDB connected successfully
+[info][14:55] Server is running on port 3001
+[info][14:55] MongoDB connected successfully
+[info][14:55] Server is running on port 3001
+[info][14:55] MongoDB connected successfully
+[info][14:55] Server is running on port 3001
+[info][14:55] MongoDB connected successfully
+[info][14:55] Server is running on port 3001
+[info][14:55] MongoDB connected successfully
+[info][14:55] Server is running on port 3001
+[info][14:55] MongoDB connected successfully
+[info][14:55] Server is running on port 3001
+[info][14:55] MongoDB connected successfully
+[info][14:55] Server is running on port 3001
+[info][14:55] Server is running on port 3001
+[info][14:55] MongoDB connected successfully
+[info][14:56] Server is running on port 3001
+[info][14:56] MongoDB connected successfully
+[info][14:56] Server is running on port 3001
+[info][14:56] MongoDB connected successfully
+[info][14:56] Server is running on port 3001
+[info][14:56] MongoDB connected successfully
+[info][14:56] ::1 - - [11/May/2024:21:56:29 +0000] "OPTIONS /api/user/signup HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:56] username: ReedThaUchiha, email: readvogt@gmail.com, password: password
+[info][14:56] ::1 - - [11/May/2024:21:56:30 +0000] "POST /api/user/signup HTTP/1.1" 500 183 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:56] Server is running on port 3001
+[info][14:56] MongoDB connected successfully
+[info][14:57] Server is running on port 3001
+[info][14:57] MongoDB connected successfully
+[info][14:57] Server is running on port 3001
+[info][14:57] MongoDB connected successfully
+[info][14:57] ::1 - - [11/May/2024:21:57:36 +0000] "OPTIONS /api/user/signup HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:57] username: ReedThaUchiha, email: readvogt@gmail.com, password: password
+[info][14:57] userInfo: {"0":"p","1":"a","2":"s","3":"s","4":"w","5":"o","6":"r","7":"d","8":"@","9":"g","10":"m","11":"a","12":"i","13":"l","14":".","15":"c","16":"o","17":"m"}
+[info][14:57] ::1 - - [11/May/2024:21:57:36 +0000] "POST /api/user/signup HTTP/1.1" 500 183 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:58] Server is running on port 3001
+[info][14:58] MongoDB connected successfully
+[info][14:58] Server is running on port 3001
+[info][14:58] MongoDB connected successfully
+[info][14:58] Server is running on port 3001
+[info][14:58] MongoDB connected successfully
+[info][14:58] ::1 - - [11/May/2024:21:58:43 +0000] "OPTIONS /api/user/signup HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:58] username: ReedThaUchiha, email: readvogt@gmail.com, password: password
+[info][14:58] userInfo: {"0":"p","1":"a","2":"s","3":"s","4":"w","5":"o","6":"r","7":"d","8":"@","9":"g","10":"m","11":"a","12":"i","13":"l","14":".","15":"c","16":"o","17":"m"}
+[info][14:58] ::1 - - [11/May/2024:21:58:43 +0000] "POST /api/user/signup HTTP/1.1" 500 72 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:59] Server is running on port 3001
+[info][14:59] MongoDB connected successfully
+[info][14:59] Server is running on port 3001
+[info][14:59] MongoDB connected successfully
+[info][14:59] ::1 - - [11/May/2024:21:59:16 +0000] "OPTIONS /api/user/signup HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][14:59] username: ReedThaUchiha, email: readvogt@gmail.com, password: password
+[info][14:59] userInfo: {"0":"p","1":"a","2":"s","3":"s","4":"w","5":"o","6":"r","7":"d","8":"@","9":"g","10":"m","11":"a","12":"i","13":"l","14":".","15":"c","16":"o","17":"m"}
+[info][14:59] ::1 - - [11/May/2024:21:59:17 +0000] "POST /api/user/signup HTTP/1.1" 500 152 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:00] ::1 - - [11/May/2024:22:00:15 +0000] "OPTIONS /api/user/signup HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:00] username: ReedThaUchiha, email: readvogt@gmail.com, password: password
+[info][15:00] userInfo: {"0":"p","1":"a","2":"s","3":"s","4":"w","5":"o","6":"r","7":"d","8":"@","9":"g","10":"m","11":"a","12":"i","13":"l","14":".","15":"c","16":"o","17":"m"}
+[info][15:00] ::1 - - [11/May/2024:22:00:16 +0000] "POST /api/user/signup HTTP/1.1" 201 411 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:00] ::1 - - [11/May/2024:22:00:35 +0000] "OPTIONS /api/cover-letter/save-draft HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:00] Received draft content: 
+[info][15:00] Received draft content name: 
+[info][15:00] undefined
+[info][15:00] ::1 - - [11/May/2024:22:00:35 +0000] "POST /api/cover-letter/save-draft HTTP/1.1" 500 43 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:08] ::1 - - [11/May/2024:22:08:27 +0000] "OPTIONS /api/cover-letter/generate-cover-letter HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:08] Generating cover letter...
+[info][15:08] ::1 - - [11/May/2024:22:08:33 +0000] "POST /api/cover-letter/generate-cover-letter HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:13] ::1 - - [11/May/2024:22:13:28 +0000] "OPTIONS /api/cover-letter/generate-cover-letter HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:13] Generating cover letter...
+[info][15:13] ::1 - - [11/May/2024:22:13:34 +0000] "POST /api/cover-letter/generate-cover-letter HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:13] ::1 - - [11/May/2024:22:13:41 +0000] "OPTIONS /api/cover-letter/generate-cover-letter HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:13] Generating cover letter...
+[info][15:13] ::1 - - [11/May/2024:22:13:47 +0000] "POST /api/cover-letter/generate-cover-letter HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:13] ::1 - - [11/May/2024:22:13:58 +0000] "OPTIONS /api/user/login HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:13] ::1 - - [11/May/2024:22:13:58 +0000] "POST /api/user/login HTTP/1.1" 422 88 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:15] Server is running on port 3001
+[info][15:15] Server is running on port 3001
+[info][15:15] MongoDB connected successfully
+[info][15:15] Server is running on port 3001
+[info][15:15] MongoDB connected successfully
+[info][15:15] Server is running on port 3001
+[info][15:15] MongoDB connected successfully
+[info][15:15] Server is running on port 3001
+[info][15:15] MongoDB connected successfully
+[info][15:15] Server is running on port 3001
+[info][15:15] MongoDB connected successfully
+[info][15:15] Server is running on port 3001
+[info][15:15] MongoDB connected successfully
+[info][15:15] ::1 - - [11/May/2024:22:15:34 +0000] "OPTIONS /api/user/login HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:15] ::1 - - [11/May/2024:22:15:34 +0000] "POST /api/user/login HTTP/1.1" 422 88 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:16] Server is running on port 3001
+[info][15:16] MongoDB connected successfully
+[info][15:16] Server is running on port 3001
+[info][15:16] MongoDB connected successfully
+[info][15:16] ::1 - - [11/May/2024:22:16:22 +0000] "OPTIONS /api/user/login HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:16] ::1 - - [11/May/2024:22:16:22 +0000] "POST /api/user/login HTTP/1.1" 422 88 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:16] Server is running on port 3001
+[info][15:16] MongoDB connected successfully
+[info][15:16] ::1 - - [11/May/2024:22:16:37 +0000] "OPTIONS /api/user/login HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:16] ::1 - - [11/May/2024:22:16:37 +0000] "POST /api/user/login HTTP/1.1" 422 88 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:18] Server is running on port 3001
+[info][15:18] MongoDB connected successfully
+[info][15:18] ::1 - - [11/May/2024:22:18:14 +0000] "OPTIONS /api/user/login HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:18] ::1 - - [11/May/2024:22:18:14 +0000] "POST /api/user/login HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:18] Server is running on port 3001
+[info][15:18] MongoDB connected successfully
+[info][15:19] Server is running on port 3001
+[info][15:19] MongoDB connected successfully
+[info][15:19] ::1 - - [11/May/2024:22:19:11 +0000] "OPTIONS /api/user/login HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:19] ::1 - - [11/May/2024:22:19:11 +0000] "POST /api/user/login HTTP/1.1" 401 42 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+[info][15:22] Server is running on port 3001
+[info][15:22] MongoDB connected successfully
+[info][15:22] Server is running on port 3001
+[info][15:22] MongoDB connected successfully
+[info][15:22] Server is running on port 3001
+[info][15:22] MongoDB connected successfully
+[info][15:22] Server is running on port 3001
+[info][15:22] MongoDB connected successfully
+[info][15:24] Server is running on port 3001
+[info][15:24] MongoDB connected successfully
+[info][15:25] Server is running on port 3001
+[info][15:25] MongoDB connected successfully
+[info][15:25] Server is running on port 3001
+[info][15:25] MongoDB connected successfully
+[info][15:25] Server is running on port 3001
+[info][15:25] MongoDB connected successfully
+[info][15:25] Server is running on port 3001
+[info][15:25] MongoDB connected successfully
+[info][15:25] Server is running on port 3001
+[info][15:25] MongoDB connected successfully
+[info][15:25] Server is running on port 3001
+[info][15:25] MongoDB connected successfully
+[info][15:25] Server is running on port 3001
+[info][15:25] Server is running on port 3001
+[info][15:25] MongoDB connected successfully
+[info][15:25] Server is running on port 3001
+[info][15:25] MongoDB connected successfully
+[info][15:27] Server is running on port 3001
+[info][15:27] Server is running on port 3001
+[info][15:27] MongoDB connected successfully
+[info][15:27] Server is running on port 3001
+[info][15:27] MongoDB connected successfully
+[info][15:27] Server is running on port 3001
+[info][15:27] MongoDB connected successfully
+[info][15:27] Server is running on port 3001
+[info][15:27] Server is running on port 3001
+[info][15:27] MongoDB connected successfully
+[info][15:28] Server is running on port 3001
+[info][15:28] MongoDB connected successfully
+[info][15:28] Server is running on port 3001
+[info][15:28] MongoDB connected successfully
+[info][15:28] Server is running on port 3001
+[info][15:28] MongoDB connected successfully
+[info][15:28] Server is running on port 3001
+[info][15:28] MongoDB connected successfully
+[info][15:30] Server is running on port 3001
+[info][15:30] MongoDB connected successfully
+[info][15:32] Server is running on port 3001
+[info][15:32] MongoDB connected successfully
+[info][15:32] username: ReedThaUchiha, email: readvogt@gmail.com, password: password
+[info][15:32] userInfo: {"0":"p","1":"a","2":"s","3":"s","4":"w","5":"o","6":"r","7":"d","8":"@","9":"g","10":"m","11":"a","12":"i","13":"l","14":".","15":"c","16":"o","17":"m"}
+[info][15:33] Server is running on port 3001
+[info][15:33] MongoDB connected successfully
+[info][15:33] Server is running on port 3001
+[info][15:33] MongoDB connected successfully
+[info][15:33] Server is running on port 3001
+[info][15:33] MongoDB connected successfully
+[info][15:33] Server is running on port 3001
+[info][15:33] MongoDB connected successfully
+[info][15:33] Server is running on port 3001
+[info][15:33] MongoDB connected successfully
+[info][15:34] username: ReedThaUchiha, email: readvogt@gmail.com, password: password
+[info][15:34] Received draft content: 
+[info][15:34] Received draft content name: 
+[info][15:34] undefined
+[info][15:35] Server is running on port 3001
+[info][15:35] MongoDB connected successfully
+[info][15:35] Server is running on port 3001
+[info][15:35] MongoDB connected successfully
+[info][15:35] Received draft content: 
+[info][15:35] Received draft content name: 
+[info][15:35] undefined
+[info][15:36] Server is running on port 3001
+[info][15:36] MongoDB connected successfully
+[info][15:36] Server is running on port 3001
+[info][15:36] MongoDB connected successfully
+[info][15:36] Server is running on port 3001
+[info][15:36] MongoDB connected successfully
+[info][15:36] Server is running on port 3001
+[info][15:36] MongoDB connected successfully
+[info][15:36] Server is running on port 3001
+[info][15:36] MongoDB connected successfully
+[info][15:36] Received draft content: 
+[info][15:36] Received draft content name: 
+[info][15:36] undefined
+[info][15:43] Server is running on port 3001
+[info][15:43] MongoDB connected successfully
+[info][15:45] Server is running on port 3001
+[info][15:45] Server is running on port 3001
+[info][15:45] MongoDB connected successfully
+[info][15:45] Server is running on port 3001
+[info][15:45] MongoDB connected successfully
+[info][15:47] Server is running on port 3001
+[info][15:47] MongoDB connected successfully
+[info][15:47] Server is running on port 3001
+[info][15:47] MongoDB connected successfully
+[info][15:47] Server is running on port 3001
+[info][15:47] MongoDB connected successfully
+[info][15:47] Server is running on port 3001
+[info][15:47] MongoDB connected successfully
+[info][15:47] Server is running on port 3001
+[info][15:47] MongoDB connected successfully
+[info][15:47] Server is running on port 3001
+[info][15:47] Server is running on port 3001
+[info][15:47] MongoDB connected successfully
+[info][15:48] Server is running on port 3001
+[info][15:48] MongoDB connected successfully
+[info][15:48] Received draft content: 
+[info][15:48] Received draft content name: 
+[info][15:48] undefined
+[info][15:48] Server is running on port 3001
+[info][15:48] MongoDB connected successfully
+[info][15:48] Received draft content: 
+[info][15:48] Received draft content name: 
+[info][15:48] undefined
+[info][15:52] Server is running on port 3001
+[info][15:52] MongoDB connected successfully
+[info][15:52] Server is running on port 3001
+[info][15:52] MongoDB connected successfully
+[info][15:53] Server is running on port 3001
+[info][15:53] MongoDB connected successfully
+[info][15:54] Server is running on port 3001
+[info][15:54] MongoDB connected successfully
+[info][15:54] Server is running on port 3001
+[info][15:54] MongoDB connected successfully
+[info][15:54] Server is running on port 3001
+[info][15:54] MongoDB connected successfully
+[info][15:54] Server is running on port 3001
+[info][15:54] MongoDB connected successfully
+[info][15:54] Server is running on port 3001
+[info][15:54] MongoDB connected successfully
+[info][15:54] Server is running on port 3001
+[info][15:54] MongoDB connected successfully
+[info][15:55] Server is running on port 3001
+[info][15:55] MongoDB connected successfully
+[info][15:55] Server is running on port 3001
+[info][15:55] MongoDB connected successfully
+[info][15:55] Received draft content: 
+[info][15:55] Received draft content name: 
+[info][15:55] undefined
+[info][15:56] Server is running on port 3001
+[info][15:56] MongoDB connected successfully
+[info][15:56] Received draft content: 
+[info][15:56] Received draft content name: 
+[info][15:56] undefined
+[info][15:57] Server is running on port 3001
+[info][15:57] MongoDB connected successfully
+[info][15:57] Server is running on port 3001
+[info][15:57] MongoDB connected successfully
+[info][15:58] Server is running on port 3001
+[info][15:58] MongoDB connected successfully
+[info][15:58] Server is running on port 3001
+[info][15:58] Server is running on port 3001
+[info][15:58] MongoDB connected successfully
+[info][15:58] Received draft content: 
+[info][15:58] Received draft content name: 
+[info][15:58] undefined
+[info][16:01] Server is running on port 3001
+[info][16:01] MongoDB connected successfully
+[info][16:01] Server is running on port 3001
+[info][16:01] MongoDB connected successfully
+[info][16:01] Server is running on port 3001
+[info][16:01] MongoDB connected successfully
+[info][16:01] Server is running on port 3001
+[info][16:01] MongoDB connected successfully
+[info][16:05] Server is running on port 3001
+[info][16:05] Server is running on port 3001
+[info][16:05] MongoDB connected successfully
+[info][16:05] Server is running on port 3001
+[info][16:05] MongoDB connected successfully
+[info][16:06] Server is running on port 3001
+[info][16:06] MongoDB connected successfully
+[info][16:06] Server is running on port 3001
+[info][16:06] MongoDB connected successfully
+[info][16:06] Server is running on port 3001
+[info][16:06] MongoDB connected successfully
+[info][16:06] Server is running on port 3001
+[info][16:06] MongoDB connected successfully
+[info][16:07] Server is running on port 3001
+[info][16:07] MongoDB connected successfully
+[info][16:07] Server is running on port 3001
+[info][16:07] MongoDB connected successfully
+[info][16:07] Server is running on port 3001
+[info][16:07] MongoDB connected successfully
+[info][16:19] Server is running on port 3001
+[info][16:19] MongoDB connected successfully
+[info][16:19] Server is running on port 3001
+[info][16:19] MongoDB connected successfully
+[info][16:20] Server is running on port 3001
+[info][16:20] MongoDB connected successfully
+[info][16:20] Server is running on port 3001
+[info][16:20] MongoDB connected successfully
+[info][16:31] Received draft content: 
+[info][16:31] Received draft content name: 
+[info][16:31] undefined
+[info][16:31] Generating cover letter...
+[info][16:32] Received draft content: 
+[info][16:32] Received draft content name: 
+[info][16:32] undefined
+[info][16:34] Received draft content: 
+[info][16:34] Received draft content name: 
+[info][16:34] undefined
+[info][16:37] Generating cover letter...
+[info][16:38] username: Hinata_Hyuuga, email: hinata@gmail.com, password: password
+[info][16:38] User registered: Hinata_Hyuuga
+[info][16:39] Received draft content: 
+[info][16:39] Received draft content name: 
+[info][16:39] undefined
+[info][16:41] Server is running on port 3001
+[info][16:41] MongoDB connected successfully
+[info][16:41] Received draft content: 
+[info][16:41] Received draft content name: 
+[info][16:41] undefined
+[info][16:44] Server is running on port 3001
+[info][16:44] MongoDB connected successfully
+[info][16:44] Received draft content: 
+[info][16:44] Received draft content name: 
+[info][16:44] undefined
+[info][16:47] Server is running on port 3001
+[info][16:47] Server is running on port 3001
+[info][16:47] MongoDB connected successfully
+[info][16:47] Server is running on port 3001
+[info][16:47] MongoDB connected successfully
+[info][16:48] Server is running on port 3001
+[info][16:48] MongoDB connected successfully
+[info][16:48] Received draft content name: undefined
+[info][16:48] Received draft content: [object Object]
+[info][16:48] undefined
+[info][16:49] Server is running on port 3001
+[info][16:49] MongoDB connected successfully
+[info][16:51] Server is running on port 3001
+[info][16:51] MongoDB connected successfully
+[info][16:51] Server is running on port 3001
+[info][16:51] MongoDB connected successfully
+[info][16:51] Server is running on port 3001
+[info][16:51] MongoDB connected successfully
+[info][16:51] Server is running on port 3001
+[info][16:51] MongoDB connected successfully
+[info][16:51] REQ SESSION: [object Object]
+[info][16:51] Received draft content name: undefined
+[info][16:51] Received draft content: [object Object]
+[info][16:51] undefined
+[info][16:52] Server is running on port 3001
+[info][16:52] MongoDB connected successfully
+[info][16:52] REQ SESSION: [object Object]
+[info][16:52] Received draft content name: undefined
+[info][16:52] Received draft content: [object Object]
+[info][16:52] undefined
+[info][16:53] Server is running on port 3001
+[info][16:53] MongoDB connected successfully
+[info][16:53] Server is running on port 3001
+[info][16:53] MongoDB connected successfully
+[info][16:53] Server is running on port 3001
+[info][16:53] MongoDB connected successfully
+[info][16:53] Server is running on port 3001
+[info][16:53] MongoDB connected successfully
+[info][16:53] Server is running on port 3001
+[info][16:53] MongoDB connected successfully
+[info][16:53] Server is running on port 3001
+[info][16:53] MongoDB connected successfully
+[info][16:53] Server is running on port 3001
+[info][16:53] MongoDB connected successfully
+[info][16:53] Server is running on port 3001
+[info][16:54] MongoDB connected successfully
+[info][16:54] Server is running on port 3001
+[info][16:54] MongoDB connected successfully
+[info][16:54] Server is running on port 3001
+[info][16:54] MongoDB connected successfully
+[info][16:54] Server is running on port 3001
+[info][16:54] MongoDB connected successfully
+[info][17:00] Server is running on port 3001
+[info][17:00] MongoDB connected successfully
+[info][17:01] Server is running on port 3001
+[info][17:01] MongoDB connected successfully
+[info][17:02] Server is running on port 3001
+[info][17:02] MongoDB connected successfully
+[info][17:02] User logged in: Hinata_Hyuuga
+[info][17:04] Server is running on port 3001
+[info][17:04] MongoDB connected successfully
+[info][17:04] REQ SESSION: [object Object]
+[info][17:04] Received draft content name: undefined
+[info][17:04] Received draft content: [object Object]
+[info][17:04] undefined
+[info][17:06] Server is running on port 3001
+[info][17:06] MongoDB connected successfully
+[info][17:06] REQ SESSION: {"cookie":{"originalMaxAge":86400000,"expires":"2024-05-13T00:06:19.916Z","secure":false,"httpOnly":true,"path":"/api"}}
+[info][17:06] Received draft content name: undefined
+[info][17:06] Received draft content: [object Object]
+[info][17:06] undefined
+[info][17:07] Generating cover letter...
+[info][17:09] REQ SESSION: {"cookie":{"originalMaxAge":86400000,"expires":"2024-05-13T00:09:03.805Z","secure":false,"httpOnly":true,"path":"/api"}}
+[info][17:09] Received draft content name: asdfsda
+[info][17:09] Received draft content: [object Object]
+[info][17:09] undefined
+[info][17:11] Server is running on port 3001
+[info][17:11] MongoDB connected successfully
+[info][17:11] Server is running on port 3001
+[info][17:11] MongoDB connected successfully
+[info][17:11] Server is running on port 3001
+[info][17:11] MongoDB connected successfully
+[info][17:11] Server is running on port 3001
+[info][17:11] MongoDB connected successfully
+[info][17:11] Server is running on port 3001
+[info][17:11] MongoDB connected successfully
+[info][17:12] Server is running on port 3001
+[info][17:12] MongoDB connected successfully
+[info][17:12] Server is running on port 3001
+[info][17:12] MongoDB connected successfully
+[info][17:12] Server is running on port 3001
+[info][17:12] MongoDB connected successfully
+[info][17:12] REQ SESSION: {"cookie":{"originalMaxAge":86400000,"expires":"2024-05-13T00:12:09.748Z","secure":false,"httpOnly":true,"path":"/api"}}
+[info][17:12] Received draft content name: asdfsda
+[info][17:12] Received draft content: [object Object]
+[info][17:12] undefined
+[info][17:15] REQ SESSION: {"cookie":{"originalMaxAge":86400000,"expires":"2024-05-13T00:15:41.709Z","secure":false,"httpOnly":true,"path":"/api"}}
+[info][17:15] Received draft content name: asdfsda
+[info][17:15] Received draft content: [object Object]
+[info][17:15] undefined
+[info][17:17] Generating cover letter...
+[info][17:19] Server is running on port 3001
+[info][17:19] MongoDB connected successfully
+[info][17:22] Server is running on port 3001
+[info][17:22] MongoDB connected successfully
+[info][17:22] Server is running on port 3001
+[info][17:22] MongoDB connected successfully
+[info][17:22] Server is running on port 3001
+[info][17:22] MongoDB connected successfully
+[info][17:23] Server is running on port 3001
+[info][17:23] Server is running on port 3001
+[info][17:23] MongoDB connected successfully
+[info][17:23] User logged in: Hinata_Hyuuga
+[info][17:23] REQ SESSION: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"}}
+[info][17:23] Received draft content name: reedthahuman
+[info][17:23] Received draft content: [object Object]
+[info][17:23] undefined
+[info][17:25] Server is running on port 3001
+[info][17:25] MongoDB connected successfully
+[info][17:25] REQ SESSION: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"}}
+[info][17:25] Received draft content name: reedthahuman
+[info][17:25] Received draft content: [object Object]
+[info][17:25] undefined
+[info][17:27] Server is running on port 3001
+[info][17:27] MongoDB connected successfully
+[info][17:27] Server is running on port 3001
+[info][17:27] REQ SESSION: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"}}
+[info][17:27] Received draft content name: reedthahuman
+[info][17:27] Received draft content: [object Object]
+[info][17:27] undefined
+[info][17:27] MongoDB connected successfully
+[info][17:28] Server is running on port 3001
+[info][17:28] MongoDB connected successfully
+[info][17:28] Server is running on port 3001
+[info][17:28] MongoDB connected successfully
+[info][17:28] Server is running on port 3001
+[info][17:28] MongoDB connected successfully
+[info][17:28] REQ SESSION: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"}}
+[info][17:28] Received draft content name: reedthahuman
+[info][17:28] Received draft content: [object Object]
+[info][17:28] undefined
+[info][17:29] Server is running on port 3001
+[info][17:29] MongoDB connected successfully
+[info][17:29] Server is running on port 3001
+[info][17:29] MongoDB connected successfully
+[info][17:29] Server is running on port 3001
+[info][17:29] MongoDB connected successfully
+[info][17:29] Server is running on port 3001
+[info][17:29] MongoDB connected successfully
+[info][17:29] Server is running on port 3001
+[info][17:29] MongoDB connected successfully
+[info][17:29] Server is running on port 3001
+[info][17:29] MongoDB connected successfully
+[info][17:29] REQ SESSION: {"cookie":{"originalMaxAge":null,"expires":null,"httpOnly":true,"path":"/"}}
+[info][17:29] Received draft content name: reedthahuman
+[info][17:29] Received draft content: [object Object]
+[info][17:29] undefined
+[info][17:30] Server is running on port 3001
+[info][17:30] MongoDB connected successfully
+[info][17:30] Server is running on port 3001
+[info][17:30] MongoDB connected successfully
+[info][17:30] REQ SESSION: [object Object]
+[info][17:30] Received draft content name: reedthahuman
+[info][17:30] Received draft content: [object Object]
+[info][17:30] undefined
+[info][17:31] Server is running on port 3001
+[info][17:31] MongoDB connected successfully
+[info][17:31] Server is running on port 3001
+[info][17:31] MongoDB connected successfully
+[info][17:31] Server is running on port 3001
+[info][17:31] Server is running on port 3001
+[info][17:31] MongoDB connected successfully
+[info][17:32] REQ SESSION: [object Object]
+[info][17:32] undefined
+[info][17:32] Server is running on port 3001
+[info][17:32] MongoDB connected successfully
+[info][17:32] Server is running on port 3001
+[info][17:32] MongoDB connected successfully
+[info][17:32] undefined
+[info][17:32] Server is running on port 3001
+[info][17:32] MongoDB connected successfully
+[info][17:34] Server is running on port 3001
+[info][17:34] MongoDB connected successfully
+[info][17:34] Server is running on port 3001
+[info][17:34] MongoDB connected successfully
+[info][17:34] Generating cover letter...
+[info][17:35] undefined
+[info][17:35] Server is running on port 3001
+[info][17:35] MongoDB connected successfully
+[info][17:36] Server is running on port 3001
+[info][17:36] MongoDB connected successfully
+[info][17:37] Server is running on port 3001
+[info][17:37] MongoDB connected successfully
+[info][17:37] Server is running on port 3001
+[info][17:37] MongoDB connected successfully
+[info][17:37] Server is running on port 3001
+[info][17:37] MongoDB connected successfully
+[info][17:55] Server is running on port 3001
+[info][17:55] MongoDB connected successfully
+[info][17:56] Server is running on port 3001
+[info][17:56] MongoDB connected successfully
+[info][17:56] Server is running on port 3001
+[info][17:56] MongoDB connected successfully
+[info][17:56] Server is running on port 3001
+[info][17:56] MongoDB connected successfully
+[info][17:57] Server is running on port 3001
+[info][17:57] MongoDB connected successfully
+[info][17:57] Server is running on port 3001
+[info][17:57] MongoDB connected successfully
+[info][17:57] Server is running on port 3001
+[info][17:57] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:58] Server is running on port 3001
+[info][17:58] MongoDB connected successfully
+[info][17:59] Server is running on port 3001
+[info][17:59] MongoDB connected successfully
+[info][17:59] Server is running on port 3001
+[info][17:59] MongoDB connected successfully
+[info][18:00] Server is running on port 3001
+[info][18:00] MongoDB connected successfully
+[info][18:00] Server is running on port 3001
+[info][18:00] MongoDB connected successfully
+[info][18:00] Server is running on port 3001
+[info][18:00] MongoDB connected successfully
+[info][18:01] Server is running on port 3001
+[info][18:01] MongoDB connected successfully
+[info][18:01] Server is running on port 3001
+[info][18:01] MongoDB connected successfully
+[info][18:01] Server is running on port 3001
+[info][18:01] MongoDB connected successfully
+[info][18:01] Server is running on port 3001
+[info][18:01] MongoDB connected successfully
+[info][18:02] Server is running on port 3001
+[info][18:02] MongoDB connected successfully
+[info][18:02] Server is running on port 3001
+[info][18:02] MongoDB connected successfully
+[info][18:02] Server is running on port 3001
+[info][18:02] MongoDB connected successfully
+[info][18:02] Server is running on port 3001
+[info][18:02] MongoDB connected successfully
+[info][18:02] Server is running on port 3001
+[info][18:02] MongoDB connected successfully
+[info][18:02] Server is running on port 3001
+[info][18:02] MongoDB connected successfully
+[info][18:02] Server is running on port 3001
+[info][18:03] MongoDB connected successfully
+[info][18:03] Server is running on port 3001
+[info][18:03] MongoDB connected successfully
+[info][18:04] Server is running on port 3001
+[info][18:04] MongoDB connected successfully
+[info][18:04] Server is running on port 3001
+[info][18:05] MongoDB connected successfully
+[info][18:05] Server is running on port 3001
+[info][18:05] MongoDB connected successfully
+[info][18:05] Server is running on port 3001
+[info][18:05] MongoDB connected successfully
+[info][18:05] Server is running on port 3001
+[info][18:05] MongoDB connected successfully
+[info][18:05] Server is running on port 3001
+[info][18:05] MongoDB connected successfully
+[info][18:05] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] MongoDB connected successfully
+[info][18:06] Server is running on port 3001
+[info][18:06] Server is running on port 3001
+[info][18:07] MongoDB connected successfully
+[info][18:07] Server is running on port 3001
+[info][18:07] MongoDB connected successfully
+[info][18:08] Server is running on port 3001
+[info][18:08] MongoDB connected successfully
+[info][18:08] Server is running on port 3001
+[info][18:08] MongoDB connected successfully
+[info][18:08] Server is running on port 3001
+[info][18:08] MongoDB connected successfully
+[info][18:08] Server is running on port 3001
+[info][18:08] Server is running on port 3001
+[info][18:08] MongoDB connected successfully
+[info][18:08] Server is running on port 3001
+[info][18:08] Server is running on port 3001
+[info][18:08] MongoDB connected successfully
+[info][18:08] Server is running on port 3001
+[info][18:08] MongoDB connected successfully
+[info][18:08] Server is running on port 3001
+[info][18:08] MongoDB connected successfully
+[info][18:08] Server is running on port 3001
+[info][18:08] MongoDB connected successfully
+[info][18:09] Server is running on port 3001
+[info][18:09] MongoDB connected successfully
+[info][18:09] Server is running on port 3001
+[info][18:09] MongoDB connected successfully
+[info][18:09] Server is running on port 3001
+[info][18:09] MongoDB connected successfully
+[info][18:12] Server is running on port 3001
+[info][18:12] MongoDB connected successfully
+[info][18:12] Server is running on port 3001
+[info][18:12] MongoDB connected successfully
+[info][18:16] Server is running on port 3001
+[info][18:16] MongoDB connected successfully
+[info][18:17] MongoDB connected successfully
+[info][18:17] Server is running on port 3001
+[info][18:17] MongoDB connected successfully
+[info][18:17] Server is running on port 3001
+[info][18:17] MongoDB connected successfully
+[info][19:21] Server is running on port 3001
+[info][19:21] MongoDB connected successfully
+[info][19:22] Server is running on port 3001
+[info][19:22] MongoDB connected successfully
+[info][19:23] Server is running on port 3001
+[info][19:23] Server is running on port 3001
+[info][19:23] MongoDB connected successfully
+[info][19:23] Server is running on port 3001
+[info][19:23] MongoDB connected successfully
+[info][19:26] User logged in: Hinata_Hyuuga
+[info][19:26] undefined
+[info][19:36] Server is running on port 3001
+[info][19:36] MongoDB connected successfully
+[info][19:37] Server is running on port 3001
+[info][19:37] MongoDB connected successfully
+[info][19:37] Server is running on port 3001
+[info][19:37] MongoDB connected successfully
+[info][19:37] Server is running on port 3001
+[info][19:37] Server is running on port 3001
+[info][19:37] MongoDB connected successfully
+[info][19:38] Server is running on port 3001
+[info][19:38] MongoDB connected successfully
+[info][19:38] Server is running on port 3001
+[info][19:38] MongoDB connected successfully
+[info][19:38] Server is running on port 3001
+[info][19:38] MongoDB connected successfully
+[info][19:38] Server is running on port 3001
+[info][19:38] MongoDB connected successfully
+[info][19:38] Server is running on port 3001
+[info][19:38] MongoDB connected successfully
+[info][19:38] Server is running on port 3001
+[info][19:38] MongoDB connected successfully
+[info][19:38] Server is running on port 3001
+[info][19:38] MongoDB connected successfully
+[info][19:39] Server is running on port 3001
+[info][19:39] Server is running on port 3001
+[info][19:39] MongoDB connected successfully
+[info][19:39] Server is running on port 3001
+[info][19:39] MongoDB connected successfully
+[info][19:39] Server is running on port 3001
+[info][19:39] MongoDB connected successfully
+[info][19:39] Server is running on port 3001
+[info][19:39] MongoDB connected successfully

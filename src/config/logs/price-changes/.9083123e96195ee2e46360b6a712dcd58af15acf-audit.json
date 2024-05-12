@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/.9083123e96195ee2e46360b6a712dcd58af15acf-audit.json",
+    "files": [
+        {
+            "date": 1715463953676,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-11.log",
+            "hash": "13c1edfcaa1865411dd27610d298770523380d15c970f75e9243da92679ae676"
+        }
+    ],
+    "hashType": "sha256"
+}

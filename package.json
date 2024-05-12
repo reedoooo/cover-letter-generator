@@ -12,20 +12,27 @@
     "express"
   ],
   "dependencies": {
-    "axios": "^1.6.8",
-    "body-parser": "^1.20.2",
+    "bcrypt": "^5.1.1",
     "cheerio": "^1.0.0-rc.12",
+    "colors": "^1.4.0",
+    "compression": "^1.7.4",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-rate-limit": "^7.2.0",
+    "express-session": "^1.18.0",
     "express-validator": "^7.0.1",
     "helmet": "^7.1.0",
     "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.4",
     "openai": "^4.44.0",
-    "replicate": "^0.29.4",
-    "swagger-ui-express": "^5.0.0"
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
@@ -35,12 +42,13 @@
     "jest": "^29.7.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.0",
+    "depcheck": "^1.4.7",
     "prettier": "^3.2.5",
     "supertest": "^7.0.0"
   },
   "scripts": {
     "start": "node src/app.js",
-    "dev": "cross-env NODE_ENV=development nodemon src/app.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/app.js --ext js,json --delay 2s --quiet",
     "prod": "cross-env NODE_ENV=production node src/app.js",
     "build": "babel src -d dist",
     "test": "jest",

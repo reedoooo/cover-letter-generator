@@ -1,21 +1,30 @@
-require("dotenv").config();
+/**
+ * Module dependencies.
+ */
 
-module.exports = {
+const path = require("path");
+const development = require("./env/development");
+const test = require("./env/test");
+const production = require("./env/production");
+const { OpenAI } = require("openai");
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const defaults = {
+  root: path.normalize(__dirname + "/.."),
   api: {
     port: process.env.PORT || 3001,
     openAIKey: process.env.OPENAI_API_KEY,
   },
-  openAi: {
-    model: "text-davinci-003",
-    temperature: 0.5,
-    max_tokens: 2048,
-    top_p: 1,
-    frequency_penalty: 0.5,
-    presence_penalty: 0,
-  },
-  chatEngine: {
-    projectId: process.env.PROJECT_ID,
-    botUserName: process.env.BOT_USER_NAME,
-    botUserSecret: process.env.BOT_USER_SECRET,
-  },
+  openai,
 };
+/**
+ * Expose
+ */
+
+module.exports = {
+  development: Object.assign({}, development, defaults),
+  test: Object.assign({}, test, defaults),
+  production: Object.assign({}, production, defaults),
+}[process.env.NODE_ENV || "development"];

@@ -1,63 +1,36 @@
+const logger = require("../config/winston");
 const aiService = require("../services/aiService");
 exports.generate = async (req, res) => {
   try {
-    console.log("RECEIVED: ", req.body);
-    const {
-      url,
-      yourName,
-      address,
-      cityStateZip,
-      emailAddress,
-      phoneNumber,
-      todayDate,
-      employerName,
-      hiringManagerName,
-      companyName,
-      companyAddress,
-      companyCityStateZip,
-      jobTitle,
-      previousPosition,
-      previousCompany,
-      skills,
-      softwarePrograms,
-      reasons,
-    } = req.body;
-
-    const result = await aiService.generateCoverLetter(
-      url, 
-      yourName,
-      address,
-      cityStateZip,
-      emailAddress,
-      phoneNumber,
-      todayDate,
-      employerName,
-      hiringManagerName,
-      companyName,
-      companyAddress,
-      companyCityStateZip,
-      jobTitle,
-      previousPosition,
-      previousCompany,
-      skills,
-      softwarePrograms,
-      reasons
-    );
+    const result = await aiService.generateCoverLetter(req.body);
     const { coverLetterHtml, draftContentState } = result;
-
-    // Return both in the response
+    // req.session.draft = draftContentState;
     res.status(200).json({
       coverLetter: coverLetterHtml,
       draftContentState: draftContentState,
       metadata: {
         generatedDate: new Date().toISOString(), // Example metadata
-        version: "1.0" // You can version your output format if needed
-      }
+        version: "1.0", // You can version your output format if needed
+      },
     });
-    // res.status(200).json({ coverLetter });
   } catch (error) {
     res.status(500).json({ message: "Error generating cover letter", error });
-    console.log(error);
+    throw error;
+  }
+};
+
+exports.saveDraft = async (req, res) => {
+  try {
+    let { content, contentName, userId } = req.body;
+    const savedDraft = await aiService.saveDraftToDatabase(
+      content,
+      contentName,
+      userId
+    );
+    res.json({ message: "Draft saved successfully", savedDraft });
+  } catch (error) {
+    res.status(500).json({ message: "Error saving draft", error });
+    logger.info(error);
     throw error;
   }
 };
