@@ -14,11 +14,11 @@ setupMiddlewares(app);
 // Setup routes
 setupRoutes(app);
 
+// Connect to MongoDB
+await connectDB();
+
 // Error handling middleware
 app.use(errorHandler);
-
-// Connect to MongoDB
-connectDB();
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => logger.info(`Server is running on port ${PORT}`));

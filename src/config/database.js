@@ -6,8 +6,8 @@ exports.connectDB = async () => {
   try {
     await mongoose.connect(config.db);
     logger.info("MongoDB connected successfully");
-  } catch (err) {
-    logger.error("MongoDB connection error:", err);
-    process.exit(1);
+  } catch (error) {
+    logger.error(`MongoDB connection failed: ${error.message}`);
+    throw error;
   }
 };

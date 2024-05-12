@@ -1,0 +1,430 @@
+[error][00:25] Error generating cover letter: 401 Incorrect API key provided: sk-proj-********************************************7I4E. You can find your API key at https://platform.openai.com/account/api-keys.
+[error][00:28] Error generating cover letter: 401 Incorrect API key provided: sk-proj-********************************************7I4E. You can find your API key at https://platform.openai.com/account/api-keys.
+[error][04:17] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:17] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:19] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:22] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:22] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:25] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:28] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:30] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:39] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:43] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:45] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:47] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:48] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:49] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:51] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:54] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][04:55] Error: Test Error
+    at /Users/reedvogt/Desktop/cover-letter-generator/src/tests/errorHandler.test.js:10:13
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at query (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/middleware/query.js:45:5)
+    at Layer.handle [as handle_request] (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:328:13)
+    at /Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/router/index.js:175:3)
+    at Function.handle (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/application.js:181:10)
+    at Server.app (/Users/reedvogt/Desktop/cover-letter-generator/node_modules/express/lib/express.js:39:9)
+    at Server.emit (node:events:514:28)
+    at parserOnIncoming (node:_http_server:1107:12)
+    at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+[error][05:33] MongoDB connection failed: Connection failed
+[error][05:34] MongoDB connection failed: Connection failed
+[error][05:35] MongoDB connection failed: Connection failed
