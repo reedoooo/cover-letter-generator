@@ -1,7 +1,6 @@
 const morgan = require("morgan");
 require("colors");
 
-// morgan.token("coloredMethod", (req) => req.method.yellow);
 morgan.token("coloredMethod", (req) => `[${req.method.yellow}]`);
 morgan.token("coloredStatus", (req, res) => {
   const status = res.statusCode;
@@ -15,5 +14,5 @@ const morganMiddleware = morgan((tokens, req, res) => {
 });
 
 module.exports = {
-  morganMiddleware,
+	morganMiddleware,
 };

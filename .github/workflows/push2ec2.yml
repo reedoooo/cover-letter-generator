@@ -1,0 +1,40 @@
+name: Push-to-EC2
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        # This action checks out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+          # This step installs Node.js version 16.x
+
+      - name: Install npm dependencies
+        run: npm install
+        # This command installs all the npm packages specified in your package.json.
+
+      - name: Run build task
+        run: npm run build --if-present
+        # This runs the build script from your package.json if it exists.
+
+      - name: Deploy to my EC2 instance
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rltgoDzv --delete"
+          SOURCE: "dist/"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
+          EXCLUDE: "/dist/, /node_modules/"
+          # Using the ssh-deploy action to deploy the 'dist' directory to the server.
+          # `ARGS`: Additional rsync arguments. `-r` is recursive, `-l` copies symlinks as symlinks,
+          # `-t` preserves modification times, `-goD` preserves group, owner, and devices,
+          # `-z` compresses file data during the transfer, `--delete` deletes extraneous files from dest dirs.

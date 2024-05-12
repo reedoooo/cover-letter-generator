@@ -1,6 +1,8 @@
 const logger = require("../config/winston");
 
 exports.errorHandler = (err, req, res, next) => {
-  logger.error(err.stack);
-  res.status(500).send("Something broke!");
+  logger.error(`Error: ${err.message}`);
+  res
+    .status(err.status || 500)
+    .json({ message: "Server Error", error: err.message });
 };

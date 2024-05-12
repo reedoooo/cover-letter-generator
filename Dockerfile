@@ -13,11 +13,17 @@ COPY package.json package-lock.json ./
 # Install production dependencies
 RUN npm install --omit=dev
 
+# Add node_modules/.bin to PATH
+ENV PATH /app/node_modules/.bin:$PATH
+
 # Copy the rest of your application code
 COPY . .
+
+# Build the application
+RUN npm run build
 
 # Expose the port your app runs on
 EXPOSE 3001
 
 # Command to run your app
-CMD ["node", "src/app.js"]
+CMD ["node", "dist/app.js"]

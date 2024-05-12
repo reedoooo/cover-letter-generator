@@ -9,6 +9,11 @@
             "date": 1715463953676,
             "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-11.log",
             "hash": "13c1edfcaa1865411dd27610d298770523380d15c970f75e9243da92679ae676"
+        },
+        {
+            "date": 1715498743066,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-12.log",
+            "hash": "2a8dc6b016f6d2e38c0ea610531a23cd4e97ef142b5e322942f3b7e9005cc20a"
         }
     ],
     "hashType": "sha256"
