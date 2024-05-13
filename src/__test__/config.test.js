@@ -21,12 +21,6 @@ describe('Configuration Tests', () => {
     expect(productionConfig).toMatchObject(require('../config/env/production'));
   });
 
-  // test('should load test configuration when NODE_ENV is test', () => {
-  //   process.env.NODE_ENV = 'test';
-  //   const testConfig = require('../config/env/test.js');
-  //   expect(testConfig).toMatchObject(require('../config/env/test.js'));
-  // });
-
   test('should include defaults in the configurations', () => {
     const config = require('../config');
     expect(config.api.port).toBeDefined();

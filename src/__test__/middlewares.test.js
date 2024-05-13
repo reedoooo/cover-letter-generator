@@ -1,26 +1,38 @@
+jest.mock("connect-mongo", () => ({
+  create: jest.fn().mockReturnValue({
+    close: jest.fn(), // Mock close method if it’s available
+  }),
+}));
+jest.mock("mongoose", () => {
+  const originalMongoose = jest.requireActual("mongoose");
+
+  return {
+    ...originalMongoose,
+    connect: jest.fn().mockResolvedValue({}),
+    disconnect: jest.fn(),
+    model: jest.fn().mockImplementation((name, schema) => {
+      return originalMongoose.model(name, schema);
+    }),
+    Schema: class extends originalMongoose.Schema {}, // Extend the actual Schema to keep `pre` and other methods
+  };
+});
+
 const express = require("express");
 const request = require("supertest");
-const { setupMiddlewares } = require("../middlewares");
 const { default: mongoose } = require("mongoose");
 
-describe("Middleware Integration Tests", () => {
-  // Mock session store if necessary for tests
-  jest.mock("connect-mongo", () => ({
-    create: jest.fn().mockReturnValue({
-      close: jest.fn(), // Mock close method if it’s available
-    }),
-  }));
-  // Mocking mongoose.connect to throw an error
-  jest.mock("mongoose", () => ({
-    connect: jest.fn().mockRejectedValue(new Error("Connection failed")),
-    disconnect: jest.fn(),
-  }));
+const app = require("../app");
+app.use(express.json()); // Make sure to use JSON middleware
 
-  let app;
+describe("Middleware Integration Tests", () => {
+  let server;
 
   beforeEach(() => {
-    app = express();
-    setupMiddlewares(app);
+    server = app.listen(3001);
+  });
+
+  afterEach(() => {
+    server.close();
   });
 
   test("should apply JSON middleware", async () => {
@@ -47,14 +59,8 @@ describe("Middleware Integration Tests", () => {
 
     await agent.get(routeToTest).expect(429); // Too many requests
   });
-
-  // After all tests
-  // After all tests - Ensure to close any open connections or stores
   afterAll(async () => {
     await mongoose.disconnect();
-    if (typeof someSessionStore !== "undefined" && someSessionStore.close) {
-      await someSessionStore.close();
-    }
     await new Promise((resolve) => setImmediate(resolve)); // This ensures that all pending async operations complete
   });
 });

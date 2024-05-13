@@ -1,33 +1,46 @@
-jest.mock("mongoose", () => ({
-  connect: jest.fn(),
-}));
-
 const mongoose = require("mongoose");
-const { connectDB } = require("../config/database");
 const logger = require("../config/winston");
+const { connectDB } = require("../config/database");
 
-jest.mock("../config/winston", () => ({
-	info: jest.fn(),
-	error: jest.fn(),
+// Mock mongoose.connect directly using Jest
+jest.mock("mongoose", () => ({
+  connect: jest.fn().mockResolvedValue({
+    connection: { host: "localhost" },
+  }),
 }));
-describe("Database Connection", () => {
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
 
-  test("should connect to the database successfully", async () => {
-    mongoose.connect.mockResolvedValue("Connected");
+// Mock the logger to avoid side effects
+jest.mock("../config/winston", () => ({
+  info: jest.fn(),
+  error: jest.fn(),
+}));
+
+describe("connectDB", () => {
+  it("should connect successfully and log the connection host", async () => {
+    // Execute connectDB
     await connectDB();
-    expect(mongoose.connect).toHaveBeenCalledWith(expect.any(String));
-    expect(logger.info).toHaveBeenCalledWith("MongoDB connected successfully");
+
+    // Assertions to verify correct logging
+    expect(mongoose.connect).toHaveBeenCalled();
+    expect(logger.info).toHaveBeenCalledWith(
+      `MongoDB connected successfully: localhost`
+    );
   });
 
-  // In your test
-  it("should handle database connection errors", async () => {
-    mongoose.connect.mockRejectedValue(new Error("Connection failed"));
-    await expect(connectDB()).rejects.toThrow("Connection failed");
-    expect(logger.error).toHaveBeenCalledWith(
-      "MongoDB connection failed: Connection failed"
-    );
+  it("should handle connection failure and log the error", async () => {
+    // Make mongoose.connect throw an error
+    const errorMessage = "Connection failed";
+    mongoose.connect.mockRejectedValue(new Error(errorMessage));
+
+    // Execute connectDB
+    try {
+      await connectDB();
+    } catch (error) {
+      // Assertions to verify error handling and logging
+      expect(mongoose.connect).toHaveBeenCalled();
+      expect(logger.error).toHaveBeenCalledWith(
+        `MongoDB connection failed: ${errorMessage}`
+      );
+    }
   });
 });

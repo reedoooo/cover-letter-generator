@@ -24,7 +24,7 @@ exports.registerUser = async (req, res) => {
     const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
-    req.session.user = { id: user._id, username: user.username };
+    // req.session.user = { id: user._id, username: user.username };
     logger.info(`User registered: ${user.username}`);
     res.status(201).json({
       token,
@@ -53,7 +53,7 @@ exports.loginUser = async (req, res) => {
     const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
-    req.session.user = { id: user._id, username: user.username };
+    // req.session.user = { id: user._id, username: user.username };
     logger.info(`User logged in: ${user.username}`);
     res.status(200).json({
       token,
@@ -68,7 +68,9 @@ exports.loginUser = async (req, res) => {
 };
 exports.logoutUser = async (req, res) => {
   try {
-    req.session.destroy();
+    // if (req.session) {
+    //   req.session.destroy();
+    // }
     req.token = null;
     res.status(200).json({ message: "Logged out successfully" });
   } catch (error) {

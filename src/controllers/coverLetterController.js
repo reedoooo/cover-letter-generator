@@ -14,8 +14,10 @@ exports.generate = async (req, res) => {
       },
     });
   } catch (error) {
-    res.status(500).json({ message: "Error generating cover letter", error });
-    throw error;
+    logger.error(`Error generating cover letter: ${error.message}`);
+    res
+      .status(500)
+      .json({ message: "Error generating cover letter", error: error.message });
   }
 };
 
@@ -27,10 +29,14 @@ exports.saveDraft = async (req, res) => {
       contentName,
       userId
     );
+    if (!savedDraft) {
+      throw new Error("Failed to save draft");
+    }
     res.json({ message: "Draft saved successfully", savedDraft });
   } catch (error) {
-    res.status(500).json({ message: "Error saving draft", error });
-    logger.info(error);
-    throw error;
+    logger.error(`Error saving draft: ${error.message}`);
+    res
+      .status(500)
+      .json({ message: "Error saving draft", error: error.message });
   }
 };

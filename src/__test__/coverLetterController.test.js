@@ -1,74 +1,118 @@
-const request = require("supertest");
-const app = require("../app"); // Assume your Express app is exported from here
+jest.mock("../config/winston", () => ({
+  info: jest.fn(),
+  error: jest.fn(),
+}));
+
+jest.mock("../services/aiService", () => ({
+  generateCoverLetter: jest.fn(),
+  saveDraftToDatabase: jest.fn(),
+}));
+
+const { generate, saveDraft } = require("../controllers/coverLetterController");
+
 const aiService = require("../services/aiService");
+const httpMocks = require("node-mocks-http");
 
-jest.mock("../services/aiService");
-describe("POST /generate", () => {
-  it("should generate a cover letter successfully", async () => {
-    const mockCoverLetter = {
-      coverLetterHtml: "<p>Your cover letter</p>",
-      draftContentState: {},
-    };
-    aiService.generateCoverLetter.mockResolvedValue(mockCoverLetter);
+describe("generate Cover Letter", () => {
+  it("should respond with generated cover letter and metadata", async () => {
+    const req = httpMocks.createRequest({
+      method: "POST",
+      url: "/api/cover-letter/generate-cover-letter",
+      body: {
+        // Add any relevant body content that your generate function expects
+      },
+    });
+    const res = httpMocks.createResponse();
 
-    const response = await request(app)
-      .post("/generate")
-      .send({ userData: "sample data" });
+    aiService.generateCoverLetter.mockResolvedValue({
+      coverLetterHtml: "<p>This is a cover letter</p>",
+      draftContentState: { content: "Draft content state" },
+    });
 
-    expect(response.statusCode).toBe(200);
-    expect(response.body.coverLetter).toBe(mockCoverLetter.coverLetterHtml);
-    expect(aiService.generateCoverLetter).toHaveBeenCalledWith({
-      userData: "sample data",
+    await generate(req, res);
+
+    expect(res.statusCode).toBe(200);
+    expect(res._getJSONData()).toEqual({
+      coverLetter: "<p>This is a cover letter</p>",
+      draftContentState: { content: "Draft content state" },
+      metadata: expect.objectContaining({
+        generatedDate: expect.any(String),
+        version: "1.0",
+      }),
     });
   });
 
-  it("should handle errors when generation fails", async () => {
+  it("should handle errors when generating cover letter", async () => {
+    const req = httpMocks.createRequest({
+      method: "POST",
+      url: "/api/cover-letter/generate-cover-letter",
+      body: {},
+    });
+    const res = httpMocks.createResponse();
     aiService.generateCoverLetter.mockRejectedValue(
-      new Error("Failed to generate")
+      new Error("Failed to generate cover letter")
     );
 
-    const response = await request(app)
-      .post("/generate")
-      .send({ userData: "sample data" });
+    await generate(req, res);
 
-    expect(response.statusCode).toBe(500);
-    expect(response.body.message).toBe("Error generating cover letter");
+    expect(res.statusCode).toBe(500);
+    expect(res._getJSONData()).toEqual({
+      message: "Error generating cover letter",
+      error: "Failed to generate cover letter",
+    });
   });
 });
-
-describe("POST /saveDraft", () => {
-  it("should save a draft successfully", async () => {
-    aiService.saveDraftToDatabase.mockResolvedValue({
-      id: "123",
-      content: "Draft content",
+describe("saveDraft", () => {
+  it("should save draft and respond successfully", async () => {
+    const req = httpMocks.createRequest({
+      method: "POST",
+      url: "/api/cover-letter/save-draft",
+      body: {
+        content: "Some content",
+        contentName: "Draft1",
+        userId: "user123",
+      },
     });
+    const res = httpMocks.createResponse();
+    const mockSavedDraft = {
+      id: "draft123",
+      content: "Some content",
+      contentName: "Draft1",
+    };
 
-    const response = await request(app).post("/saveDraft").send({
-      content: "Draft content",
-      contentName: "My Draft",
-      userId: "user1",
-    });
+    aiService.saveDraftToDatabase.mockResolvedValue(mockSavedDraft);
 
-    expect(response.statusCode).toBe(200);
-    expect(response.body.message).toBe("Draft saved successfully");
-    expect(response.body.savedDraft).toEqual({
-      id: "123",
-      content: "Draft content",
+    await saveDraft(req, res);
+
+    expect(res.statusCode).toBe(200);
+    expect(res._getJSONData()).toEqual({
+      message: "Draft saved successfully",
+      savedDraft: mockSavedDraft,
     });
   });
 
-  it("should handle errors when saving fails", async () => {
+  it("should handle errors when saving draft", async () => {
+    const req = httpMocks.createRequest({
+      method: "POST",
+      url: "/api/cover-letter/save-draft",
+      body: {
+        content: "Draft content",
+        contentName: "Draft1",
+        userId: "user123",
+      },
+    });
+    const res = httpMocks.createResponse();
     aiService.saveDraftToDatabase.mockRejectedValue(
-      new Error("Failed to save")
+      new Error("Failed to save draft")
     );
 
-    const response = await request(app).post("/saveDraft").send({
-      content: "Draft content",
-      contentName: "My Draft",
-      userId: "user1",
-    });
+    await saveDraft(req, res);
+    expect(res._getJSONData()).toHaveProperty('message', 'Error saving draft');
 
-    expect(response.statusCode).toBe(500);
-    expect(response.body.message).toBe("Error saving draft");
+    expect(res.statusCode).toBe(500);
+    expect(res._getJSONData()).toEqual({
+      message: "Error saving draft",
+      error: "Failed to save draft",
+    });
   });
 });

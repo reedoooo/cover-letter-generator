@@ -64,6 +64,9 @@ exports.validateUserSignUp = [
   check("email").not().isEmpty().withMessage("Email is required"),
   check("password").not().isEmpty().withMessage("Password is required"),
   (req, res, next) => {
+    // if (process.env.NODE_ENV === "test") {
+    //   return next();
+    // }
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       logger.error(`Validation errors: ${JSON.stringify(errors.array())}`);
@@ -77,13 +80,16 @@ exports.validateUserLogIn = [
   check("username").not().isEmpty().withMessage("Username is required"),
   check("password").not().isEmpty().withMessage("Password is required"),
   (req, res, next) => {
+    // if (process.env.NODE_ENV === "test") {
+    //   return next();
+    // }
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       logger.error(`Validation errors: ${JSON.stringify(errors.array())}`);
       return res.status(422).json({ errors: errors.array() });
     }
     next();
-  }
+  },
 ];
 
 // body('username').isLength({ min: 5 }).withMessage('Username must be at least 5 characters long'),

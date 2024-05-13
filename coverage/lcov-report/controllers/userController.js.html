@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">16.32% </span>
+                <span class="strong">17.39% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/49</span>
+                <span class='fraction'>8/46</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">16.32% </span>
+                <span class="strong">17.39% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>8/49</span>
+                <span class='fraction'>8/46</span>
             </div>
         
             
@@ -156,7 +156,9 @@
 <a name='L91'></a><a href='#L91'>91</a>
 <a name='L92'></a><a href='#L92'>92</a>
 <a name='L93'></a><a href='#L93'>93</a>
-<a name='L94'></a><a href='#L94'>94</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -182,7 +184,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -211,7 +213,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -226,7 +228,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -275,7 +279,7 @@ exports.registerUser = <span class="fstat-no" title="function not covered" >as</
     const token = <span class="cstat-no" title="statement not covered" >jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {</span>
       expiresIn: "1h",
     });
-<span class="cstat-no" title="statement not covered" >    req.session.user = { id: user._id, username: user.username };</span>
+    // req.session.user = { id: user._id, username: user.username };
 <span class="cstat-no" title="statement not covered" >    logger.info(`User registered: ${user.username}`);</span>
 <span class="cstat-no" title="statement not covered" >    res.status(201).json({</span>
       token,
@@ -304,7 +308,7 @@ exports.loginUser = <span class="fstat-no" title="function not covered" >as</spa
     const token = <span class="cstat-no" title="statement not covered" >jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {</span>
       expiresIn: "1h",
     });
-<span class="cstat-no" title="statement not covered" >    req.session.user = { id: user._id, username: user.username };</span>
+    // req.session.user = { id: user._id, username: user.username };
 <span class="cstat-no" title="statement not covered" >    logger.info(`User logged in: ${user.username}`);</span>
 <span class="cstat-no" title="statement not covered" >    res.status(200).json({</span>
       token,
@@ -319,7 +323,9 @@ exports.loginUser = <span class="fstat-no" title="function not covered" >as</spa
 };
 exports.logoutUser = <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
 <span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    req.session.destroy();</span>
+    // if (req.session) {
+    //   req.session.destroy();
+    // }
 <span class="cstat-no" title="statement not covered" >    req.token = null;</span>
 <span class="cstat-no" title="statement not covered" >    res.status(200).json({ message: "Logged out successfully" });</span>
   } catch (error) {
@@ -349,7 +355,7 @@ exports.validateToken = <span class="fstat-no" title="function not covered" >as<
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-05-12T13:00:47.681Z
+                at 2024-05-13T01:15:25.731Z
             </div>
         <script src="../prettify.js"></script>
         <script>
