@@ -1,4 +1,4 @@
-name: Push-to-EC2
+name: Push_To_EC2
 
 on: [push]
 
@@ -24,7 +24,7 @@ jobs:
         run: npm run build --if-present
         # This runs the build script from your package.json if it exists.
 
-      - name: Deploy to my EC2 instance
+      - name: Push_To_EC2
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
