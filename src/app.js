@@ -15,12 +15,21 @@ setupMiddlewares(app);
 setupRoutes(app);
 
 // Connect to MongoDB
-await connectDB();
+async function main() {
+  await connectDB();
+  // any other initialization code
+}
+
+if (process.env.NODE_ENV !== "test") {
+  main().catch(console.error);
+}
 
 // Error handling middleware
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => logger.info(`Server is running on port ${PORT}`));
+if (process.env.NODE_ENV !== "test") {
+  const PORT = process.env.PORT || 3001;
+  app.listen(PORT, () => logger.info(`Server is running on port ${PORT}`));
+}
 
 module.exports = app;

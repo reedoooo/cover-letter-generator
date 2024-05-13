@@ -1,33 +1,35 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
 const bcrypt = require("bcrypt");
 
-const userSchema = new Schema({
-  username: { type: String, unique: true, trim: true },
+const coverLetterSchema = new mongoose.Schema(
+  {
+    name: String,
+    content: String,
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
+    updatedAt: {
+      type: Date,
+      default: Date.now,
+    },
+  },
+  { _id: false }
+); // Ensuring that no separate _id is created for subdocuments
+
+const userSchema = new mongoose.Schema({
+  username: { type: String, unique: true, trim: true, required: false },
   email: {
     type: String,
     unique: true,
     lowercase: true,
     trim: true,
+    required: false,
   },
-  password: { type: String },
+  password: { type: String, required: false },
   coverLetters: {
     type: Map,
-    of: new Schema(
-      {
-        name: String,
-        content: String,
-        createdAt: {
-          type: Date,
-          default: Date.now,
-        },
-        updatedAt: {
-          type: Date,
-          default: Date.now,
-        },
-      },
-      { _id: false }
-    ),
+    of: coverLetterSchema, // Use the defined coverLetterSchema for map values
     default: {},
   },
   createdAt: {
@@ -40,12 +42,14 @@ const userSchema = new Schema({
   },
 });
 
-// Pre-save hook to handle the updatedAt field automatically and hash password if modified
+// Pre-save hook for handling password hashing and updating timestamps
 userSchema.pre("save", function (next) {
   this.updatedAt = new Date();
   if (this.isModified("password")) {
     bcrypt.hash(this.password, 10, (err, hash) => {
-      if (err) return next(err);
+      if (err) {
+        return next(err);
+      }
       this.password = hash;
       next();
     });
@@ -54,4 +58,5 @@ userSchema.pre("save", function (next) {
   }
 });
 
-module.exports = mongoose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
+module.exports = User;

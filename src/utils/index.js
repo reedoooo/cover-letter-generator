@@ -1,5 +1,6 @@
 const cheerio = require("cheerio");
 const logger = require("../config/winston");
+const { default: axios } = require("axios");
 function splitTextDocuments(text) {
   // Split the text into individual documents based on some delimiter or criteria
   // For example, splitting by empty lines assuming each document is separated by empty lines
@@ -24,7 +25,6 @@ async function extractTextFromUrl(url) {
 
     const lines = text.map((line) => line.trim()).filter((line) => line);
     const document = splitTextDocuments(lines.join("\n"));
-
     return document;
   } catch (error) {
     logger.error("Error extracting text from URL:", error);
