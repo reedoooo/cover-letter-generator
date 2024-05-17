@@ -1,0 +1,645 @@
+[info][00:02] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:02] Server is running on port 3001
+[info][00:04] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:04] Server is running on port 3001
+[info][00:04] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:04] Server is running on port 3001
+[info][00:05] Scraped job data:
+[info][00:05] Scraped: [object Object]
+[info][00:05] Prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at .
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: 
+  - Job Description: 
+  - Responsibilities: undefined
+  - Qualifications: undefined
+  - Company Culture: undefined
+  - Benefits: undefined
+  - Highlight the following skills: 
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][00:12] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:12] Server is running on port 3001
+[info][00:13] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:13] Server is running on port 3001
+[info][00:13] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:13] Server is running on port 3001
+[info][00:13] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:13] Server is running on port 3001
+[info][00:13] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":""}
+[info][00:13] Prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at .
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: 
+  - Job Description: 
+  - Responsibilities: undefined
+  - Qualifications: undefined
+  - Company Culture: undefined
+  - Benefits: undefined
+  - Highlight the following skills: 
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][00:36] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:36] Server is running on port 3001
+[info][00:36] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:36] Server is running on port 3001
+[info][00:36] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:36] Server is running on port 3001
+[info][00:36] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:36] Server is running on port 3001
+[info][00:39] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:39] Server is running on port 3001
+[info][00:39] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:39] Server is running on port 3001
+[info][00:40] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][00:40] Prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at .
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: 
+  - Job Description: 
+  - Responsibilities: 
+  - Qualifications: 
+  - Company Culture: 
+  - Benefits: 
+  - Highlight the following skills: 
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][00:42] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:42] Server is running on port 3001
+[info][00:42] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:42] Server is running on port 3001
+[info][00:42] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:42] Server is running on port 3001
+[info][00:42] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:42] Server is running on port 3001
+[info][00:43] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:43] Server is running on port 3001
+[info][00:44] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:44] Server is running on port 3001
+[info][00:45] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:45] Server is running on port 3001
+[info][00:46] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:46] Server is running on port 3001
+[info][00:46] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:46] Server is running on port 3001
+[info][00:47] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:47] Server is running on port 3001
+[info][00:47] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:47] Server is running on port 3001
+[info][00:47] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:47] Server is running on port 3001
+[info][00:48] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][00:48] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at .
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: 
+  - Job Description: 
+  - Responsibilities: 
+  - Qualifications: 
+  - Company Culture: 
+  - Benefits: 
+  - Highlight the following skills: 
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][00:50] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:50] Server is running on port 3001
+[info][00:50] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:50] Server is running on port 3001
+[info][00:50] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:50] Server is running on port 3001
+[info][00:51] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:51] Server is running on port 3001
+[info][00:51] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:51] Server is running on port 3001
+[info][00:51] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:51] Server is running on port 3001
+[info][00:51] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:51] Server is running on port 3001
+[info][00:51] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:51] Server is running on port 3001
+[info][00:52] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:52] Server is running on port 3001
+[info][00:52] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:52] Server is running on port 3001
+[info][00:52] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][00:52] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][00:53] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:53] Server is running on port 3001
+[info][00:54] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:54] Server is running on port 3001
+[info][00:54] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:54] Server is running on port 3001
+[info][00:54] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:54] Server is running on port 3001
+[info][00:54] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:54] Server is running on port 3001
+[info][00:54] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:54] Server is running on port 3001
+[info][00:55] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:55] Server is running on port 3001
+[info][00:55] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:55] Server is running on port 3001
+[info][00:55] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:55] Server is running on port 3001
+[info][00:55] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][00:55] Server is running on port 3001
+[info][00:55] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:55] Server is running on port 3001
+[info][00:55] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][00:55] Server is running on port 3001
+[info][00:56] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][00:56] Server is running on port 3001
+[info][01:03] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:03] Server is running on port 3001
+[info][01:03] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:03] Server is running on port 3001
+[info][01:04] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:04] Server is running on port 3001
+[info][01:06] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:06] Server is running on port 3001
+[info][01:06] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:06] Server is running on port 3001
+[info][01:06] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:06] Server is running on port 3001
+[info][01:07] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:07] Server is running on port 3001
+[info][01:07] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:07] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:08] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:08] Server is running on port 3001
+[info][01:09] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:09] Server is running on port 3001
+[info][01:09] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:09] Server is running on port 3001
+[info][01:09] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:09] Server is running on port 3001
+[info][01:09] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:09] Server is running on port 3001
+[info][01:09] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:09] Server is running on port 3001
+[info][01:09] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:09] Server is running on port 3001
+[info][01:09] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:09] Server is running on port 3001
+[info][01:09] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:09] Server is running on port 3001
+[info][01:10] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:10] Server is running on port 3001
+[info][01:11] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:11] Server is running on port 3001
+[info][01:11] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][01:11] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][01:11] [GENERATED COVER LATER FROM RESPONSE] [Your Name]
+[Your Address]
+[City, State, Zip Code]
+[Email Address]
+[Phone Number]
+[Date]
+
+Hiring Manager
+the company
+[Company Address]
+[City, State, Zip Code]
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in United States at the company as advertised. With a strong background in Full Stack Development and a passion for AI technologies, I am excited about the opportunity to contribute to your team and help drive innovation within your organization.
+
+In my most recent role as a Full Stack Developer based in Seattle, I have honed my skills in JavaScript, React.js, Node.js, and Material Design while working on diverse projects that have enhanced my technical capabilities. My experience includes spearheading the development of an e-commerce platform for trading card enthusiasts called Enhanced Card Store. This project involved utilizing technologies such as JavaScript, React.js, Express, MongoDB, Material-UI, and data visualization tools to enhance user engagement and drive business insights.
+
+I hold a Certificate in Advanced Software Development in Full Stack JavaScript from Code Fellows in Seattle. Additionally, my educational background includes two years of coursework in Psychology from Willamette University. My professional experience at Pagliacci Pizza and Amazon Warehouse has equipped me with valuable skills in streamlining workflows, improving productivity, and implementing efficient systems.
+
+I am particularly drawn to the opportunity at the company due to its reputation for innovation and commitment to excellence. I am eager to contribute my technical expertise and collaborative spirit to help achieve the company's goals and drive success in the realm of Tcgplayer development.
+
+Thank you for considering my application. I look forward to the possibility of discussing how my skills and experiences align with the needs of your team. Please find attached my resume for your review.
+
+Warm regards,
+
+[Your Name]
+[info][01:14] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:14] Server is running on port 3001
+[info][01:14] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:14] Server is running on port 3001
+[info][01:14] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][01:14] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][01:14] [GENERATED COVER LATER FROM RESPONSE] [Your Name]  
+[Your Address]  
+[City, State, Zip]  
+[Email Address]  
+[Phone Number]  
+
+[Date]
+
+Hiring Manager  
+the company  
+[Company Address]  
+[City, State, Zip]  
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in United States at the company as advertised. With a proven track record as a Seattle-based Full Stack Developer with expertise in AI technologies and Web Design, I am excited about the opportunity to contribute to your team and help drive innovation in software development.
+
+In reviewing the job description for the Developer positions at your company, I believe that my technical skills and project experience align well with the requirements of the role. My proficiency in JavaScript, React.js, Node.js, and Material Design, combined with a solid foundation in data algorithms and databases, has enabled me to deliver user-centric software solutions that meet both functional and aesthetic requirements.
+
+One of my notable projects that showcases my abilities is the Enhanced Card Store e-commerce platform. Spearheading its development involved implementing sophisticated features using technologies such as React.js, Express, MongoDB, Material-UI, and more. This project not only enhanced user interaction but also contributed to strategic business insights through data visualization tools I deployed.
+
+Furthermore, my experience at Pagliacci Pizza and Amazon Warehouse has honed my ability to streamline workflows, improve efficiency, and drive performance improvements. These experiences have equipped me with a strong work ethic and problem-solving skills that I believe will be valuable assets in a dynamic environment like yours.
+
+I am particularly drawn to the innovative culture at your company (if known) and am eager to contribute my expertise to help drive projects forward. I am confident that my technical skills, project experience, and passion for AI technologies make me a strong candidate for these Developer roles.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my background aligns with the needs of your team further. Please feel free to contact me at [Phone Number] or [Email Address].
+
+Warm regards,
+
+[Your Name]
+[info][01:16] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:16] Server is running on port 3001
+[info][01:16] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:16] Server is running on port 3001
+[info][01:16] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:16] Server is running on port 3001
+[info][01:17] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:17] Server is running on port 3001
+[info][01:17] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:17] Server is running on port 3001
+[info][01:17] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:17] Server is running on port 3001
+[info][01:17] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][01:17] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][01:18] [GENERATED COVER LATER FROM RESPONSE] [Your Name]  
+[Your Address]  
+[City, State, Zip]  
+[Email Address]  
+[Phone Number]  
+
+[Date]
+
+Hiring Manager  
+the company  
+[Company Address]  
+[City, State, Zip]
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in United States at the company as advertised. With a strong foundation in Full Stack Development and a passion for AI technologies, I am excited about the opportunity to contribute to your team and help drive innovation within your organization.
+
+In my most recent role as a Seattle-based Full Stack Developer, I have honed my skills in JavaScript, React.js, Node.js, and Material Design while working on diverse projects that have allowed me to continuously enhance my technical abilities. My experience includes spearheading the development of an e-commerce platform for trading card enthusiasts where I leveraged technologies such as MongoDB, Express, and Material-UI to enhance user interaction and commercial functionality.
+
+I am proficient in a variety of languages including HTML5, CSS, SCSS, JavaScript, TypeScript, and SQL. Additionally, I have experience with AI model training techniques and data processing which could be valuable in developing innovative solutions for your organization. My familiarity with AWS services, Node.js, React Native, and other frameworks/tools further strengthens my technical capabilities.
+
+Moreover, my background in explaining complex concepts in educational settings coupled with my experience in streamlining workflows at previous roles demonstrate my ability to work effectively within a team environment while driving efficiencies and delivering results.
+
+I am confident that my technical skills combined with my passion for AI technologies make me a strong candidate for the 4 Developer Tcgplayer Jobs at your esteemed company. I look forward to the opportunity to discuss how I can contribute to your team and help achieve your organizational goals.
+
+Thank you for considering my application. I look forward to the possibility of discussing this exciting opportunity with you further.
+
+Warm regards,
+
+[Your Name]
+[info][01:18] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:18] Server is running on port 3001
+[info][01:18] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:18] Server is running on port 3001
+[info][01:19] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][01:19] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][01:19] [GENERATED COVER LATER FROM RESPONSE] [Your Name]
+[Your Address]
+[City, State, Zip Code]
+[Email Address]
+[Phone Number]
+[Date]
+
+Hiring Manager
+the company
+[Company Address]
+[City, State, Zip Code]
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in United States at the company. With a strong background as a Seattle-based Full Stack Developer, I am excited about the opportunity to contribute to your team and leverage my skills and experience in AI technologies and Web Design.
+
+In my previous roles, I have demonstrated expertise in JavaScript, React.js, Node.js, and Material Design. My experience includes spearheading the development of an e-commerce platform for trading card enthusiasts where I enhanced user interaction and commercial functionality. Through this project, I engineered a sophisticated card search and management system that boosted user engagement and facilitated seamless transaction experiences. Additionally, I deployed data visualization tools to track card trends leading to strategic business insights and enhanced user retention by 25%.
+
+My technical skills include proficiency in HTML5, CSS, SCSS, TypeScript, SQL, AWS services, Express, MongoDB, MySQL, PostgreSQL, Jest, Docker, React Native among others. Furthermore, my teaching and tutoring experience has equipped me with the ability to explain complex concepts effectively in educational settings.
+
+I hold a Certificate in Advanced Software Development in Full Stack JavaScript from Code Fellows in Seattle. In addition to my technical expertise, my background includes coursework in Psychology from Willamette University.
+
+I am confident that my skills and experiences align with the requirements of the Developer positions at your company. I am eager to bring my passion for AI technologies and user-centric software development to your team.
+
+Thank you for considering my application. I look forward to the possibility of discussing how my background may fit within your team's needs.
+
+Warm regards,
+
+[Your Name]
+[info][01:21] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:21] Server is running on port 3001
+[info][01:22] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:22] Server is running on port 3001
+[info][01:22] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:22] Server is running on port 3001
+[info][01:22] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:22] Server is running on port 3001
+[info][01:23] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:23] Server is running on port 3001
+[info][01:23] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:23] Server is running on port 3001
+[info][01:25] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:25] Server is running on port 3001
+[info][01:28] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:28] Server is running on port 3001
+[info][01:28] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:28] Server is running on port 3001
+[info][01:29] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][01:29] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][01:29] [GENERATED COVER LATER FROM RESPONSE] [Your Name] [Your Address] [City, State, Zip] [Email Address] [Phone Number] [Date]
+
+Hiring Manager the company [Company Address] [City, State, Zip]
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in United States at the company as advertised. With a strong background as a Seattle-based Full Stack Developer and a passion for AI technologies, I am excited about the opportunity to contribute to your team and help drive innovative solutions.
+
+In my previous roles and projects, such as spearheading the development of an e-commerce platform for trading card enthusiasts with Enhanced Card Store, I have demonstrated proficiency in JavaScript, React.js, Node.js, and Material Design. Leveraging my skills in Data Algorithms, databases, and UI/UX design principles, I have successfully delivered user-centric software solutions that enhance user interaction and commercial functionality.
+
+My technical skills include expertise in HTML5, CSS, JavaScript, TypeScript, SQL as well as familiarity with AI model training techniques and tools such as AWS services, MongoDB, MySQL, Jest, Docker. Additionally, my experience in explaining complex concepts in educational settings makes me an effective communicator and collaborator within a team environment.
+
+I completed a Certificate in Advanced Software Development in Full Stack JavaScript from Code Fellows in 2023 and have gained valuable experience working with industry-leading companies such as Amazon Warehouse and Pagliacci Pizza. My ability to streamline workflows and improve efficiency has resulted in tangible outcomes such as reduced customer complaints and increased sales performance.
+
+I am eager to bring my technical expertise and passion for AI technologies to the 4 Developer Tcgplayer Jobs at your esteemed company. I am confident that my skills align well with the requirements of the role and that I can contribute effectively to your team's success.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my background, skills, and enthusiasm can benefit your team at the company. Please find attached my resume for your review.
+
+Warm regards,
+
+[Your Name]
+[info][01:31] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:31] Server is running on port 3001
+[info][01:31] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:31] Server is running on port 3001
+[info][01:31] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:31] Server is running on port 3001
+[info][01:31] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:31] Server is running on port 3001
+[info][01:31] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:31] Server is running on port 3001
+[info][01:34] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:34] Server is running on port 3001
+[info][01:35] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:35] Server is running on port 3001
+[info][01:35] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:35] Server is running on port 3001
+[info][01:35] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:35] Server is running on port 3001
+[info][01:36] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][01:36] Server is running on port 3001
+[info][01:36] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][01:36] Server is running on port 3001
+[info][01:36] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][01:36] Server is running on port 3001
+[info][02:06] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][02:06] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][02:06] [GENERATED COVER LATER FROM RESPONSE] [Your Name]  
+[Your Address]  
+[City, State, Zip]  
+[Email Address]  
+[Phone Number]  
+[Date]
+
+Hiring Manager  
+the company  
+[Company Address]  
+[City, State, Zip]
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in the United States at the company as advertised. With a solid background as a Full Stack Developer based in Seattle and a passion for AI technologies, I am excited about the opportunity to contribute to your team and help drive innovation within your organization.
+
+My experience includes spearheading the development of an e-commerce platform called Enhanced Card Store, where I utilized my expertise in JavaScript, React.js, Express, MongoDB, and Material-UI to enhance user interaction and commercial functionality. This project allowed me to showcase my skills in data algorithms, databases, and UI/UX design principles while delivering functional and user-centric software solutions.
+
+Having worked with various technologies such as AWS services, Node.js, React Native, and Docker among others, I am confident in my ability to adapt quickly to new environments and contribute effectively to your development projects. My diverse project portfolio reflects my commitment to ongoing technical skill enhancement and staying abreast of industry trends.
+
+In addition to my technical skills, I bring a strong work ethic and a track record of success in optimizing workflows and improving efficiency. For instance, during my time at Pagliacci Pizza as a Cook, I revamped kitchen workflows resulting in a 30% drop in customer complaints and a 10% increase in sales performance. This experience has honed my ability to prioritize resource efficiency and drive positive outcomes.
+
+I hold a Certificate in Advanced Software Development in Full Stack JavaScript from Code Fellows in Seattle. My educational background combined with practical experience equips me with the necessary skills to excel in a dynamic development environment like yours.
+
+I am excited about the prospect of joining the company team and contributing towards innovative projects that push boundaries within the tech industry. I am confident that my technical expertise coupled with my passion for AI technologies make me a strong candidate for these positions.
+
+Thank you for considering my application. I look forward to discussing how my skills and experiences align with the needs of your team. Please find attached my resume for your review.
+
+Warm regards,
+
+[Your Name]
+[info][02:09] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][02:09] Server is running on port 3001
+[info][02:09] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][02:09] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][02:09] [GENERATED COVER LATER FROM RESPONSE] [Your Name]  
+[Your Address]  
+[City, State, Zip]  
+[Email Address]  
+[Phone Number]  
+[Date]
+
+Hiring Manager  
+the company  
+United States
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in United States at the company, as advertised. With a strong foundation as a Seattle-based Full Stack Developer and a passion for AI technologies, I am excited about the opportunity to contribute to your team.
+
+In my current role as a Full Stack Developer, I have honed my skills in JavaScript, React.js, Node.js, and Material Design. I have successfully led projects such as the development of an e-commerce platform for trading card enthusiasts called Enhanced Card Store. This project involved implementing sophisticated features using technologies like MongoDB, Express, and Material-UI to enhance user interaction and commercial functionality.
+
+My educational background includes a Certificate in Advanced Software Development in Full Stack JavaScript from Code Fellows in Seattle. Additionally, I have completed two years of coursework in Psychology at Willamette University. My diverse experiences working as a Cook at Pagliacci Pizza and as a Warehouse Associate at Amazon Warehouse have equipped me with valuable skills in workflow optimization and inventory management.
+
+I am particularly drawn to the innovative work being done at the company and am eager to bring my technical expertise and problem-solving skills to your team. I am confident that my background in AI & Machine Learning, frameworks like AWS services and React.js, and experience with databases such as MySQL and PostgreSQL make me a strong candidate for this position.
+
+I am enthusiastic about the prospect of contributing to the company's projects and collaborating with a talented team of developers. Thank you for considering my application. I look forward to discussing how my skills and experiences align with the needs of your team.
+
+Warm regards,
+
+[Your Name]
+[info][02:22] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][02:22] Server is running on port 3001
+[info][03:07] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][03:07] Server is running on port 3001
+[info][03:09] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][03:09] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-student   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][03:09] [GENERATED COVER LATER FROM RESPONSE] [Your Name]  
+[Your Address]  
+[City, State, Zip]  
+[Email Address]  
+[Phone Number]  
+
+[Date]
+
+Hiring Manager  
+the company  
+[Company Address]  
+[City, State, Zip]
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in United States at the company as advertised. With a strong background in Full Stack Development and a passion for AI technologies, I am excited about the opportunity to contribute to your team.
+
+As a Seattle-based Full Stack Developer with experience in JavaScript, React.js, Node.js, and Material Design, I have successfully completed diverse projects that showcase my technical skills and ability to deliver user-centric software solutions. My proficiency in HTML5, CSS, JavaScript, TypeScript, SQL, as well as frameworks such as AWS services, Node.js, Express, React.js, MongoDB, and more aligns well with the requirements of the position.
+
+One of my recent projects that I am particularly proud of is the Enhanced Card Store. This e-commerce platform aimed at trading card enthusiasts involved developing sophisticated features using technologies like JavaScript, React.js, Express, MongoDB, Material-UI among others. Through this project, I was able to enhance user interaction and commercial functionality while contributing to strategic business insights through data visualization tools.
+
+In addition to my technical skills and project experience, I also bring strong communication and problem-solving abilities gained from my previous work experiences at Pagliacci Pizza and Amazon Warehouse. These roles have equipped me with valuable skills in streamlining workflows and improving efficiency.
+
+I am excited about the opportunity to bring my expertise and enthusiasm for AI technologies to the team at the company. I am confident that my background and skills make me a strong candidate for this position. Thank you for considering my application. I look forward to discussing how my qualifications align with your team's needs further.
+
+Warm regards,
+
+[Your Name]
+[info][03:10] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][03:10] Server is running on port 3001
+[info][03:12] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][03:12] Server is running on port 3001
+[info][03:12] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][03:12] Server is running on port 3001
+[info][03:21] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][03:21] Server is running on port 3001
+[info][03:22] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][03:22] Server is running on port 3001
+[info][03:22] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][03:22] Server is running on port 3001
+[info][03:22] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][03:22] Server is running on port 3001
+[info][03:25] MongoDB connected successfully: ac-qmqonx3-shard-00-02.drldbfy.mongodb.net
+[info][03:25] Server is running on port 3001
+[info][03:25] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][03:25] Server is running on port 3001
+[info][03:25] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
+[info][03:25] Server is running on port 3001

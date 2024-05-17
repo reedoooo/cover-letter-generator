@@ -79,7 +79,7 @@ describe("Validation Middleware Tests", () => {
         expect(response.status).toBe(422);
         expect(response.body.errors).toBeDefined();
         expect(
-          response.body.errors.some((error) => error.msg === message)
+          response.body.errors.some((error) => error.msg === message),
         ).toBeTruthy();
       });
     });
@@ -93,8 +93,8 @@ describe("Validation Middleware Tests", () => {
       expect(response.body.errors).toBeDefined();
       expect(
         response.body.errors.some(
-          (error) => error.msg === "Password is required"
-        )
+          (error) => error.msg === "Password is required",
+        ),
       ).toBeTruthy();
     });
 
@@ -102,7 +102,7 @@ describe("Validation Middleware Tests", () => {
       const credentials = { username: "testuser", password: "password123" };
       const response = await request(app).post("/test-login").send(credentials);
       expect(response.status).toBe(200);
-			expect(response.body.message).toBe("Login validation passed"); // Correct the expected message
+      expect(response.body.message).toBe("Login validation passed"); // Correct the expected message
     });
 
     it("should reject login with empty fields", async () => {
@@ -112,13 +112,13 @@ describe("Validation Middleware Tests", () => {
       expect(response.body.errors).toBeDefined();
       expect(
         response.body.errors.some(
-          (error) => error.msg === "Username is required"
-        )
+          (error) => error.msg === "Username is required",
+        ),
       ).toBeTruthy();
       expect(
         response.body.errors.some(
-          (error) => error.msg === "Password is required"
-        )
+          (error) => error.msg === "Password is required",
+        ),
       ).toBeTruthy();
     });
   });

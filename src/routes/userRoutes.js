@@ -6,12 +6,12 @@ const userController = require("../controllers/userController");
 router.post(
   "/signup",
   validationMiddleware.validateUserSignUp,
-  userController.registerUser
+  userController.registerUser,
 );
 router.post(
   "/login",
   validationMiddleware.validateUserLogIn,
-  userController.loginUser
+  userController.loginUser,
 );
 router.get("/logout", userController.logoutUser);
 router.get("/validate-token", userController.validateToken);

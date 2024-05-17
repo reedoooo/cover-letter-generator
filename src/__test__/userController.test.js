@@ -64,7 +64,7 @@ describe("registerUser", () => {
 
     expect(res.status).toHaveBeenCalledWith(201);
     // expect(res.json).
-		// toHaveBeenCalledWith(Object.keys(mockUser));
+    // toHaveBeenCalledWith(Object.keys(mockUser));
     // Ensure that the test accurately matches the expected object structure
     // expect(res.json).toHaveBeenCalledWith({
     //   message: "User registered successfully",
@@ -218,7 +218,7 @@ describe("validateToken", () => {
     };
 
     jwt.verify = jest.fn((token, secret, callback) =>
-      callback(null, { userId: "1" })
+      callback(null, { userId: "1" }),
     ); // Simulate valid token
     await validateToken(req, res);
 
@@ -237,7 +237,7 @@ describe("validateToken", () => {
     };
 
     jwt.verify = jest.fn((token, secret, callback) =>
-      callback(new Error("Invalid token"), null)
+      callback(new Error("Invalid token"), null),
     );
     await validateToken(req, res);
 

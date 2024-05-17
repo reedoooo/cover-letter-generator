@@ -50,7 +50,7 @@ describe("generate Cover Letter", () => {
     });
     const res = httpMocks.createResponse();
     aiService.generateCoverLetter.mockRejectedValue(
-      new Error("Failed to generate cover letter")
+      new Error("Failed to generate cover letter"),
     );
 
     await generate(req, res);
@@ -103,11 +103,11 @@ describe("saveDraft", () => {
     });
     const res = httpMocks.createResponse();
     aiService.saveDraftToDatabase.mockRejectedValue(
-      new Error("Failed to save draft")
+      new Error("Failed to save draft"),
     );
 
     await saveDraft(req, res);
-    expect(res._getJSONData()).toHaveProperty('message', 'Error saving draft');
+    expect(res._getJSONData()).toHaveProperty("message", "Error saving draft");
 
     expect(res.statusCode).toBe(500);
     expect(res._getJSONData()).toEqual({

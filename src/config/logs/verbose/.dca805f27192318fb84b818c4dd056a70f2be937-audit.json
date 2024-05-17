@@ -29,6 +29,11 @@
             "date": 1715857493155,
             "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/verbose/verbose-2024-05-16.log",
             "hash": "991a1530513b18eb89f687ab9a5c318aaa48f22dc2b5919c71a1ec498326094b"
+        },
+        {
+            "date": 1715929289031,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/verbose/verbose-2024-05-17.log",
+            "hash": "4f112f7ab8289ca46264283d81d46a29da527791f697be527375d53d02d3ee91"
         }
     ],
     "hashType": "sha256"

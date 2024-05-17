@@ -1,20 +1,21 @@
 const logger = require("../config/winston");
 const User = require("../models/User");
-const { PDFDocument } = require("pdf-lib");
+
+const { PDFDocument, StandardFonts, rgb } = require("pdf-lib");
 const {
   convertDraftContentStateToPlainText,
   loadPdf,
   scrapeLinkedInJobListing,
 } = require("../utils");
-import OpenAI from "openai";
-
+const OpenAI = require("openai");
+const path = require("path");
+const fs = require("fs");
 function getOpenaiClient() {
-  const chat = new OpenAI({
-    openAi: process.env.OPENAI_API_KEY,
-    modelName: "gpt-3.5-turbo",
+  return new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
   });
-  return chat;
 }
+
 exports.generateCoverLetter = async (
   rawInputValues,
   pdfFile,
@@ -33,40 +34,60 @@ exports.generateCoverLetter = async (
     jobTitle,
   } = rawInputValues;
 
-  let resumeText = "";
-  if (pdfFile) {
-    resumeText = await loadPdf(pdfFile.path);
-  } else {
-    resumeText = pdfText;
-  }
+  // let resumeText = "";
+  // if (pdfFile) {
+  //   resumeText = await loadPdf(pdfFile.path);
+  // } else {
+  //   resumeText = pdfText;
+  // }
 
   // Scrape LinkedIn job listing
   let jobData = {};
   if (linkedInUrl) {
-    jobData = await scrapeLinkedInJobListing(linkedInUrl);
+    try {
+      jobData = await scrapeLinkedInJobListing(linkedInUrl);
+      logger.info(`Scraped: ${JSON.stringify(jobData)}`);
+    } catch (error) {
+      logger.error(
+        `Error scraping LinkedIn job listing: ${error.message}`,
+        error
+      );
+    }
   }
 
+  // Handle cases where scraped data might be empty
+  const finalJobTitle = jobTitle || jobData.jobTitle || "the position";
+  const finalCompanyName = companyName || jobData.companyName || "the company";
+  const finalJobDescription = jobData.jobDescription || "Not provided";
+  const finalJobRequirements = jobData.jobRequirements || "Not provided";
+  const finalSkills = skills || jobData.skills || "Not provided";
+
+  // Prepare the prompt for OpenAI
   const prompt = `
-  Write a professional cover letter for a position of ${jobTitle || jobData.jobTitle} at ${companyName || jobData.companyName}.
+  Write a professional cover letter for a position of ${finalJobTitle} at ${finalCompanyName}.
   Here are the details:
-  - Job Title: ${jobTitle || jobData.jobTitle}
-  - Company Name: ${companyName || jobData.companyName}
-  - Job Description: ${jobData.jobDescription}
-  - Responsibilities: ${jobData.responsibilities}
-  - Qualifications: ${jobData.qualifications}
-  - Company Culture: ${jobData.companyCulture}
-  - Benefits: ${jobData.benefits}
-  - Highlight the following skills: ${skills || jobData.skills}
-  - Include details from the following resume: ${resumeText}
+  - Job Title: ${finalJobTitle}
+  - Company Name: ${finalCompanyName}
+  - Job Description: ${finalJobDescription}
+  - Responsibilities: ${finalJobRequirements}
+  - Qualifications: ${jobData.qualifications || "Not provided"}
+  - Company Culture: ${jobData.companyCulture || "Not provided"}
+  - Benefits: ${jobData.benefits || "Not provided"}
+  - Highlight the following skills: ${finalSkills}
+  - Include details from the following resume: ${pdfText || "Not provided"}
   `;
 
-  const { chat } = getOpenaiClient();
+  logger.info(`Generated prompt: ${prompt}`);
 
-  // const prompt = `Write a professional cover letter for a position of ${jobTitle || jobData.jobTitle} at ${companyName || jobData.companyName}. Highlight the following skills: ${skills || jobData.skills}. Include details from the following resume: ${resumeText}.\nJob Description: ${jobData.jobDescription}\nJob Requirements: ${jobData.jobRequirements}`;
+  const openaiClient = getOpenaiClient();
+
   try {
-    const response = await chat.completions.create({
-      model: "gpt-3.5-turbo-instruct",
-      prompt: prompt,
+    const response = await openaiClient.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [
+        { role: "system", content: "You are a helpful assistant." },
+        { role: "user", content: prompt },
+      ],
       temperature: 0.5,
       max_tokens: 1024,
       top_p: 1,
@@ -74,7 +95,12 @@ exports.generateCoverLetter = async (
       presence_penalty: 0,
     });
 
-    const generatedTextResponse = response.choices[0].text.trim();
+    const generatedTextResponse = response.choices[0].message.content.trim();
+
+    logger.info(
+      `[GENERATED COVER LATER FROM RESPONSE] ${generatedTextResponse}`
+    );
+
     const placeholders = {
       "[Your Name]": yourName,
       "[Email Address]": emailAddress,
@@ -91,38 +117,282 @@ exports.generateCoverLetter = async (
       (match) => placeholders[match]
     );
 
-    const coverLetterHtml = `<p>${generatedText.replace(/\n/g, "</p><p>")}</p>`;
+    const coverLetterHtml = `
+      <html>
+      <head>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+          }
+          .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+          }
+          .headerTitle {
+            font-size: 1.2em;
+            margin: 5px 0;
+          }
+          .resumeTitle {
+            font-weight: bold;
+          }
+          .resumeImage {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+          }
+          .resumeBody {
+            margin-top: 20px;
+          }
+          .resumeBodyTitle {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+          }
+          .resumeBodyContent {
+            margin-bottom: 20px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <header class="header">
+            <div>
+              <h1>${yourName}</h1>
+              <p class="resumeTitle headerTitle">${jobTitle}</p>
+              <p class="resumeTitle">${companyName}</p>
+            </div>
+          </header>
+          <div class="resumeBody">
+            <div>
+              <h2 class="resumeBodyTitle">PROFILE SUMMARY</h2>
+              <p class="resumeBodyContent">${pdfText}</p>
+            </div>
+            <div>
+              <h2 class="resumeBodyTitle">JOB DESCRIPTION</h2>
+              <p class="resumeBodyContent">${finalJobDescription}</p>
+            </div>
+            <div>
+              <h2 class="resumeBodyTitle">RESPONSIBILITIES</h2>
+              <p class="resumeBodyContent">${finalJobRequirements}</p>
+            </div>
+            <div>
+              <h2 class="resumeBodyTitle">QUALIFICATIONS</h2>
+              <p class="resumeBodyContent">${jobData.qualifications || "Not provided"}</p>
+            </div>
+            <div>
+              <h2 class="resumeBodyTitle">SKILLS</h2>
+              <p class="resumeBodyContent">${finalSkills}</p>
+            </div>
+          </div>
+        </div>
+      </body>
+      </html>
+    `;
+
     const draftContentState = {
       entityMap: {},
-      blocks: generatedText.split("\n").map((text, index) => ({
-        key: `block${index}`,
-        text: text,
-        type: "unstyled",
-        depth: 0,
-        inlineStyleRanges: [],
-        entityRanges: [],
-        data: {},
-      })),
+      blocks: [
+        {
+          key: "1",
+          text: yourName,
+          type: "header-one",
+          depth: 0,
+          inlineStyleRanges: [],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "2",
+          text: jobTitle,
+          type: "header-two",
+          depth: 0,
+          inlineStyleRanges: [
+            { offset: 0, length: jobTitle.length, style: "BOLD" },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "3",
+          text: companyName,
+          type: "header-two",
+          depth: 0,
+          inlineStyleRanges: [
+            { offset: 0, length: companyName.length, style: "BOLD" },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "4",
+          text: "PROFILE SUMMARY",
+          type: "header-two",
+          depth: 0,
+          inlineStyleRanges: [
+            { offset: 0, length: "PROFILE SUMMARY".length, style: "BOLD" },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "5",
+          text: pdfText,
+          type: "unstyled",
+          depth: 0,
+          inlineStyleRanges: [],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "6",
+          text: "JOB DESCRIPTION",
+          type: "header-two",
+          depth: 0,
+          inlineStyleRanges: [
+            { offset: 0, length: "JOB DESCRIPTION".length, style: "BOLD" },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "7",
+          text: finalJobDescription,
+          type: "unstyled",
+          depth: 0,
+          inlineStyleRanges: [],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "8",
+          text: "RESPONSIBILITIES",
+          type: "header-two",
+          depth: 0,
+          inlineStyleRanges: [
+            { offset: 0, length: "RESPONSIBILITIES".length, style: "BOLD" },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "9",
+          text: finalJobRequirements,
+          type: "unstyled",
+          depth: 0,
+          inlineStyleRanges: [],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "10",
+          text: "QUALIFICATIONS",
+          type: "header-two",
+          depth: 0,
+          inlineStyleRanges: [
+            { offset: 0, length: "QUALIFICATIONS".length, style: "BOLD" },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "11",
+          text: jobData.qualifications || "Not provided",
+          type: "unstyled",
+          depth: 0,
+          inlineStyleRanges: [],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "12",
+          text: "SKILLS",
+          type: "header-two",
+          depth: 0,
+          inlineStyleRanges: [
+            { offset: 0, length: "SKILLS".length, style: "BOLD" },
+          ],
+          entityRanges: [],
+          data: {},
+        },
+        {
+          key: "13",
+          text: finalSkills,
+          type: "unstyled",
+          depth: 0,
+          inlineStyleRanges: [],
+          entityRanges: [],
+          data: {},
+        },
+      ],
     };
 
+    // Create and save the PDF
     const pdfDoc = await PDFDocument.create();
-    const page = pdfDoc.addPage();
-    page.drawText(generatedText, {
+    const timesRomanFont = await pdfDoc.embedFont(StandardFonts.TimesRoman);
+    const page = pdfDoc.addPage([595.28, 841.89]);
+
+    const { width, height } = page.getSize();
+    const fontSize = 10;
+    const margin = 50;
+    let y = height - margin;
+    const words = res?.data?.choices[0]?.text.split(" ");
+    const lines = [];
+    let line = "";
+
+    for (const word of words) {
+      if ((line + word).length > 100) {
+        lines.push(line);
+        line = "";
+      }
+
+      line += `${word} `;
+    }
+
+    if (line.length > 0) {
+      lines.push(line);
+    }
+
+    page.drawText(lines.join("\n"), {
       x: 50,
-      y: page.getHeight() - 50,
-      size: 12,
+      y: height - 4 * fontSize,
+      size: fontSize,
+      font: timesRomanFont,
+      color: rgb(0, 0.53, 0.71),
     });
-
     const pdfBytes = await pdfDoc.save();
+    // saveAs(new Blob([pdfBytes.buffer]), "My_cover_letter.pdf");
+    const pdfDir = path.join(__dirname, "../generated");
+    const pdfPath = path.join(pdfDir, "cover_letter.pdf");
+    // const pdfPath = path.join(__dirname, "../generated/cover_letter.pdf");
+    // Ensure the directory exists
+    if (!fs.existsSync(pdfDir)) {
+      fs.mkdirSync(pdfDir, { recursive: true });
+    }
 
+    fs.writeFileSync(pdfPath, pdfBytes);
     return {
-      coverLetterHtml,
-      draftContentState,
+      rawTextResponse: response.choices[0].message.content, // PropType: string (plain text)
+      coverLetterHtml, // PropType: string (HTML)
+      draftContentState, // PropType: object (Draft.js content state)
       pdfBytes,
+      pdfPath,
     };
   } catch (error) {
-    logger.error(`Error generating cover letter: ${error.message}`);
-    throw error; // Rethrow the error for further handling if necessary
+    logger.error(`Error generating cover letter: ${error.message}`, error);
+    throw error;
   }
 };
 exports.saveDraftToDatabase = async (content, contentName, userId) => {

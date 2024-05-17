@@ -5,7 +5,7 @@ const { setupRoutes } = require("../routes");
 jest.mock("../routes/userRoutes", () => (req, res) => res.send("User Route"));
 jest.mock(
   "../routes/coverLetterRoutes",
-  () => (req, res) => res.send("Cover Letter Route")
+  () => (req, res) => res.send("Cover Letter Route"),
 );
 
 describe("Route Setup", () => {

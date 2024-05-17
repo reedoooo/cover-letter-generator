@@ -40,7 +40,7 @@ describe("extractTextFromUrl", () => {
     axios.get.mockRejectedValue(new Error(errorMessage));
 
     await expect(extractTextFromUrl("http://example.com")).rejects.toThrow(
-      errorMessage
+      errorMessage,
     );
     expect(axios.get).toHaveBeenCalledWith("http://example.com");
   });

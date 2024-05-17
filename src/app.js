@@ -3,13 +3,14 @@ const express = require("express");
 const logger = require("./config/winston");
 const { connectDB } = require("./config/database");
 const { unifiedErrorHandler } = require("./middlewares/unifiedErrorHandler");
-const setupMiddlewares = require("./middlewares/index");
 const setupRoutes = require("./routes");
+const middlewares = require("./middlewares");
+const path = require("path");
 
 const app = express();
 
 // Setup middlewares
-setupMiddlewares(app);
+middlewares(app);
 
 // Setup routes
 setupRoutes(app);

@@ -8,16 +8,19 @@ const {
 
 exports.generate = async (req, res) => {
   try {
-    const { rawInputValues, pdfText, pdfUrl, linkedInUrl } = req.body;
     const pdfFile = req.file;
-
-    logger.info(
-      `Generating cover letter for user: ${JSON.stringify(rawInputValues)}`
-    );
-    logger.info(`File: ${pdfFile ? pdfFile.originalname : "No file"}`);
-    logger.info(`Resume text: ${pdfText}`);
-    logger.info(`Resume URL: ${pdfUrl}`);
-
+    const formData = req.body;
+    const rawInputValues = formData.rawInputValues;
+    const pdfText = formData.pdfText;
+    const pdfUrl = formData.pdfUrl;
+    const linkedInUrl = formData.linkedInUrl;
+    console.group("Cover Letter Generation");
+    console.log("Raw Input Values:", rawInputValues);
+    console.log("File:", pdfFile ? pdfFile.originalname : "No file");
+    console.log("Resume text:", pdfText);
+    console.log("Resume URL:", pdfUrl);
+    console.log("LinkedIn URL:", linkedInUrl);
+    console.groupEnd();
     const result = await generateCoverLetter(
       rawInputValues,
       pdfFile,
@@ -25,16 +28,22 @@ exports.generate = async (req, res) => {
       pdfUrl,
       linkedInUrl
     );
-    const { coverLetterHtml, draftContentState, pdfBytes } = result;
-    const pdfOptions = { format: "A4" };
-
-    const pdfPath = path.join(__dirname, "../generated/cover_letter.pdf");
-    fs.writeFileSync(pdfPath, pdfBytes);
+    const {
+      rawTextResponse,
+      coverLetterHtml,
+      draftContentState,
+      pdfBytes,
+      pdfPath,
+    } = result;
+    // const pdfResPath = path.join(__dirname, "../generated/cover_letter.pdf");
+    // fs.writeFileSync(pdfPath, pdfBytes);
 
     res.status(200).json({
-      coverLetter: coverLetterHtml,
-      draftContentState: draftContentState,
-      pdfUrl: `http://localhost:3000/generated/cover_letter.pdf`,
+      message: "Cover letter generated successfully",
+      resPdfUrl: pdfPath,
+      resText: rawTextResponse,
+      resHmtl: coverLetterHtml,
+      resBlock: draftContentState,
       metadata: {
         generatedDate: new Date().toISOString(), // Example metadata
         version: "1.0", // You can version your output format if needed

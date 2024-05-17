@@ -49,7 +49,7 @@ describe("Middleware Integration Tests", () => {
   test("should protect routes with rate limiting", async () => {
     const routeToTest = "/test-rate-limit";
     app.get(routeToTest, (req, res) =>
-      res.status(200).json({ message: "Rate test" })
+      res.status(200).json({ message: "Rate test" }),
     );
 
     const agent = request(app);
