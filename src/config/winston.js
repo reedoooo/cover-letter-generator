@@ -5,11 +5,13 @@ require("colors");
 require("winston-daily-rotate-file"); // This is necessary to use DailyRotateFile
 const path = require("path");
 const { format: dateFormat } = require("date-fns");
+
 const timestampFormat = () => dateFormat(new Date(), "HH:mm");
 const capitalizeLevels = format((info) => {
   info.level = info.level.toUpperCase();
   return info;
 })();
+
 const logFilter = (level) => {
   return format((info) => {
     if (info.level === level) {
@@ -17,10 +19,19 @@ const logFilter = (level) => {
     }
   })();
 };
+
+// const tableFormat = format.printf(({ level, message }) => {
+//   if (Array.isArray(message) || typeof message === 'object') {
+//     console.table(message);
+//     return '';
+//   } else {
+//     return `${level}: ${message}`;
+//   }
+// });
+
 const consoleFormat = combine(
   timestamp({ format: timestampFormat }),
   capitalizeLevels,
-
   colorize(),
   printf((info) => `[${info.level}][${info.timestamp}] ${info.message}`)
 );
@@ -69,7 +80,6 @@ const logger = createLogger({
     ...Object.keys(config.npm.levels).map((level) =>
       createDailyRotateFileTransport(level)
     ),
-    priceChangeTransport,
   ],
   exceptionHandlers: [
     new transports.File({

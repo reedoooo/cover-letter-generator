@@ -14,6 +14,26 @@
             "date": 1715498743066,
             "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-12.log",
             "hash": "2a8dc6b016f6d2e38c0ea610531a23cd4e97ef142b5e322942f3b7e9005cc20a"
+        },
+        {
+            "date": 1715591396423,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-13.log",
+            "hash": "0c40d416f0b09c1c032d53a15a67a5342c4c11aff08c4893fa824d1742ab4e40"
+        },
+        {
+            "date": 1715680596799,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-14.log",
+            "hash": "cdbadbcab94ce65b3e36879e8a413faeca57ff2fc7b50167bebee175f6b0b009"
+        },
+        {
+            "date": 1715816965477,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-15.log",
+            "hash": "67aa71bdc1458adb7c7c5c01c6aae0025fa9a219ab192ec5c70f1658a34eb0db"
+        },
+        {
+            "date": 1715857493150,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-16.log",
+            "hash": "eeee21aedca94756db439ce2e7c2455e9850cbfa8dbb6b0802c63bd6ba903f17"
         }
     ],
     "hashType": "sha256"

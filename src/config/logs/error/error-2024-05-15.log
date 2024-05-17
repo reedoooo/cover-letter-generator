@@ -1,0 +1,6 @@
+[error][21:10] Validation errors: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[error][21:21] Validation errors: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[error][21:27] Error generating cover letter: exports.generateCoverLetter is not a function
+[error][21:51] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][22:08] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][23:58] Error generating cover letter: Unexpected token u in JSON at position 0

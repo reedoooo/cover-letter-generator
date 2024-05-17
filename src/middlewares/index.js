@@ -1,21 +1,39 @@
+const express = require("express");
+
 const cors = require("cors");
 const helmet = require("helmet");
 const compression = require("compression");
 const cookieParser = require("cookie-parser");
-// const session = require("express-session");
-// const MongoStore = require("connect-mongo");
-// const config = require("../config");
 const rateLimit = require("express-rate-limit");
-const express = require("express");
 const { morganMiddleware } = require("./morganMiddleware");
 
 exports.setupMiddlewares = (app) => {
-  app.use(helmet());
+  app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"],
+        styleSrc: ["'self'", "https://fonts.googleapis.com"],
+      },
+    })
+  );
   app.use(morganMiddleware);
   app.use(compression({ threshold: 512 }));
-  app.use(cookieParser());
-  app.use(cors());
   app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
+  app.use(cookieParser());
+  const corsOptions = {
+    origin: "*",
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type, Authorization",
+    credentials: true,
+    optionsSuccessStatus: 200,
+  };
+  app.use(cors(corsOptions));
+  app.use(express.static("public"));
+  // In your middleware or test setup file
+
+  // app.use(cookieParser());
+  // app.use(cors());
   // In your middleware or test setup file
   // if (process.env.NODE_ENV !== "test") {
   //   app.use(

@@ -1,15 +1,48 @@
+const fs = require("fs");
+const path = require("path");
+const { PDFDocument } = require("pdf-lib");
+const axios = require("axios");
 const cheerio = require("cheerio");
 const logger = require("../config/winston");
-const { default: axios } = require("axios");
-function splitTextDocuments(text) {
-  // Split the text into individual documents based on some delimiter or criteria
-  // For example, splitting by empty lines assuming each document is separated by empty lines
-  const documents = text.split(/\n\s*\n/);
+const config = require("../config/index");
 
-  // Remove any leading or trailing whitespace from each document
-  const cleanedDocuments = documents.map((doc) => doc.trim());
+const scrapeLinkedInJobListing = async (url) => {
+  try {
+    const { data } = await axios.get(url);
+    const $ = cheerio.load(data);
 
-  return cleanedDocuments;
+    const jobTitle = $('h1').text().trim();
+    const companyName = $('.topcard__org-name-link').text().trim();
+    const jobDescription = $('.description__text').text().trim();
+    const jobRequirements = $('.description__job-criteria-list').text().trim();
+    const skills = $('.job-criteria__item--skill .job-criteria__text').map((i, el) => $(el).text().trim()).get();
+
+    return {
+      jobTitle,
+      companyName,
+      jobDescription,
+      jobRequirements,
+      skills: skills.join(', '),
+    };
+  } catch (error) {
+    console.error(`Error scraping LinkedIn job listing: ${error.message}`);
+    throw error;
+  }
+};
+async function loadPdf(pdfPath) {
+  const data = fs.readFileSync(pdfPath);
+  const pdfDoc = await PDFDocument.load(data);
+  const pages = pdfDoc.getPages();
+  let text = "";
+
+  pages.forEach((page) => {
+    text += page
+      .getTextContent()
+      .items.map((item) => item.str)
+      .join(" ");
+  });
+
+  return text;
 }
 
 async function extractTextFromUrl(url) {
@@ -32,6 +65,17 @@ async function extractTextFromUrl(url) {
   }
 }
 
+function splitTextDocuments(text) {
+  // Split the text into individual documents based on some delimiter or criteria
+  // For example, splitting by empty lines assuming each document is separated by empty lines
+  const documents = text.split(/\n\s*\n/);
+
+  // Remove any leading or trailing whitespace from each document
+  const cleanedDocuments = documents.map((doc) => doc.trim());
+
+  return cleanedDocuments;
+}
+
 function convertDraftContentStateToPlainText(draftContentState) {
   if (!draftContentState.blocks) {
     logger.error("Invalid draft content state: Missing blocks");
@@ -44,8 +88,38 @@ function convertDraftContentStateToPlainText(draftContentState) {
   return plainText;
 }
 
+async function getCoverLetter(url, pdfPath, openai_api_key) {
+  const pdfDocText = await loadPdf(pdfPath);
+  const jobPostText = await extractTextFromUrl(url);
+
+  const documents = splitTextDocuments(pdfDocText + jobPostText);
+  const vectordb = await Chroma.fromDocuments(
+    documents,
+    new OpenAIEmbeddings({ openai_api_key })
+  );
+
+  const pdfQa = new RetrievalQA({
+    retriever: vectordb.asRetriever({ k: 6 }),
+    chainType: "stuff",
+    chatModel: new ChatOpenAI({
+      temperature: 0.7,
+      modelName: "gpt-3.5-turbo",
+      openai_api_key,
+    }),
+  });
+
+  const query =
+    "Write a cover letter for given CV and Job posting in a conversational style and fill out the writer's name in the end using cv";
+  const result = await pdfQa.run(query);
+
+  return result;
+}
+
 module.exports = {
   splitTextDocuments,
   extractTextFromUrl,
   convertDraftContentStateToPlainText,
+  getCoverLetter,
+  loadPdf,
+  scrapeLinkedInJobListing,
 };

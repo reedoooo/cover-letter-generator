@@ -1,32 +1,70 @@
-const config = require("../config/index");
 const logger = require("../config/winston");
 const User = require("../models/User");
-const { convertDraftContentStateToPlainText } = require("../utils");
+const { PDFDocument } = require("pdf-lib");
+const {
+  convertDraftContentStateToPlainText,
+  loadPdf,
+  scrapeLinkedInJobListing,
+} = require("../utils");
+import OpenAI from "openai";
 
-exports.generateCoverLetter = async (reqBody) => {
+function getOpenaiClient() {
+  const chat = new OpenAI({
+    openAi: process.env.OPENAI_API_KEY,
+    modelName: "gpt-3.5-turbo",
+  });
+  return chat;
+}
+exports.generateCoverLetter = async (
+  rawInputValues,
+  pdfFile,
+  pdfText,
+  pdfUrl,
+  linkedInUrl
+) => {
   const {
-    url,
     yourName,
-    address,
-    cityStateZip,
     emailAddress,
     phoneNumber,
-    todayDate,
-    employerName,
-    hiringManagerName,
-    companyName,
-    companyAddress,
-    companyCityStateZip,
-    jobTitle,
-    previousPosition,
-    previousCompany,
     skills,
-    softwarePrograms,
-    reasons,
-  } = reqBody;
-  const prompt = `Write a professional cover letter for a position of ${jobTitle} at ${companyName}. Highlight the following skills: ${skills}. Express enthusiasm for the role because: ${reasons}.`;
+    projects,
+    companyName,
+    employerName,
+    jobTitle,
+  } = rawInputValues;
+
+  let resumeText = "";
+  if (pdfFile) {
+    resumeText = await loadPdf(pdfFile.path);
+  } else {
+    resumeText = pdfText;
+  }
+
+  // Scrape LinkedIn job listing
+  let jobData = {};
+  if (linkedInUrl) {
+    jobData = await scrapeLinkedInJobListing(linkedInUrl);
+  }
+
+  const prompt = `
+  Write a professional cover letter for a position of ${jobTitle || jobData.jobTitle} at ${companyName || jobData.companyName}.
+  Here are the details:
+  - Job Title: ${jobTitle || jobData.jobTitle}
+  - Company Name: ${companyName || jobData.companyName}
+  - Job Description: ${jobData.jobDescription}
+  - Responsibilities: ${jobData.responsibilities}
+  - Qualifications: ${jobData.qualifications}
+  - Company Culture: ${jobData.companyCulture}
+  - Benefits: ${jobData.benefits}
+  - Highlight the following skills: ${skills || jobData.skills}
+  - Include details from the following resume: ${resumeText}
+  `;
+
+  const { chat } = getOpenaiClient();
+
+  // const prompt = `Write a professional cover letter for a position of ${jobTitle || jobData.jobTitle} at ${companyName || jobData.companyName}. Highlight the following skills: ${skills || jobData.skills}. Include details from the following resume: ${resumeText}.\nJob Description: ${jobData.jobDescription}\nJob Requirements: ${jobData.jobRequirements}`;
   try {
-    const response = await config.openai.completions.create({
+    const response = await chat.completions.create({
       model: "gpt-3.5-turbo-instruct",
       prompt: prompt,
       temperature: 0.5,
@@ -35,31 +73,24 @@ exports.generateCoverLetter = async (reqBody) => {
       frequency_penalty: 0.5,
       presence_penalty: 0,
     });
+
     const generatedTextResponse = response.choices[0].text.trim();
-    // logger.info("Generated cover letter:", generatedTextResponse);
     const placeholders = {
       "[Your Name]": yourName,
-      "[Address]": address,
-      "[City, State ZIP Code]": cityStateZip,
       "[Email Address]": emailAddress,
       "[Phone Number]": phoneNumber,
-      "[Today’s Date]": todayDate,
       "[Employer Name]": employerName,
-      "[Hiring Manager Name]": hiringManagerName,
       "[Company Name]": companyName,
-      "[Company Address]": companyAddress,
-      "[Company City, State ZIP Code]": companyCityStateZip,
       "[Job Title]": jobTitle,
-      "[Previous Position]": previousPosition,
-      "[Previous Company]": previousCompany,
       "[Skills]": skills,
-      "[Software Programs]": softwarePrograms,
-      "[Reasons]": reasons,
+      "[Projects]": projects,
     };
+
     const generatedText = generatedTextResponse.replace(
       /\[.*?\]/g,
       (match) => placeholders[match]
     );
+
     const coverLetterHtml = `<p>${generatedText.replace(/\n/g, "</p><p>")}</p>`;
     const draftContentState = {
       entityMap: {},
@@ -73,9 +104,21 @@ exports.generateCoverLetter = async (reqBody) => {
         data: {},
       })),
     };
+
+    const pdfDoc = await PDFDocument.create();
+    const page = pdfDoc.addPage();
+    page.drawText(generatedText, {
+      x: 50,
+      y: page.getHeight() - 50,
+      size: 12,
+    });
+
+    const pdfBytes = await pdfDoc.save();
+
     return {
       coverLetterHtml,
       draftContentState,
+      pdfBytes,
     };
   } catch (error) {
     logger.error(`Error generating cover letter: ${error.message}`);

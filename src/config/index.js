@@ -1,5 +1,5 @@
 /**
- * Module dependencies.
+ * config/index.js
  */
 
 const path = require("path");
@@ -14,7 +14,7 @@ const openai = new OpenAI({
 const defaults = {
   root: path.normalize(__dirname + "/.."),
   api: {
-    port: process.env.PORT || 3001,
+    port: process.env.PORT || 3002,
     openAIKey: process.env.OPENAI_API_KEY,
   },
   openai,
