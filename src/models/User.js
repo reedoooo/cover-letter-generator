@@ -14,7 +14,7 @@ const coverLetterSchema = new mongoose.Schema(
       default: Date.now,
     },
   },
-  { _id: false }
+  { _id: false },
 ); // Ensuring that no separate _id is created for subdocuments
 
 const userSchema = new mongoose.Schema({

@@ -1,0 +1,25 @@
+[error][00:05] Error generating cover letter: 400 Missing required parameter: 'messages'.
+[error][00:05] Error generating cover letter: 400 Missing required parameter: 'messages'.
+[error][00:13] Error generating cover letter: 400 Missing required parameter: 'messages'.
+[error][00:13] Error generating cover letter: 400 Missing required parameter: 'messages'.
+[error][00:40] Error generating cover letter: ENOENT: no such file or directory, open '/Users/reedvogt/Desktop/cover-letter-generator/src/generated/cover_letter.pdf'
+[error][00:48] Error generating cover letter: 404 This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions? 404 This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?
+[error][00:48] Error generating cover letter: 404 This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?
+[error][00:53] Error generating cover letter: ENOENT: no such file or directory, open '/Users/reedvogt/Desktop/cover-letter-generator/src/generated/cover_letter.pdf'
+[error][01:11] Error generating cover letter: path is not defined path is not defined
+[error][01:11] Error generating cover letter: path is not defined
+[error][01:14] Error generating cover letter: Cannot read properties of undefined (reading 'join') Cannot read properties of undefined (reading 'join')
+[error][01:14] Error generating cover letter: Cannot read properties of undefined (reading 'join')
+[error][01:18] Error generating cover letter: ENOENT: no such file or directory, open '/Users/reedvogt/Desktop/cover-letter-generator/src/generated/cover_letter.pdf' ENOENT: no such file or directory, open '/Users/reedvogt/Desktop/cover-letter-generator/src/generated/cover_letter.pdf'
+[error][01:18] Error generating cover letter: ENOENT: no such file or directory, open '/Users/reedvogt/Desktop/cover-letter-generator/src/generated/cover_letter.pdf'
+[error][01:19] Error generating cover letter: Cannot read properties of undefined (reading 'join') Cannot read properties of undefined (reading 'join')
+[error][01:19] Error generating cover letter: Cannot read properties of undefined (reading 'join')
+[error][01:29] Error generating cover letter: ENOENT: no such file or directory, open '/Users/reedvogt/Desktop/cover-letter-generator/src/generated/cover_letter.pdf' ENOENT: no such file or directory, open '/Users/reedvogt/Desktop/cover-letter-generator/src/generated/cover_letter.pdf'
+[error][01:29] Error generating cover letter: ENOENT: no such file or directory, open '/Users/reedvogt/Desktop/cover-letter-generator/src/generated/cover_letter.pdf'
+[error][02:06] Error generating cover letter: coverLetterHtml is not defined
+[error][03:09] Error generating cover letter: resumeText is not defined resumeText is not defined
+[error][03:09] Error generating cover letter: resumeText is not defined
+[error][10:22] Error generating cover letter: Cannot read properties of undefined (reading 'length') Cannot read properties of undefined (reading 'length')
+[error][10:22] Error generating cover letter: Cannot read properties of undefined (reading 'length')
+[error][18:19] Error generating cover letter: Cannot read properties of undefined (reading 'length') Cannot read properties of undefined (reading 'length')
+[error][18:19] Error generating cover letter: Cannot read properties of undefined (reading 'length')

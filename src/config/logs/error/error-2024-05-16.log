@@ -1,0 +1,26 @@
+[error][04:25] Error: Unexpected field
+[error][04:27] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][05:01] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][05:21] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][21:03] Error generating cover letter: Cannot destructure property 'yourName' of 'rawInputValues' as it is undefined.
+[error][21:14] Error generating cover letter: undefined is not iterable
+[error][21:19] Error generating cover letter: Cannot read properties of undefined (reading 'pdfFile')
+[error][21:20] Error generating cover letter: undefined is not iterable
+[error][21:21] Error generating cover letter: undefined is not iterable
+[error][21:22] Error generating cover letter: Cannot convert object to primitive value
+[error][21:50] Error generating cover letter: Cannot convert object to primitive value
+[error][21:54] Error generating cover letter: Cannot convert object to primitive value
+[error][22:11] Error generating cover letter: Cannot convert object to primitive value
+[error][22:50] Error generating cover letter: Cannot convert object to primitive value
+[error][23:06] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][23:08] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][23:09] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][23:32] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][23:35] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][23:37] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][23:38] Error generating cover letter: Unexpected token u in JSON at position 0
+[error][23:44] Error generating cover letter: formData.get is not a function
+[error][23:45] Error generating cover letter: formData.get is not a function
+[error][23:45] Error generating cover letter: formData.get is not a function
+[error][23:51] Error generating cover letter: 400 Missing required parameter: 'messages'.
+[error][23:51] Error generating cover letter: 400 Missing required parameter: 'messages'.

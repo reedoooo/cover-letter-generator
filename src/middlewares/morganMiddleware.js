@@ -14,5 +14,5 @@ const morganMiddleware = morgan((tokens, req, res) => {
 });
 
 module.exports = {
-	morganMiddleware,
+  morganMiddleware,
 };

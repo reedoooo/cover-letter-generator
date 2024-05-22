@@ -1,35 +1,37 @@
 require("dotenv").config();
 const express = require("express");
 const logger = require("./config/winston");
-const { setupMiddlewares } = require("./middlewares");
-const { setupRoutes } = require("./routes");
-const { errorHandler } = require("./middlewares/errorHandler");
 const { connectDB } = require("./config/database");
+const { unifiedErrorHandler } = require("./middlewares/unifiedErrorHandler");
+const setupRoutes = require("./routes");
+const middlewares = require("./middlewares");
+const path = require("path");
 
 const app = express();
 
 // Setup middlewares
-setupMiddlewares(app);
+middlewares(app);
 
 // Setup routes
 setupRoutes(app);
 
-// Connect to MongoDB
+// Connect to MongoDB and start server
 async function main() {
-  await connectDB();
-  // any other initialization code
+  try {
+    await connectDB();
+    if (process.env.NODE_ENV !== "test") {
+      const PORT = process.env.PORT || 3001;
+      app.listen(PORT, () => logger.info(`Server is running on port ${PORT}`));
+    }
+  } catch (error) {
+    logger.error(`Failed to start the server: ${error.message}`);
+    process.exit(1); // Exit the process with failure
+  }
 }
 
-if (process.env.NODE_ENV !== "test") {
-  main().catch(console.error);
-}
+main();
 
 // Error handling middleware
-app.use(errorHandler);
-
-if (process.env.NODE_ENV !== "test") {
-  const PORT = process.env.PORT || 3001;
-  app.listen(PORT, () => logger.info(`Server is running on port ${PORT}`));
-}
+app.use(unifiedErrorHandler);
 
 module.exports = app;

@@ -23,7 +23,7 @@ describe("connectDB", () => {
     // Assertions to verify correct logging
     expect(mongoose.connect).toHaveBeenCalled();
     expect(logger.info).toHaveBeenCalledWith(
-      `MongoDB connected successfully: localhost`
+      `MongoDB connected successfully: localhost`,
     );
   });
 
@@ -39,7 +39,7 @@ describe("connectDB", () => {
       // Assertions to verify error handling and logging
       expect(mongoose.connect).toHaveBeenCalled();
       expect(logger.error).toHaveBeenCalledWith(
-        `MongoDB connection failed: ${errorMessage}`
+        `MongoDB connection failed: ${errorMessage}`,
       );
     }
   });

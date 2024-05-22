@@ -1,13 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const coverLetterController = require("../controllers/coverLetterController");
-const validationMiddleware = require("../middlewares/validationMiddleware");
+const multer = require("multer");
+const storage = multer.memoryStorage();
+const upload = multer({ storage });
 
-router.post(
-  "/generate-cover-letter",
-  validationMiddleware.validateCoverLetter,
-  coverLetterController.generate
-);
-router.post("/save-draft", coverLetterController.saveDraft);
+const { generate, saveDraft } = require("../controllers/coverLetterController");
+
+router.post("/generate-cover-letter", upload.single("pdfFile"), generate);
+router.post("/save-draft", saveDraft);
 
 module.exports = router;

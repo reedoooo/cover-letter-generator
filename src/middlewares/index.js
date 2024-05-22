@@ -1,38 +1,38 @@
+const express = require("express");
+
 const cors = require("cors");
 const helmet = require("helmet");
 const compression = require("compression");
 const cookieParser = require("cookie-parser");
-// const session = require("express-session");
-// const MongoStore = require("connect-mongo");
-// const config = require("../config");
 const rateLimit = require("express-rate-limit");
-const express = require("express");
 const { morganMiddleware } = require("./morganMiddleware");
+const path = require("path");
 
-exports.setupMiddlewares = (app) => {
-  app.use(helmet());
+const middlewares = (app) => {
+  app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"],
+        styleSrc: ["'self'", "https://fonts.googleapis.com"],
+      },
+    })
+  );
   app.use(morganMiddleware);
   app.use(compression({ threshold: 512 }));
-  app.use(cookieParser());
-  app.use(cors());
   app.use(express.json());
-  // In your middleware or test setup file
-  // if (process.env.NODE_ENV !== "test") {
-  //   app.use(
-  //     session({
-  //       secret:
-  //         "547623567e04d62d3ccb6f9332e7cb22fec2edd13f1391a4e00d058db12bcdff", // Use a random string for the secret
-  //       resave: false,
-  //       saveUninitialized: false,
-  //       store: MongoStore.create({
-  //         mongoUrl: config.db,
-  //         collectionName: "sessions",
-  //         autoRemove: "interval",
-  //       }),
-  //     })
-  //   );
-  // }
+  app.use(express.urlencoded({ extended: true }));
+  app.use(cookieParser());
+  app.use(express.static(path.join(__dirname, "public")));
 
+  const corsOptions = {
+    origin: "*",
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type, Authorization",
+    credentials: true,
+    optionsSuccessStatus: 200,
+  };
+  app.use(cors(corsOptions));
+  // app.use(express.static("public"));
   app.use(
     rateLimit({
       windowMs: 15 * 60 * 1000, // 15 minutes
@@ -40,3 +40,5 @@ exports.setupMiddlewares = (app) => {
     })
   );
 };
+
+module.exports = middlewares;

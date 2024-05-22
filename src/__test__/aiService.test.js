@@ -49,14 +49,14 @@ describe("Cover Letter Helpers", () => {
 
       const result = await generateCoverLetter(reqBody);
       expect(result.coverLetterHtml).toContain(
-        "Generated cover letter content"
+        "Generated cover letter content",
       );
       expect(config.openai.completions.create).toHaveBeenCalledTimes(1);
     });
 
     it("should handle errors during cover letter generation", async () => {
       config.openai.completions.create.mockRejectedValue(
-        new Error("API Error")
+        new Error("API Error"),
       );
       await expect(generateCoverLetter({})).rejects.toThrow("API Error");
       expect(logger.error).toHaveBeenCalled();
@@ -83,7 +83,7 @@ describe("Cover Letter Helpers", () => {
     it("should handle errors when user not found", async () => {
       User.findById.mockResolvedValue(null);
       await expect(saveDraftToDatabase({}, "Draft1", "123")).rejects.toThrow(
-        "User not found"
+        "User not found",
       );
       expect(logger.error).toHaveBeenCalled();
     });
@@ -93,7 +93,7 @@ describe("Cover Letter Helpers", () => {
       User.findById.mockRejectedValue(error);
 
       await expect(saveDraftToDatabase({}, "Draft1", "123")).rejects.toThrow(
-        "Database error"
+        "Database error",
       );
       expect(logger.error).toHaveBeenCalled();
     });

@@ -1,85 +1,130 @@
-const config = require("../config/index");
 const logger = require("../config/winston");
 const User = require("../models/User");
-const { convertDraftContentStateToPlainText } = require("../utils");
+const { scrapeLinkedInJobListing } = require("../utils/dataUtilities");
+const {
+  createCoverLetterHtml,
+  createDraftContentState,
+} = require("../utils/fileConversionUtilities");
+const {
+  replacePlaceholders,
+  convertDraftContentStateToPlainText,
+} = require("../utils/genUtilities");
+const {
+  createPrompt,
+  fetchOpenAIResponse,
+} = require("../utils/openAiUtilities");
+const { generatePDF, savePDF } = require("../utils/pdfUtilities");
 
-exports.generateCoverLetter = async (reqBody) => {
+exports.generateCoverLetter = async (
+  rawInputValues,
+  pdfFile,
+  pdfText,
+  pdfUrl,
+  linkedInUrl
+) => {
   const {
-    url,
     yourName,
-    address,
+    yourAddress,
     cityStateZip,
     emailAddress,
     phoneNumber,
-    todayDate,
-    employerName,
-    hiringManagerName,
-    companyName,
+    date,
     companyAddress,
     companyCityStateZip,
-    jobTitle,
-    previousPosition,
-    previousCompany,
     skills,
-    softwarePrograms,
-    reasons,
-  } = reqBody;
-  const prompt = `Write a professional cover letter for a position of ${jobTitle} at ${companyName}. Highlight the following skills: ${skills}. Express enthusiasm for the role because: ${reasons}.`;
+    projects,
+    companyName,
+    employerName,
+    jobTitle,
+  } = rawInputValues;
+  let jobData = {};
+  if (linkedInUrl) {
+    try {
+      jobData = await scrapeLinkedInJobListing(linkedInUrl);
+      logger.info(`Scraped: ${JSON.stringify(jobData)}`);
+    } catch (error) {
+      logger.error(
+        `Error scraping LinkedIn job listing: ${error.message}`,
+        error
+      );
+    }
+  }
+
+  const finalJobTitle = jobData.jobTitle || "the position";
+  const finalCompanyName = jobData.companyName || "the company";
+  const finalJobDescription = jobData.jobDescription || "Not provided";
+  const finalJobRequirements = jobData.jobRequirements || "Not provided";
+  const finalSkills = skills || jobData.skills || "Not provided";
+  const finalQualifications = jobData.qualifications || "Not provided";
+  const finalCompanyCulture = jobData.companyCulture || "Not provided";
+  const finalBenefits = jobData.benefits || "Not provided";
+
+  const prompt = createPrompt({
+    finalJobTitle,
+    finalCompanyName,
+    finalJobDescription,
+    finalJobRequirements,
+    finalQualifications,
+    finalCompanyCulture,
+    finalBenefits,
+    finalSkills,
+    pdfText,
+  });
+
   try {
-    const response = await config.openai.completions.create({
-      model: "gpt-3.5-turbo-instruct",
-      prompt: prompt,
-      temperature: 0.5,
-      max_tokens: 1024,
-      top_p: 1,
-      frequency_penalty: 0.5,
-      presence_penalty: 0,
-    });
-    const generatedTextResponse = response.choices[0].text.trim();
-    // logger.info("Generated cover letter:", generatedTextResponse);
+    const generatedTextResponse = await fetchOpenAIResponse(prompt);
+
     const placeholders = {
       "[Your Name]": yourName,
-      "[Address]": address,
-      "[City, State ZIP Code]": cityStateZip,
+      "[Your Address]": yourAddress || "Not provided",
+      "[City, State, Zip Code]": cityStateZip || "Not provided",
       "[Email Address]": emailAddress,
       "[Phone Number]": phoneNumber,
-      "[Today’s Date]": todayDate,
-      "[Employer Name]": employerName,
-      "[Hiring Manager Name]": hiringManagerName,
-      "[Company Name]": companyName,
-      "[Company Address]": companyAddress,
-      "[Company City, State ZIP Code]": companyCityStateZip,
-      "[Job Title]": jobTitle,
-      "[Previous Position]": previousPosition,
-      "[Previous Company]": previousCompany,
-      "[Skills]": skills,
-      "[Software Programs]": softwarePrograms,
-      "[Reasons]": reasons,
+      "[Date]": new Date().toLocaleDateString(),
+      "Hiring Manager": employerName,
+      "the company": finalCompanyName,
+      "[Company Address]": companyAddress || "Not provided",
+      "[Company City, State, Zip Code]": companyCityStateZip || "Not provided",
     };
-    const generatedText = generatedTextResponse.replace(
-      /\[.*?\]/g,
-      (match) => placeholders[match]
+
+    const generatedText = replacePlaceholders(
+      generatedTextResponse,
+      placeholders
     );
-    const coverLetterHtml = `<p>${generatedText.replace(/\n/g, "</p><p>")}</p>`;
-    const draftContentState = {
-      entityMap: {},
-      blocks: generatedText.split("\n").map((text, index) => ({
-        key: `block${index}`,
-        text: text,
-        type: "unstyled",
-        depth: 0,
-        inlineStyleRanges: [],
-        entityRanges: [],
-        data: {},
-      })),
-    };
+    logger.info(`[GENERATED COVER LETTER] ${generatedText}`);
+    const htmlContent = createCoverLetterHtml({
+      yourName: yourName,
+      jobTitle,
+      companyName,
+      pdfText,
+      finalJobDescription,
+      finalJobRequirements,
+      finalQualifications,
+      finalSkills,
+    });
+    const draftContentState = createDraftContentState({
+      yourName,
+      jobTitle,
+      companyName,
+      pdfText,
+      finalJobDescription,
+      finalJobRequirements,
+      finalQualifications,
+      finalSkills,
+    });
+    const pdfBytes = await generatePDF(generatedText);
+    const pdfPath = savePDF(pdfBytes);
+
     return {
-      coverLetterHtml,
-      draftContentState,
+      rawTextResponse: generatedText,
+      coverLetterHtml: htmlContent, // Assuming generatedText is HTML-safe
+      draftContentState: draftContentState,
+      pdfBytes,
+      pdfPath,
     };
   } catch (error) {
-    logger.error(`Error generating cover letter: ${error.message}`);
-    throw error; // Rethrow the error for further handling if necessary
+    logger.error(`Error generating cover letter: ${error.message}`, error);
+    throw error;
   }
 };
 exports.saveDraftToDatabase = async (content, contentName, userId) => {
