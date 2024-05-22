@@ -27,4 +27,5 @@ module.exports = {
   development: Object.assign({}, development, defaults),
   test: Object.assign({}, test, defaults),
   production: Object.assign({}, production, defaults),
+  templatePath: path.join(__dirname, "../models/CoverLetter.js"),
 }[process.env.NODE_ENV || "development"];

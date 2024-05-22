@@ -643,3 +643,90 @@ Warm regards,
 [info][03:25] Server is running on port 3001
 [info][03:25] MongoDB connected successfully: ac-qmqonx3-shard-00-01.drldbfy.mongodb.net
 [info][03:25] Server is running on port 3001
+[info][10:18] MongoDB connected successfully: ac-qmqonx3-shard-00-00.drldbfy.mongodb.net
+[info][10:18] Server is running on port 3001
+[info][10:22] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][10:22] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-student   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Portfolio, Mar 2023 - github.com/reedoooo/portfolio-prep#readme  ●   Personal and professional showcase  ●   Built with JavaScript, React.js, Express, MongoDB, Chakra UI, and Node.js.  Enhanced Card Store, May 2023 - github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the creation of the enhanced TCG e-commerce platform, featuring  card search and management, e-commerce functionality, and deck building,  built with JavaScript, React.js, Express, MongoDB, MUI, and Node.js..  TabPage, May 2023 - github.com/reedoooo/tabpage#readme  ●   Work organizer web app  ●   Built with JavaScript, TypeScript, React.js, Express, MongoDB, Chakra UI, and  Node.js.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][10:22] [GENERATED COVER LATER FROM RESPONSE] [Your Name]  
+[Your Address]  
+[City, State, Zip]  
+[Email Address]  
+[Phone Number]  
+
+[Date]
+
+Hiring Manager  
+the company  
+[Company Address]  
+[City, State, Zip]  
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in the United States at the company as advertised. With a strong background as a Seattle-based Full Stack Developer and a passion for AI technologies and Web Design, I am excited about the opportunity to contribute to your team.
+
+I have honed my skills in JavaScript, React.js, Node.js, and Material Design through diverse projects and continuous technical skill enhancement. My experience includes developing functional and user-centric software by leveraging Data Algorithms, databases, and Material UI/UX design principles. Additionally, I am proficient in HTML5, CSS, TypeScript, SQL, AWS services, MongoDB, MySQL, PostgreSQL, Jest, Docker, React Native, and more.
+
+One of my notable projects is the Enhanced Card Store where I spearheaded the creation of an enhanced TCG e-commerce platform with features such as card search and management, e-commerce functionality, and deck building. This project was built using JavaScript, React.js, Express, MongoDB, and MUI. My ability to explain complex concepts in understandable terms has been demonstrated through my teaching and tutoring experience.
+
+My educational background includes a Certificate in Advanced Software Development in Full Stack JavaScript from Code Fellows in Seattle. I also completed two years of coursework in Psychology at Willamette University in Salem. In addition to my technical skills and educational qualifications, I have practical experience in improving workflow efficiency at Pagliacci Pizza as a Cook where I achieved a 30% drop in customer complaints and a 10% increase in sales performance.
+
+I am eager to bring my expertise to the team at the company and contribute to innovative projects within the realm of Developer Tcgplayer Jobs. Thank you for considering my application. I look forward to discussing how my skills align with your requirements further.
+
+Warm regards,
+
+[Your Name]
+[info][18:19] Scraped: {"jobTitle":"4 Developer Tcgplayer Jobs in United States","companyName":"","jobDescription":"","jobRequirements":"","skills":"","location":"","employmentType":"","postedDate":"","seniorityLevel":"","industries":""}
+[info][18:19] Generated prompt: 
+  Write a professional cover letter for a position of 4 Developer Tcgplayer Jobs in United States at the company.
+  Here are the details:
+  - Job Title: 4 Developer Tcgplayer Jobs in United States
+  - Company Name: the company
+  - Job Description: Not provided
+  - Responsibilities: Not provided
+  - Qualifications: Not provided
+  - Company Culture: Not provided
+  - Benefits: Not provided
+  - Highlight the following skills: Not provided
+  - Include details from the following resume: Reed Vogt  Software Developer  Seattle, Washington | readvogt@gmail.com | 206-915-8624  linkedin.com/in/reed-vogt-fullstack-developer   | https://github.com/reedoooo  Seattle-based Full Stack Developer with a passion for AI technologies and a strong foundation  in Web-Design. I leverage a robust background in Data Algorithms, databases and Material  UI/UX design principles to deliver functional, user-centric software. Expert in JavaScript,  React.js, Node.js, and Material Design, my career re fl ects diverse projects and ongoing  technical skill enhancement.  TECHNICAL SKILLS  Languages:   HTML5, CSS, SCSS, JavaScript, TypeScript, SQL  AI & Machine Learning:   Familiarity with AI model training techniques, data processing, and  analysis  Frameworks & Tools:   AWS services, Node.js, Express, React.js, MongoDB, MySQL,  PostgreSQL, Jest, Docker, React Native, Material Design  Teaching & Tutoring:   Experience in explaining complex concepts in understandable terms,  patient and effective in educational settings  PROJECTS  Enhanced Card Store |   May 2023   |   github.com/reedoooo/enhanced-card-store#readme  ●   Spearheaded the development of an e-commerce platform for trading card  enthusiasts, enhancing user interaction and commercial functionality.  ●   Technologies: JavaScript, React.js, Express, MongoDB, Material-UI, Zod, Fetch  API, cron, Nivo Charts.  ●   Key Achievements:  ●   Engineered a sophisticated card search and management system,  boosting user engagement and facilitating seamless transaction  experiences.  ●   Deployed data visualization tools to track card trends, contributing to  strategic business insights and enhanced user retention by 25%.  EDUCATION  Code Fellows - Seattle, WA  Certi fi cate - Advanced Software Development in Full Stack JavaScript - 2023  Willamette University, Salem, OR  Two-Year Coursework in Psychology  EXPERIENCE  Pagliacci Pizza, Seattle, WA, Cook, Feb 2022 – Nov 2022  ●   Elevated kitchen productivity through a revamped work fl ow that streamlined  task allocation and prioritized resource e ffi ciency, resulting in a 30% drop in  customer complaints and a 10% increment in sales performance.  Amazon Warehouse, Warehouse Associate, Apr 2020 – Sep 2020  ●   Played a vital role in implementing a new inventory management system that  improved time e ffi ciency by over 50%.
+  
+[info][18:19] [GENERATED COVER LATER FROM RESPONSE] [Your Name]
+[Your Address]
+[City, State, Zip Code]
+[Email Address]
+[Phone Number]
+[Date]
+
+Hiring Manager
+the company
+[Company Address]
+[City, State, Zip Code]
+
+Dear Hiring Manager,
+
+I am writing to express my interest in the 4 Developer Tcgplayer Jobs in United States at the company as advertised. With a strong background in Full Stack Development and a passion for AI technologies, I am excited about the opportunity to contribute to your team and help drive innovation within your organization.
+
+My experience as a Seattle-based Full Stack Developer, with expertise in JavaScript, React.js, Node.js, and Material Design, aligns well with the technical skills required for this position. I have successfully led projects such as the development of an e-commerce platform for trading card enthusiasts, where I implemented sophisticated features using technologies like MongoDB and React.js. This project resulted in improved user engagement and enhanced commercial functionality.
+
+In addition to my technical skills, I have a proven track record of improving operational efficiency and performance. For instance, during my time at Pagliacci Pizza as a Cook, I implemented workflow improvements that led to a 30% drop in customer complaints and a 10% increase in sales performance. My ability to streamline processes and prioritize resource efficiency will be valuable in contributing to the success of your team at the company.
+
+I hold a Certificate in Advanced Software Development in Full Stack JavaScript from Code Fellows and have demonstrated my commitment to continuous learning and skill enhancement throughout my career. My background also includes coursework in Psychology from Willamette University, providing me with a well-rounded perspective that complements my technical expertise.
+
+I am eager to bring my unique blend of technical skills, project management experience, and passion for AI technologies to the team at the company. I am confident that my background makes me a strong candidate for these Developer positions and I look forward to the opportunity to discuss how my skills and experiences align with the needs of your team.
+
+Thank you for considering my application. I look forward to the possibility of contributing to your organization's success as part of your talented team.
+
+Warm regards,
+
+[Your Name]

@@ -19,3 +19,7 @@
 [error][02:06] Error generating cover letter: coverLetterHtml is not defined
 [error][03:09] Error generating cover letter: resumeText is not defined resumeText is not defined
 [error][03:09] Error generating cover letter: resumeText is not defined
+[error][10:22] Error generating cover letter: Cannot read properties of undefined (reading 'length') Cannot read properties of undefined (reading 'length')
+[error][10:22] Error generating cover letter: Cannot read properties of undefined (reading 'length')
+[error][18:19] Error generating cover letter: Cannot read properties of undefined (reading 'length') Cannot read properties of undefined (reading 'length')
+[error][18:19] Error generating cover letter: Cannot read properties of undefined (reading 'length')

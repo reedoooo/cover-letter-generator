@@ -5,24 +5,30 @@ const {
   generateCoverLetter,
   saveDraftToDatabase,
 } = require("../services/aiService");
-
+const { convertToRegularObject } = require("../utils/genUtilities");
 exports.generate = async (req, res) => {
   try {
     const pdfFile = req.file;
     const formData = req.body;
-    const rawInputValues = formData.rawInputValues;
     const pdfText = formData.pdfText;
     const pdfUrl = formData.pdfUrl;
     const linkedInUrl = formData.linkedInUrl;
-    console.group("Cover Letter Generation");
-    console.log("Raw Input Values:", rawInputValues);
-    console.log("File:", pdfFile ? pdfFile.originalname : "No file");
-    console.log("Resume text:", pdfText);
-    console.log("Resume URL:", pdfUrl);
-    console.log("LinkedIn URL:", linkedInUrl);
-    console.groupEnd();
+    let rawInputValues = formData.rawInputValues;
+    if (typeof rawInputValues === "string") {
+      try {
+        rawInputValues = JSON.parse(rawInputValues);
+        logger.info("Parsed Raw Input Values:", rawInputValues);
+      } catch (error) {
+        throw new TypeError("Failed to parse rawInputValues JSON string");
+      }
+    }
+
+    if (!Array.isArray(rawInputValues)) {
+      throw new TypeError("rawInputValues should be an array");
+    }
+    const inputValues = convertToRegularObject(rawInputValues);
     const result = await generateCoverLetter(
-      rawInputValues,
+      inputValues,
       pdfFile,
       pdfText,
       pdfUrl,
@@ -35,14 +41,12 @@ exports.generate = async (req, res) => {
       pdfBytes,
       pdfPath,
     } = result;
-    // const pdfResPath = path.join(__dirname, "../generated/cover_letter.pdf");
-    // fs.writeFileSync(pdfPath, pdfBytes);
 
     res.status(200).json({
       message: "Cover letter generated successfully",
       resPdfUrl: pdfPath,
       resText: rawTextResponse,
-      resHmtl: coverLetterHtml,
+      resHTML: coverLetterHtml,
       resBlock: draftContentState,
       metadata: {
         generatedDate: new Date().toISOString(), // Example metadata

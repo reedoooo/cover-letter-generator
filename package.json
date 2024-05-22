@@ -39,6 +39,7 @@
     "openai": "^4.47.1",
     "pdf-lib": "^1.17.1",
     "rsyncwrapper": "^3.0.1",
+    "selenium-webdriver": "^4.21.0",
     "swagger-ui-express": "^5.0.0",
     "winston": "^3.13.0",
     "winston-daily-rotate-file": "^5.0.0"

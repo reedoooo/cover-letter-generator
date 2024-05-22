@@ -34,6 +34,11 @@
             "date": 1715929289031,
             "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/debug/debug-2024-05-17.log",
             "hash": "5b2aab0ffcbd1a9a451be4616df31158d19a15408dd2e488a9be5098eaac1eb9"
+        },
+        {
+            "date": 1716401720624,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/debug/debug-2024-05-22.log",
+            "hash": "3197eb530434d0168fb009ddece0e52c774ffc20c0cb7cecaa618b5382c18dcd"
         }
     ],
     "hashType": "sha256"
