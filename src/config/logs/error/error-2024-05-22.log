@@ -63,3 +63,27 @@
 " (0x000a)
 [error][15:31] Error generating cover letter: WinAnsi cannot encode "
 " (0x000a)
+[error][17:23] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf) WinAnsi cannot encode "●" (0x25cf)
+[error][17:23] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf)
+[error][17:27] Error generating cover letter: replaceUnsupportedCharacters is not defined replaceUnsupportedCharacters is not defined
+[error][17:27] Error generating cover letter: replaceUnsupportedCharacters is not defined
+[error][17:27] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf) WinAnsi cannot encode "●" (0x25cf)
+[error][17:27] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf)
+[error][17:28] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf) WinAnsi cannot encode "●" (0x25cf)
+[error][17:28] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf)
+[error][17:50] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf) WinAnsi cannot encode "●" (0x25cf)
+[error][17:50] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf)
+[error][17:55] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf) WinAnsi cannot encode "●" (0x25cf)
+[error][17:55] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf)
+[error][17:57] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf) WinAnsi cannot encode "●" (0x25cf)
+[error][17:57] Error generating cover letter: WinAnsi cannot encode "●" (0x25cf)
+[error][18:49] Error generating cover letter: WinAnsi cannot encode "
+" (0x000a) WinAnsi cannot encode "
+" (0x000a)
+[error][18:49] Error generating cover letter: WinAnsi cannot encode "
+" (0x000a)
+[error][20:53] Error generating cover letter: WinAnsi cannot encode "
+" (0x000a) WinAnsi cannot encode "
+" (0x000a)
+[error][20:53] Error generating cover letter: WinAnsi cannot encode "
+" (0x000a)

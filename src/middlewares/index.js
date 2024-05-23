@@ -1,5 +1,4 @@
 const express = require("express");
-
 const cors = require("cors");
 const helmet = require("helmet");
 const compression = require("compression");
@@ -22,7 +21,8 @@ const middlewares = (app) => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
   app.use(cookieParser());
-  app.use(express.static(path.join(__dirname, "public")));
+  app.use(express.static(path.join(__dirname, "../public")));
+  app.use("/generated", express.static(path.join(__dirname, "../generated")));
 
   const corsOptions = {
     origin: "*",
@@ -32,7 +32,6 @@ const middlewares = (app) => {
     optionsSuccessStatus: 200,
   };
   app.use(cors(corsOptions));
-  // app.use(express.static("public"));
   app.use(
     rateLimit({
       windowMs: 15 * 60 * 1000, // 15 minutes

@@ -6,6 +6,8 @@ const {
   saveDraftToDatabase,
 } = require("../services/aiService");
 const { convertToRegularObject } = require("../utils/genUtilities");
+const User = require("../models/User");
+const { default: mongoose } = require("mongoose");
 exports.generate = async (req, res) => {
   try {
     const pdfFile = req.file;
@@ -41,10 +43,14 @@ exports.generate = async (req, res) => {
       pdfBytes,
       pdfPath,
     } = result;
+    const relativePdfPath = `/generated/${path.basename(pdfPath)}`;
+    logger.info(`PDF saved at: ${pdfPath}`);
+    logger.info(`Returning relative PDF path: ${relativePdfPath}`);
 
     res.status(200).json({
       message: "Cover letter generated successfully",
-      resPdfUrl: pdfPath,
+      resPdfUrl: relativePdfPath,
+
       resText: rawTextResponse,
       resHTML: coverLetterHtml,
       resBlock: draftContentState,
@@ -63,14 +69,40 @@ exports.generate = async (req, res) => {
 };
 exports.saveDraft = async (req, res) => {
   try {
-    let { content, contentName, userId } = req.body;
-    const savedDraft = await saveDraftToDatabase(content, contentName, userId);
-    if (!savedDraft) {
-      throw new Error("Failed to save draft");
+    console.log("Incoming request body:", req.body);
+    const { content, contentName, userId } = req.body;
+
+    // Validate required fields
+    if (!content || !contentName || !userId) {
+      return res.status(400).json({
+        message: "Missing required fields: content, contentName, or userId",
+      });
     }
-    res.json({ message: "Draft saved successfully", savedDraft });
+
+    // Validate userId and convert to ObjectId
+    if (!mongoose.Types.ObjectId.isValid(userId)) {
+      return res.status(400).json({ message: "Invalid userId format" });
+    }
+    const objectId = await mongoose.Types.ObjectId.createFromHexString(userId);
+
+    const user = await User.findById(objectId);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    const newDraft = {
+      contentName,
+      content,
+    };
+
+    user.coverLetters.push(newDraft);
+    await user.save();
+
+    res
+      .status(201)
+      .json({ message: "Draft saved successfully", draft: newDraft });
   } catch (error) {
-    logger.error(`Error saving draft: ${error.message}`);
+    console.error(`Error saving draft: ${error.message}`);
     res
       .status(500)
       .json({ message: "Error saving draft", error: error.message });

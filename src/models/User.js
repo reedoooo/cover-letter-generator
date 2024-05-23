@@ -1,22 +1,31 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
-const coverLetterSchema = new mongoose.Schema(
-  {
-    name: String,
-    content: String,
-    createdAt: {
-      type: Date,
-      default: Date.now,
-    },
-    updatedAt: {
-      type: Date,
-      default: Date.now,
-    },
+// const coverLetterSchema = new mongoose.Schema(
+//   {
+//     name: String,
+//     content: String,
+//     createdAt: {
+//       type: Date,
+//       default: Date.now,
+//     },
+//     updatedAt: {
+//       type: Date,
+//       default: Date.now,
+//     },
+//   },
+//   { _id: false }
+// ); // Ensuring that no separate _id is created for subdocuments
+const coverLetterSchema = new mongoose.Schema({
+  contentName: {
+    type: String,
+    required: false,
   },
-  { _id: false },
-); // Ensuring that no separate _id is created for subdocuments
-
+  content: {
+    type: Object,
+    required: true,
+  },
+});
 const userSchema = new mongoose.Schema({
   username: { type: String, unique: true, trim: true, required: false },
   email: {
@@ -27,11 +36,13 @@ const userSchema = new mongoose.Schema({
     required: false,
   },
   password: { type: String, required: false },
-  coverLetters: {
-    type: Map,
-    of: coverLetterSchema, // Use the defined coverLetterSchema for map values
-    default: {},
-  },
+  coverLetters: [coverLetterSchema],
+
+  // coverLetters: {
+  //   type: Map,
+  //   of: coverLetterSchema, // Use the defined coverLetterSchema for map values
+  //   default: {},
+  // },
   createdAt: {
     type: Date,
     default: Date.now,

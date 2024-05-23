@@ -8,6 +8,7 @@ const {
 const {
   replacePlaceholders,
   convertDraftContentStateToPlainText,
+  replaceUnsupportedCharacters,
 } = require("../utils/genUtilities");
 const {
   createPrompt,
@@ -72,14 +73,15 @@ exports.generateCoverLetter = async (
   });
 
   try {
-    const generatedTextResponse = await fetchOpenAIResponse(prompt);
+    let generatedTextResponse = await fetchOpenAIResponse(prompt);
+    generatedTextResponse = replaceUnsupportedCharacters(generatedTextResponse);
 
     const placeholders = {
-      "[Your Name]": yourName,
+      "[Your Name]": yourName || "Not provided",
       "[Your Address]": yourAddress || "Not provided",
       "[City, State, Zip Code]": cityStateZip || "Not provided",
-      "[Email Address]": emailAddress,
-      "[Phone Number]": phoneNumber,
+      "[Email Address]": emailAddress || "Not provided",
+      "[Phone Number]": phoneNumber || "Not provided",
       "[Date]": new Date().toLocaleDateString(),
       "Hiring Manager": employerName,
       "the company": finalCompanyName,
