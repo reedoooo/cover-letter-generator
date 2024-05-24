@@ -39,6 +39,16 @@
             "date": 1716401720623,
             "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/http/http-2024-05-22.log",
             "hash": "0696bc6160738370a579e3557646cf1cd00f3916eb5b26673c4ea27b216dbfad"
+        },
+        {
+            "date": 1716489993625,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/http/http-2024-05-23.log",
+            "hash": "b06dac44cd160b150f1b4664d9ea8344c2d9025cdd87c2c30fe62cc5111e7267"
+        },
+        {
+            "date": 1716582130790,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/http/http-2024-05-24.log",
+            "hash": "8d0f88794e440d5ab70ddf1f10ff6b6bd7bab92515bb4398a72e2b2665fe826a"
         }
     ],
     "hashType": "sha256"

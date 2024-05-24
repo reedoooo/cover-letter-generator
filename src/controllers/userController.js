@@ -68,10 +68,12 @@ exports.loginUser = async (req, res) => {
 };
 exports.logoutUser = async (req, res) => {
   try {
-    // if (req.session) {
-    //   req.session.destroy();
-    // }
-    req.token = null;
+    if (req.token) {
+      logger.info(`User logged out: ${req.token.username}`);
+      delete req.token;
+    } else {
+      logger.info(`No user logged out : ${JSON.stringify(req.token)}`);
+    }
     res.status(200).json({ message: "Logged out successfully" });
   } catch (error) {
     logger.error(`Error logging out: ${error.message}`);

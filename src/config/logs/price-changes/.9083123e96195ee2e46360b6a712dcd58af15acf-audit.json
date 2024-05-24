@@ -44,6 +44,16 @@
             "date": 1716401720619,
             "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-22.log",
             "hash": "65d2efd86344eaa8b23c0067fe65e2c48e4eace2f0072f3b845463cea32c954a"
+        },
+        {
+            "date": 1716489993621,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-23.log",
+            "hash": "5a84d5552e50d4a67c743c8de0a2631b2a9ff4b9904432b13a5e7379423b7af1"
+        },
+        {
+            "date": 1716582130787,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-24.log",
+            "hash": "242c79908b3130e2f96ca10d8e93b29141c71b01d9742e9f899ff4e0dc49a23a"
         }
     ],
     "hashType": "sha256"

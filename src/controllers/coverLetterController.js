@@ -1,10 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const logger = require("../config/winston");
-const {
-  generateCoverLetter,
-  saveDraftToDatabase,
-} = require("../services/aiService");
+const { generateCoverLetter } = require("../services/aiService");
 const { convertToRegularObject } = require("../utils/genUtilities");
 const User = require("../models/User");
 const { default: mongoose } = require("mongoose");
@@ -15,20 +12,20 @@ exports.generate = async (req, res) => {
     const pdfText = formData.pdfText;
     const pdfUrl = formData.pdfUrl;
     const linkedInUrl = formData.linkedInUrl;
-    let rawInputValues = formData.rawInputValues;
-    if (typeof rawInputValues === "string") {
+    let formValues = formData.formValues;
+    if (typeof formValues === "string") {
       try {
-        rawInputValues = JSON.parse(rawInputValues);
-        logger.info("Parsed Raw Input Values:", rawInputValues);
+        formValues = JSON.parse(formValues);
+        logger.info("Parsed Raw Input Values:", formValues);
       } catch (error) {
-        throw new TypeError("Failed to parse rawInputValues JSON string");
+        throw new TypeError("Failed to parse formValues JSON string");
       }
     }
 
-    if (!Array.isArray(rawInputValues)) {
-      throw new TypeError("rawInputValues should be an array");
+    if (!Array.isArray(formValues)) {
+      throw new TypeError("formValues should be an array");
     }
-    const inputValues = convertToRegularObject(rawInputValues);
+    const inputValues = convertToRegularObject(formValues);
     const result = await generateCoverLetter(
       inputValues,
       pdfFile,
@@ -70,10 +67,10 @@ exports.generate = async (req, res) => {
 exports.saveDraft = async (req, res) => {
   try {
     console.log("Incoming request body:", req.body);
-    const { content, contentName, userId } = req.body;
-
+    const { draft, userId } = req.body;
+    const { title, content } = draft;
     // Validate required fields
-    if (!content || !contentName || !userId) {
+    if (!title || !content || !userId) {
       return res.status(400).json({
         message: "Missing required fields: content, contentName, or userId",
       });
@@ -91,8 +88,10 @@ exports.saveDraft = async (req, res) => {
     }
 
     const newDraft = {
-      contentName,
+      title,
       content,
+      createdAt: new Date(),
+      updatedAt: new Date(),
     };
 
     user.coverLetters.push(newDraft);

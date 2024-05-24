@@ -17,7 +17,7 @@ const {
 const { generatePDF, savePDF } = require("../utils/pdfUtilities");
 
 exports.generateCoverLetter = async (
-  rawInputValues,
+  formValues,
   pdfFile,
   pdfText,
   pdfUrl,
@@ -37,7 +37,7 @@ exports.generateCoverLetter = async (
     companyName,
     employerName,
     jobTitle,
-  } = rawInputValues;
+  } = formValues;
   let jobData = {};
   if (linkedInUrl) {
     try {
@@ -129,24 +129,24 @@ exports.generateCoverLetter = async (
     throw error;
   }
 };
-exports.saveDraftToDatabase = async (content, contentName, userId) => {
-  try {
-    const plainText = convertDraftContentStateToPlainText(content);
-    const user = await User.findById(userId);
-    if (!user) {
-      throw new Error("User not found");
-    }
-    const draftKey = `Draft ${user.coverLetters.size + 1}`;
-    user.coverLetters.set(draftKey, {
-      name: contentName,
-      content: plainText,
-      createdAt: new Date(), // Set current time if it's a new draft
-      updatedAt: new Date(), // Update time every time this is saved
-    });
-    await user.save();
-    return user.coverLetters.get(draftKey);
-  } catch (error) {
-    logger.error(`Error saving draft to database: ${error.message}`);
-    throw error; // Rethrow the error for further handling if necessary
-  }
-};
+// exports.saveDraftToDatabase = async (content, contentName, userId) => {
+//   try {
+//     const plainText = convertDraftContentStateToPlainText(content);
+//     const user = await User.findById(userId);
+//     if (!user) {
+//       throw new Error("User not found");
+//     }
+//     const draftKey = `Draft ${user.coverLetters.size + 1}`;
+//     user.coverLetters.set(draftKey, {
+//       name: contentName,
+//       content: plainText,
+//       createdAt: new Date(), // Set current time if it's a new draft
+//       updatedAt: new Date(), // Update time every time this is saved
+//     });
+//     await user.save();
+//     return user.coverLetters.get(draftKey);
+//   } catch (error) {
+//     logger.error(`Error saving draft to database: ${error.message}`);
+//     throw error; // Rethrow the error for further handling if necessary
+//   }
+// };

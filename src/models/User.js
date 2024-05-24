@@ -17,7 +17,7 @@ const bcrypt = require("bcrypt");
 //   { _id: false }
 // ); // Ensuring that no separate _id is created for subdocuments
 const coverLetterSchema = new mongoose.Schema({
-  contentName: {
+  title: {
     type: String,
     required: false,
   },

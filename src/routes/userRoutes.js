@@ -13,7 +13,7 @@ router.post(
   validationMiddleware.validateUserLogIn,
   userController.loginUser,
 );
-router.get("/logout", userController.logoutUser);
+router.post("/logout", userController.logoutUser);
 router.get("/validate-token", userController.validateToken);
 
 module.exports = router;
