@@ -1,9 +1,8 @@
 {
   "name": "cover-letter-generator",
   "version": "1.0.0",
-  "main": "src/app.js",
-  "license": "ISC",
   "description": "A Node.js application for generating customized cover letters.",
+  "license": "ISC",
   "author": "Reed Vogt",
   "keywords": [
     "cover letter",
@@ -11,6 +10,17 @@
     "node.js",
     "express"
   ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "prod": "cross-env NODE_ENV=production node index.js",
+    "build": "babel src --out-dir dist --copy-files",
+    "test": "jest src/**/*.test.js --coverage --verbose --runInBand --detectOpenHandles",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettify": "prettier --write ."
+  },
   "dependencies": {
     "@babel/cli": "^7.24.5",
     "@babel/core": "^7.24.5",
@@ -19,6 +29,7 @@
     "bcrypt": "^5.1.1",
     "cheerio": "^1.0.0-rc.12",
     "colors": "^1.4.0",
+    "config": "^3.3.9",
     "compression": "^1.7.4",
     "connect-mongo": "^5.1.0",
     "cookie-parser": "^1.4.6",
@@ -57,16 +68,6 @@
     "prettier": "^3.2.5",
     "supertest": "^7.0.0"
   },
-  "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon",
-    "prod": "cross-env NODE_ENV=production node src/app.js",
-    "build": "babel src --out-dir dist --copy-files",
-    "test": "jest src/**/*.test.js --coverage --verbose --runInBand --detectOpenHandles",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prettify": "prettier --write ."
-  },
   "nodemonConfig": {
     "watch": [
       "src",
@@ -79,6 +80,6 @@
       "node_modules",
       "dist"
     ],
-    "exec": "node --inspect=9229 src/app.js"
+    "exec": "node --inspect=9229 index.js"
   }
 }

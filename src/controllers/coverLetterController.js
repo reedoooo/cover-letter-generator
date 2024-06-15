@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 const logger = require("../config/winston");
-const { generateCoverLetter } = require("../services/aiService");
 const { convertToRegularObject } = require("../utils/genUtilities");
 const User = require("../models/User");
 const { default: mongoose } = require("mongoose");
+const { generateCoverLetter } = require("../services/aiService");
+
 exports.generate = async (req, res) => {
   try {
     const pdfFile = req.file;

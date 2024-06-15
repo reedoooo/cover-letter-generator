@@ -4,16 +4,13 @@ const {
   splitTextDocuments,
   extractTextFromUrl,
   convertDraftContentStateToPlainText,
-  getCoverLetter,
-  loadPdf,
-  scrapeLinkedInJobListing,
   replacePlaceholders,
 } = require("./genUtilities");
 const {
   createCoverLetterHtml,
   createDraftContentState,
 } = require("./fileConversionUtilities");
-const { generatePDF, savePDF, loadPdf } = require("./pdfUtilities");
+const { generatePDF, savePDF, loadPDF } = require("./pdfUtilities");
 
 module.exports = {
   scrapeLinkedInJobListing,
@@ -22,13 +19,11 @@ module.exports = {
   splitTextDocuments,
   extractTextFromUrl,
   convertDraftContentStateToPlainText,
-  getCoverLetter,
-  loadPdf,
   scrapeLinkedInJobListing,
   replacePlaceholders,
   createCoverLetterHtml,
   createDraftContentState,
   generatePDF,
   savePDF,
-  loadPdf,
+  loadPDF,
 };

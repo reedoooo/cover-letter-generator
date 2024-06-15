@@ -44,7 +44,7 @@ exports.validateUserSignUp = [
 ];
 
 exports.validateUserLogIn = [
-  check("username").not().isEmpty().withMessage("Username is required"),
+  // check("username").not().isEmpty().withMessage("Username is required"),
   check("password").not().isEmpty().withMessage("Password is required"),
   (req, res, next) => {
     // if (process.env.NODE_ENV === "test") {

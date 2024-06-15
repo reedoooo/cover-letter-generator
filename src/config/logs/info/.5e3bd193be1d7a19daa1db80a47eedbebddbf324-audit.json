@@ -6,54 +6,29 @@
     "auditLog": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/.5e3bd193be1d7a19daa1db80a47eedbebddbf324-audit.json",
     "files": [
         {
-            "date": 1715463953678,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-11.log",
-            "hash": "5b947f89b3a077d7d78419cd3f24e20159aab9ee32bdee8b366e9caf9b921e05"
+            "date": 1717872947157,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-06-08.log",
+            "hash": "7377383a94e02bfda863a8ae09717ab9fb3ac1d13adfa17ba7b9e1ce0c4638e2"
         },
         {
-            "date": 1715498945750,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-12.log",
-            "hash": "a4dfc32918e8c8b396d435c60cd2d3161d06c0181b90780392cbe2c5bfde24ac"
+            "date": 1718009825516,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-06-10.log",
+            "hash": "ab01c0bdb2c68ab43da2d70f0f22ecb63dbc5a5c4e6390b14cbc769b9c1b9ebf"
         },
         {
-            "date": 1715591396426,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-13.log",
-            "hash": "53d9b71da7b1e0a39dad8b3b5fe34887b3cfd2107629ac629a889cce2051ef3d"
+            "date": 1718316327891,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-06-13.log",
+            "hash": "8f1a9f8d67ccb2b02fb529b735f16041961ec62ee2f10a1a9a9d19d8dba22bf6"
         },
         {
-            "date": 1715680596792,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-14.log",
-            "hash": "d44e6ae63856883eb8bee4659953a8bb4f9cdf402381396c8638f9a3b5e1e245"
+            "date": 1718389091516,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-06-14.log",
+            "hash": "729f6b571fcc4e660b908c85f55ab2ee3f7c1d41ac1a9015e90f2308f2e8ebf9"
         },
         {
-            "date": 1715816965480,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-15.log",
-            "hash": "591f91d2a26cb16efaf87ab516ef134cc92b94de98fed1078507ebda60b872a9"
-        },
-        {
-            "date": 1715857493154,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-16.log",
-            "hash": "5904ec7f1ee99d0d30faef5292c38fe64162349a4c225d8e49ea67f1cf0df149"
-        },
-        {
-            "date": 1715929289029,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-17.log",
-            "hash": "4348b34289753e37cfeb76e64dba7bec43eeb83f4154286cda2dd0f5dc83af31"
-        },
-        {
-            "date": 1716401720622,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-22.log",
-            "hash": "60e69ee4ee7c2f70641bc8fb9d37e190f34b725b62f886ffea89ee056799bdc5"
-        },
-        {
-            "date": 1716447823639,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-23.log",
-            "hash": "cb81170eb26ca0e18f5f091c2aeb6ee8f3ed92c50a77f386572bdc2a44784757"
-        },
-        {
-            "date": 1716534282414,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-05-24.log",
-            "hash": "43ec818cdf65cff25f1d989d9347dfc10ff947e4c6082a36502850ff005dd310"
+            "date": 1718435686023,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/info/info-2024-06-15.log",
+            "hash": "4d20196a766e4ce4952da47798bf868e1bbac621238449b7e98e01eb4f6480f4"
         }
     ],
     "hashType": "sha256"

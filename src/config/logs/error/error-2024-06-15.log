@@ -1,0 +1,5 @@
+[error][03:40] Error registering user: User validation failed: coverLetters.0.content: Path `content` is required.
+[error][10:12] Error registering user: User validation failed: storage.prompts.4.generatorTitle: `createTemplatePrompt` is not a valid enum value for path `generatorTitle`., storage.prompts.5.generatorTitle: `reviseTemplatePrompt` is not a valid enum value for path `generatorTitle`.
+[error][10:38] Error registering user: User validation failed: storage.prompts.4.generatorTitle: `createTemplatePrompt` is not a valid enum value for path `generatorTitle`., storage.prompts.5.generatorTitle: `reviseTemplatePrompt` is not a valid enum value for path `generatorTitle`.
+[error][12:07] Error logging in: Cannot read properties of undefined (reading 'includes')
+[error][12:11] Validation errors: [{"type":"field","msg":"Username is required","path":"username","location":"body"}]

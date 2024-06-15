@@ -1,7 +1,4 @@
-const fs = require("fs");
 const { Builder, By, until } = require("selenium-webdriver");
-
-const axios = require("axios");
 const cheerio = require("cheerio");
 const logger = require("../config/winston");
 

@@ -6,31 +6,6 @@
     "auditLog": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/.9083123e96195ee2e46360b6a712dcd58af15acf-audit.json",
     "files": [
         {
-            "date": 1715463953676,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-11.log",
-            "hash": "13c1edfcaa1865411dd27610d298770523380d15c970f75e9243da92679ae676"
-        },
-        {
-            "date": 1715498743066,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-12.log",
-            "hash": "2a8dc6b016f6d2e38c0ea610531a23cd4e97ef142b5e322942f3b7e9005cc20a"
-        },
-        {
-            "date": 1715591396423,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-13.log",
-            "hash": "0c40d416f0b09c1c032d53a15a67a5342c4c11aff08c4893fa824d1742ab4e40"
-        },
-        {
-            "date": 1715680596799,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-14.log",
-            "hash": "cdbadbcab94ce65b3e36879e8a413faeca57ff2fc7b50167bebee175f6b0b009"
-        },
-        {
-            "date": 1715816965477,
-            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-15.log",
-            "hash": "67aa71bdc1458adb7c7c5c01c6aae0025fa9a219ab192ec5c70f1658a34eb0db"
-        },
-        {
             "date": 1715857493150,
             "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-16.log",
             "hash": "eeee21aedca94756db439ce2e7c2455e9850cbfa8dbb6b0802c63bd6ba903f17"
@@ -54,6 +29,31 @@
             "date": 1716582130787,
             "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-05-24.log",
             "hash": "242c79908b3130e2f96ca10d8e93b29141c71b01d9742e9f899ff4e0dc49a23a"
+        },
+        {
+            "date": 1717872947144,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-06-08.log",
+            "hash": "ba409f2304b5e376062dfbc7401e25c211e0be414bc13f1cf8177257396b449a"
+        },
+        {
+            "date": 1718009825513,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-06-10.log",
+            "hash": "8a23dfaebeafc96d89d7beab5ce89ae5641aca8dc802b6f67f273eb0e59b005a"
+        },
+        {
+            "date": 1718316327882,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-06-13.log",
+            "hash": "88dff3beebe236f35eba3ce6c8b6568d53fb08ffe387ef0c71fcce95a12bbd99"
+        },
+        {
+            "date": 1718389091512,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-06-14.log",
+            "hash": "4d4f2f97fbe3f8f0d8a6fc8cb065ad18db5c8215e68fa352be003a0ab4729a37"
+        },
+        {
+            "date": 1718435686017,
+            "name": "/Users/reedvogt/Desktop/cover-letter-generator/src/config/logs/price-changes/price-change-2024-06-15.log",
+            "hash": "046379f3ccde824bdd9affe37ace2c028c15217cf05641afb9f34d58c2b95041"
         }
     ],
     "hashType": "sha256"

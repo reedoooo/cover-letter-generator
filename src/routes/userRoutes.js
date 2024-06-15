@@ -15,5 +15,6 @@ router.post(
 );
 router.post("/logout", userController.logoutUser);
 router.get("/validate-token", userController.validateToken);
+router.get("/storage/prompts", userController.getPromptLibrary);
 
 module.exports = router;

@@ -6,7 +6,9 @@ const upload = multer({ storage });
 
 const { generate, saveDraft } = require("../controllers/coverLetterController");
 
-router.post("/generate-cover-letter", upload.single("pdfFile"), generate);
-router.post("/save-draft", saveDraft);
+router.post("/create", upload.single("pdfFile"), generate);
+router.post("/save", saveDraft);
+router.put("/update/:draftId", upload.single("pdfFile"), saveDraft);
+router.delete("/delete/:draftId", saveDraft);
 
 module.exports = router;

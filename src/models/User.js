@@ -1,21 +1,8 @@
-const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
+const { Template } = require('./Template');
 
-// const coverLetterSchema = new mongoose.Schema(
-//   {
-//     name: String,
-//     content: String,
-//     createdAt: {
-//       type: Date,
-//       default: Date.now,
-//     },
-//     updatedAt: {
-//       type: Date,
-//       default: Date.now,
-//     },
-//   },
-//   { _id: false }
-// ); // Ensuring that no separate _id is created for subdocuments
+// Define the cover letter schema
 const coverLetterSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -23,26 +10,75 @@ const coverLetterSchema = new mongoose.Schema({
   },
   content: {
     type: Object,
+    required: false,
+  },
+});
+// Define the prompt schema
+const promptSchema = new mongoose.Schema({
+  generatorTitle: {
+    type: String,
+    enum: [
+      'coverLetter',
+      'chat',
+      'generateNewComponent',
+      'reviseComponent',
+      'uxUiDeveloper',
+      'promptEnhancerAi',
+      'softwareDeveloper',
+      'textBasedWebBrowser',
+      'seniorFrontendDeveloper',
+      'commitMessageGenerator',
+      'graphvizDotGenerator',
+      'chatGptPromptGenerator',
+      'dataAnalyst',
+      'seoAdvisor',
+      'recipeCreator',
+      'createTemplatePrompt',
+      'reviseTemplatePrompt',
+    ],
+    required: true,
+  },
+  data: {
+    type: Map,
+    of: String,
     required: true,
   },
 });
+// Define the user schema
 const userSchema = new mongoose.Schema({
-  username: { type: String, unique: true, trim: true, required: false },
-  email: {
-    type: String,
-    unique: true,
-    lowercase: true,
-    trim: true,
-    required: false,
-  },
-  password: { type: String, required: false },
+  username: { type: String, unique: true, trim: true },
+  email: { type: String, unique: true, lowercase: true, trim: true },
+  password: String,
   coverLetters: [coverLetterSchema],
-
-  // coverLetters: {
-  //   type: Map,
-  //   of: coverLetterSchema, // Use the defined coverLetterSchema for map values
-  //   default: {},
-  // },
+  storage: {
+    templates: {
+      assistants: [
+        {
+          type: String,
+          enum: [
+            'UX/UI Developer',
+            'Data Analyst',
+            'Software Developer',
+            'Senior Frontend Developer',
+            'Senior Backend Developer',
+            'Senior Full Stack Developer',
+            'Full Stack Developer',
+            'Backend Developer',
+            'Frontend Developer',
+          ],
+        },
+      ],
+      prompts: [String],
+      customAiTemplates: [Template.schema],
+    },
+    prompts: [promptSchema],
+  },
+  dashboard: {
+    projects: Map,
+  },
+  profile: {
+    img: String,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
@@ -53,10 +89,9 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-// Pre-save hook for handling password hashing and updating timestamps
-userSchema.pre("save", function (next) {
+userSchema.pre('save', function (next) {
   this.updatedAt = new Date();
-  if (this.isModified("password")) {
+  if (this.isModified('password')) {
     bcrypt.hash(this.password, 10, (err, hash) => {
       if (err) {
         return next(err);
@@ -69,5 +104,6 @@ userSchema.pre("save", function (next) {
   }
 });
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model('User', userSchema);
+
 module.exports = User;
